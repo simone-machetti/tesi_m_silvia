@@ -1,0 +1,30 @@
+\babel@toc {english}{}\relax 
+\babel@toc {french}{}\relax 
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Comparison of relevant FPGA-based platforms across key features.\relax }}{20}{table.caption.6}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Summary of the features of the Xilinx Zynq-7020 SoC on the Pynq-Z2 board.\relax }}{36}{table.caption.11}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Experimental setup for signal acquisition characterization on \mbox {X-HEEP-FEMU} and \mbox {HEEPocrates}.\relax }}{47}{table.caption.14}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Experimental setup for evaluating TinyAI workloads on \mbox {X-HEEP-FEMU} and \mbox {HEEPocrates}.\relax }}{49}{table.caption.15}%
+\contentsline {table}{\numberline {2.5}{\ignorespaces Normalized acquisition time (in cycles) and power consumption (in \si {\milli \watt }) for active and sleep states across sampling frequencies during a \SI {5}{\second } acquisition window.\relax }}{51}{table.caption.16}%
+\contentsline {table}{\numberline {2.6}{\ignorespaces Normalized processing time (in cycles) and power consumption (in \si {\milli \watt }) across platforms and processing elements for representative workloads.\relax }}{53}{table.caption.18}%
+\contentsline {table}{\numberline {2.7}{\ignorespaces Acquisition time comparison with and without flash virtualization.\relax }}{55}{table.caption.20}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Comparison of relevant platforms across key architectural features.\relax }}{65}{table.caption.21}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Summary of features and operating parameters of the selected platforms.\relax }}{89}{table.caption.26}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Summary of characteristics of the applications in the benchmark.\relax }}{91}{table.caption.27}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Area and leakage distributions among the internal components of the \mbox {X-HEEP platform}.\relax }}{92}{table.caption.28}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Comparison of area (kGE) and sustained memory bandwidth (bits/cycle) for different interconnect configurations.\relax }}{94}{table.caption.30}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Voltage scaling impact on frequency, total power, leakage power, and dynamic power density for the \mbox {HEEPocrates} chip.\relax }}{96}{table.caption.32}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Execution time (s) for each benchmark, split into processing (Proc) and idle (Idle) phases across all platforms. Negative idle times indicate that the processing duration exceeds the task deadlines.\relax }}{98}{table.caption.34}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Energy consumption (mJ) for each benchmark, split into processing (Proc) and idle (Idle) phases across all platforms. Zero idle times indicate that the processing duration exceeds the task deadlines.\relax }}{98}{table.caption.35}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Comparison of relevant academic GPU platforms based on key features.\relax }}{113}{table.caption.37}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Configurability knobs of the presented e-GPU platform.\relax }}{126}{table.caption.42}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Selected \mbox {e-GPU} configurations for our experiments. CU: Compute Unit.\relax }}{139}{table.caption.46}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Summary of benchmark workloads used to evaluate the \mbox {e-GPU} architecture.\relax }}{140}{table.caption.47}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Area and leakage breakdown across accelerator configurations with percentage contribution to total.\relax }}{143}{table.caption.48}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Cycle breakdown by matrix size and execution phase across configurations.\relax }}{145}{table.caption.50}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Processing time, power, and normalized performance metrics across processing elements for representative processing phases.\relax }}{147}{table.caption.52}%
+\addvspace {10\p@ }

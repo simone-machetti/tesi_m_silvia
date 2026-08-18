@@ -1,0 +1,4659 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{co-design_vision}{article}{}
+      \name{author}{8}{}{%
+        {{hash=97086af6f9b912b0d193298184bd518f}{%
+           family={Ponzina},
+           familyi={P\bibinitperiod},
+           given={Flavio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=dff791296cb2bdae9dd7ddc6551fedd6}{%
+           family={Machetti},
+           familyi={M\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=34401b941b171ea02a50f7c700fdf1f1}{%
+           family={Rios},
+           familyi={R\bibinitperiod},
+           given={Marco\bibnamedelima Antonio},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=5a497c637bc20ceb7862e83ccd555011}{%
+           family={Denkinger},
+           familyi={D\bibinitperiod},
+           given={Benoît\bibnamedelima W.},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=8e173bdc19ca87066bf2ae35b38311bf}{%
+           family={Levisse},
+           familyi={L\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a9a2721a044e1591054b8a918cb5e79a}{%
+           family={Ansaloni},
+           familyi={A\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b1a047e19103694fff610fa3ef3991a7}{%
+           family={Peón-Quirós},
+           familyi={P\bibinithyphendelim Q\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{213a7eb98cb6c3580b1923fd4a421517}
+      \strng{fullhash}{05cbfc805cc3c4e8e94838aee5c013d9}
+      \strng{bibnamehash}{213a7eb98cb6c3580b1923fd4a421517}
+      \strng{authorbibnamehash}{213a7eb98cb6c3580b1923fd4a421517}
+      \strng{authornamehash}{213a7eb98cb6c3580b1923fd4a421517}
+      \strng{authorfullhash}{05cbfc805cc3c4e8e94838aee5c013d9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Micro}
+      \field{number}{6}
+      \field{title}{A hardware/software co-design vision for deep learning at the edge}
+      \field{volume}{42}
+      \field{year}{2022}
+      \field{pages}{48\bibrangedash 54}
+      \range{pages}{7}
+    \endentry
+    \entry{bio_apps}{article}{}
+      \name{author}{9}{}{%
+        {{hash=3caa8d8b7194889ba4ba8c6ba230eefe}{%
+           family={De\bibnamedelima Giovanni},
+           familyi={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Elisabetta},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e53eacb2d5a60f7dd9c924523eeeecd8}{%
+           family={Montagna},
+           familyi={M\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=5a497c637bc20ceb7862e83ccd555011}{%
+           family={Denkinger},
+           familyi={D\bibinitperiod},
+           given={Benoît\bibnamedelima W.},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=dff791296cb2bdae9dd7ddc6551fedd6}{%
+           family={Machetti},
+           familyi={M\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b1a047e19103694fff610fa3ef3991a7}{%
+           family={Peón-Quirós},
+           familyi={P\bibinithyphendelim Q\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=827269a2d37dfe60be4b8a7adaa9d625}{%
+           family={Benatti},
+           familyi={B\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cec900c2c76db4ce83099c914c1a9a72}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{c0f0dbc2dd2371c0d574e0b78938b4bd}
+      \strng{fullhash}{d7349ffdcd4877e2de464b52332d8e2b}
+      \strng{bibnamehash}{c0f0dbc2dd2371c0d574e0b78938b4bd}
+      \strng{authorbibnamehash}{c0f0dbc2dd2371c0d574e0b78938b4bd}
+      \strng{authornamehash}{c0f0dbc2dd2371c0d574e0b78938b4bd}
+      \strng{authorfullhash}{d7349ffdcd4877e2de464b52332d8e2b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Transactions on Computer-Aided Design of Integrated Circuits and Systems}
+      \field{number}{11}
+      \field{title}{Modular design and optimization of biomedical applications for ultralow power heterogeneous platforms}
+      \field{volume}{39}
+      \field{year}{2020}
+      \field{pages}{3821\bibrangedash 3832}
+      \range{pages}{12}
+    \endentry
+    \entry{taji2024energy}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=1eb623875add0b3d3b543ab80e6e092a}{%
+           family={Taji},
+           familyi={T\bibinitperiod},
+           given={Hossein},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e6ba2c8c53df12f0773cc1062583008d}{%
+           family={Miranda},
+           familyi={M\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b1a047e19103694fff610fa3ef3991a7}{%
+           family={Peón-Quirós},
+           familyi={P\bibinithyphendelim Q\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{340f5f545c2305c88759f5dceca92195}
+      \strng{fullhash}{96c432421ff07fa6f8616c3b03db1616}
+      \strng{bibnamehash}{96c432421ff07fa6f8616c3b03db1616}
+      \strng{authorbibnamehash}{96c432421ff07fa6f8616c3b03db1616}
+      \strng{authornamehash}{340f5f545c2305c88759f5dceca92195}
+      \strng{authorfullhash}{96c432421ff07fa6f8616c3b03db1616}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 29th {ACM}/{IEEE} International Symposium on Low Power Electronics and Design ({ISLPED} 2024)}
+      \field{title}{Energy-efficient frequency selection method for bio-signal acquisition in {AI/ML} wearables}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+    \endentry
+    \entry{e-gpu}{online}{}
+      \name{author}{7}{}{%
+        {{hash=dff791296cb2bdae9dd7ddc6551fedd6}{%
+           family={Machetti},
+           familyi={M\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=8bda20b9e46ee85247877a0732d6b3a6}{%
+           family={Orlandic},
+           familyi={O\bibinitperiod},
+           given={Lara},
+           giveni={L\bibinitperiod}}}%
+        {{hash=4826c7471127fe92123bb49d08e0f0aa}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Darong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=771542bc8e1c1a4befa3f7fa8665a7fa}{%
+           family={Kasap},
+           familyi={K\bibinitperiod},
+           given={Deniz},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a9a2721a044e1591054b8a918cb5e79a}{%
+           family={Ansaloni},
+           familyi={A\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{da388a1e042ebd131cd158fab87deb06}
+      \strng{fullhash}{a3e9ce116079e48b98a3fa65a7f19432}
+      \strng{bibnamehash}{da388a1e042ebd131cd158fab87deb06}
+      \strng{authorbibnamehash}{da388a1e042ebd131cd158fab87deb06}
+      \strng{authornamehash}{da388a1e042ebd131cd158fab87deb06}
+      \strng{authorfullhash}{a3e9ce116079e48b98a3fa65a7f19432}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.AR}
+      \field{eprinttype}{arXiv}
+      \field{title}{e-{GPU}: An open-source and configurable {RISC-V} graphic processing unit for {TinyAI} applications}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2505.08421
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2505.08421
+      \endverb
+    \endentry
+    \entry{asip}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=dff791296cb2bdae9dd7ddc6551fedd6}{%
+           family={Machetti},
+           familyi={M\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Politecnico di Torino}%
+      }
+      \list{location}{1}{%
+        {Turin, Italy}%
+      }
+      \strng{namehash}{dff791296cb2bdae9dd7ddc6551fedd6}
+      \strng{fullhash}{dff791296cb2bdae9dd7ddc6551fedd6}
+      \strng{bibnamehash}{dff791296cb2bdae9dd7ddc6551fedd6}
+      \strng{authorbibnamehash}{dff791296cb2bdae9dd7ddc6551fedd6}
+      \strng{authornamehash}{dff791296cb2bdae9dd7ddc6551fedd6}
+      \strng{authorfullhash}{dff791296cb2bdae9dd7ddc6551fedd6}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ASIP} design for motion estimation in video compression algorithms}
+      \field{type}{mathesis}
+      \field{year}{2018}
+    \endentry
+    \entry{oe-cgra}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=98a55ac8f3f673752d1ca3ff8e3d1bce}{%
+           family={Álvarez},
+           familyi={Á\bibinitperiod},
+           given={Rubén\bibnamedelima Rodríguez},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=27a12e354738b01d4fef2e7291d229a6}{%
+           family={Denkinger},
+           familyi={D\bibinitperiod},
+           given={Benoît},
+           giveni={B\bibinitperiod}}}%
+        {{hash=fcfb810767d5738a4397ed1e174509a7}{%
+           family={Sapriza},
+           familyi={S\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e5fb030948d77c9c55c3c62dfbefc29a}{%
+           family={Miranda\bibnamedelima Calero},
+           familyi={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a9a2721a044e1591054b8a918cb5e79a}{%
+           family={Ansaloni},
+           familyi={A\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Bologna, Italy}%
+      }
+      \strng{namehash}{76632ed480bc1a44db621db0bdfa14f9}
+      \strng{fullhash}{6744fe1cbfcf902cfba60c30c5d2209a}
+      \strng{bibnamehash}{6744fe1cbfcf902cfba60c30c5d2209a}
+      \strng{authorbibnamehash}{6744fe1cbfcf902cfba60c30c5d2209a}
+      \strng{authornamehash}{76632ed480bc1a44db621db0bdfa14f9}
+      \strng{authorfullhash}{6744fe1cbfcf902cfba60c30c5d2209a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 20th {ACM} International Conference on Computing Frontiers ({CF} 2023)}
+      \field{title}{An open-hardware coarse-grained reconfigurable array for edge computing}
+      \field{year}{2023}
+    \endentry
+    \entry{blade}{article}{}
+      \name{author}{6}{}{%
+        {{hash=aa663b403d32565d8df46419704e43fc}{%
+           family={Simon},
+           familyi={S\bibinitperiod},
+           given={William\bibnamedelima Andrew},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=92d8dcf6a235d42a29d8f27ca58e980a}{%
+           family={Qureshi},
+           familyi={Q\bibinitperiod},
+           given={Yasir\bibnamedelima Mahmood},
+           giveni={Y\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=bc6714f561668b0c5f6364d76471623c}{%
+           family={Rios},
+           familyi={R\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8e173bdc19ca87066bf2ae35b38311bf}{%
+           family={Levisse},
+           familyi={L\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ff1d78220041dbd806ab7cfe56396c59}{%
+           family={Zapater},
+           familyi={Z\bibinitperiod},
+           given={Marina},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{80108cf73125e9a9d37e472d1c3de0ca}
+      \strng{fullhash}{e2d76785c3b0ffc86affd8777ad5e394}
+      \strng{bibnamehash}{e2d76785c3b0ffc86affd8777ad5e394}
+      \strng{authorbibnamehash}{e2d76785c3b0ffc86affd8777ad5e394}
+      \strng{authornamehash}{80108cf73125e9a9d37e472d1c3de0ca}
+      \strng{authorfullhash}{e2d76785c3b0ffc86affd8777ad5e394}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Transactions on Computers}
+      \field{number}{9}
+      \field{title}{{BLADE}: An in-cache computing architecture for edge devices}
+      \field{volume}{69}
+      \field{year}{2020}
+      \field{pages}{1349\bibrangedash 1363}
+      \range{pages}{15}
+    \endentry
+    \entry{openhw}{online}{}
+      \name{author}{1}{}{%
+        {{hash=223360d594705903bbb0666ee2d1e430}{%
+           family={{OpenHW Group}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{223360d594705903bbb0666ee2d1e430}
+      \strng{fullhash}{223360d594705903bbb0666ee2d1e430}
+      \strng{bibnamehash}{223360d594705903bbb0666ee2d1e430}
+      \strng{authorbibnamehash}{223360d594705903bbb0666ee2d1e430}
+      \strng{authornamehash}{223360d594705903bbb0666ee2d1e430}
+      \strng{authorfullhash}{223360d594705903bbb0666ee2d1e430}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{OpenHW} Group}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/openhwgroup
+      \endverb
+      \verb{url}
+      \verb https://github.com/openhwgroup
+      \endverb
+    \endentry
+    \entry{pulp}{online}{}
+      \name{author}{1}{}{%
+        {{hash=85c650e65fc96823c0afcaf5d8730fca}{%
+           family={{PULP Platform}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{85c650e65fc96823c0afcaf5d8730fca}
+      \strng{fullhash}{85c650e65fc96823c0afcaf5d8730fca}
+      \strng{bibnamehash}{85c650e65fc96823c0afcaf5d8730fca}
+      \strng{authorbibnamehash}{85c650e65fc96823c0afcaf5d8730fca}
+      \strng{authornamehash}{85c650e65fc96823c0afcaf5d8730fca}
+      \strng{authorfullhash}{85c650e65fc96823c0afcaf5d8730fca}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{PULP} Project}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://pulp-platform.org/
+      \endverb
+      \verb{url}
+      \verb https://pulp-platform.org/
+      \endverb
+    \endentry
+    \entry{opentitan}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3c32edfad4776ee7263b82dfc54caeaa}{%
+           family={{OpenTitan Project}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{3c32edfad4776ee7263b82dfc54caeaa}
+      \strng{fullhash}{3c32edfad4776ee7263b82dfc54caeaa}
+      \strng{bibnamehash}{3c32edfad4776ee7263b82dfc54caeaa}
+      \strng{authorbibnamehash}{3c32edfad4776ee7263b82dfc54caeaa}
+      \strng{authornamehash}{3c32edfad4776ee7263b82dfc54caeaa}
+      \strng{authorfullhash}{3c32edfad4776ee7263b82dfc54caeaa}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{OpenTitan} Project}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://opentitan.org/
+      \endverb
+      \verb{url}
+      \verb https://opentitan.org/
+      \endverb
+    \endentry
+    \entry{xif}{online}{}
+      \name{author}{1}{}{%
+        {{hash=223360d594705903bbb0666ee2d1e430}{%
+           family={{OpenHW Group}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{223360d594705903bbb0666ee2d1e430}
+      \strng{fullhash}{223360d594705903bbb0666ee2d1e430}
+      \strng{bibnamehash}{223360d594705903bbb0666ee2d1e430}
+      \strng{authorbibnamehash}{223360d594705903bbb0666ee2d1e430}
+      \strng{authornamehash}{223360d594705903bbb0666ee2d1e430}
+      \strng{authorfullhash}{223360d594705903bbb0666ee2d1e430}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{CORE-V} eXtension InterFace ({CV-X-IF})}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/openhwgroup/core-v-xif
+      \endverb
+      \verb{url}
+      \verb https://github.com/openhwgroup/core-v-xif
+      \endverb
+    \endentry
+    \entry{riscv_toolchain}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b0f0d8b477216fcf9b5195b65f13abed}{%
+           family={{RISC-V International Collaborators}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b0f0d8b477216fcf9b5195b65f13abed}
+      \strng{fullhash}{b0f0d8b477216fcf9b5195b65f13abed}
+      \strng{bibnamehash}{b0f0d8b477216fcf9b5195b65f13abed}
+      \strng{authorbibnamehash}{b0f0d8b477216fcf9b5195b65f13abed}
+      \strng{authornamehash}{b0f0d8b477216fcf9b5195b65f13abed}
+      \strng{authorfullhash}{b0f0d8b477216fcf9b5195b65f13abed}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{GNU} {RISC-V} toolchain}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/riscv-collab/riscv-gnu-toolchain
+      \endverb
+      \verb{url}
+      \verb https://github.com/riscv-collab/riscv-gnu-toolchain
+      \endverb
+    \endentry
+    \entry{verilator}{online}{}
+      \name{author}{1}{}{%
+        {{hash=93d4a8be4c3167be46ddd27d9ad76e62}{%
+           family={{Verilator}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{93d4a8be4c3167be46ddd27d9ad76e62}
+      \strng{fullhash}{93d4a8be4c3167be46ddd27d9ad76e62}
+      \strng{bibnamehash}{93d4a8be4c3167be46ddd27d9ad76e62}
+      \strng{authorbibnamehash}{93d4a8be4c3167be46ddd27d9ad76e62}
+      \strng{authornamehash}{93d4a8be4c3167be46ddd27d9ad76e62}
+      \strng{authorfullhash}{93d4a8be4c3167be46ddd27d9ad76e62}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Verilator}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/verilator/verilator
+      \endverb
+      \verb{url}
+      \verb https://github.com/verilator/verilator
+      \endverb
+    \endentry
+    \entry{symbiyosys}{online}{}
+      \name{author}{1}{}{%
+        {{hash=02054ad776baa38c39bfa195c6a16af3}{%
+           family={{YosysHQ}},
+           familyi={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{02054ad776baa38c39bfa195c6a16af3}
+      \strng{fullhash}{02054ad776baa38c39bfa195c6a16af3}
+      \strng{bibnamehash}{02054ad776baa38c39bfa195c6a16af3}
+      \strng{authorbibnamehash}{02054ad776baa38c39bfa195c6a16af3}
+      \strng{authornamehash}{02054ad776baa38c39bfa195c6a16af3}
+      \strng{authorfullhash}{02054ad776baa38c39bfa195c6a16af3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{SymbiYosys}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/YosysHQ/sby
+      \endverb
+      \verb{url}
+      \verb https://github.com/YosysHQ/sby
+      \endverb
+    \endentry
+    \entry{femu}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{hash=dff791296cb2bdae9dd7ddc6551fedd6}{%
+           family={Machetti},
+           familyi={M\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=771542bc8e1c1a4befa3f7fa8665a7fa}{%
+           family={Kasap},
+           familyi={K\bibinitperiod},
+           given={Deniz},
+           giveni={D\bibinitperiod}}}%
+        {{hash=fcfb810767d5738a4397ed1e174509a7}{%
+           family={Sapriza},
+           familyi={S\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a67f0c1a560e181a498b5945c517e79b}{%
+           family={Rodríguez\bibnamedelima Álvarez},
+           familyi={R\bibinitperiod\bibinitdelim Á\bibinitperiod},
+           given={Rubén},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1eb623875add0b3d3b543ab80e6e092a}{%
+           family={Taji},
+           familyi={T\bibinitperiod},
+           given={Hossein},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e6ba2c8c53df12f0773cc1062583008d}{%
+           family={Miranda},
+           familyi={M\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b1a047e19103694fff610fa3ef3991a7}{%
+           family={Peón-Quirós},
+           familyi={P\bibinithyphendelim Q\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{226055df81d355b3f21564ce21f881ea}
+      \strng{fullhash}{59f3bb8a0bb9863228d1251fd55f7143}
+      \strng{bibnamehash}{226055df81d355b3f21564ce21f881ea}
+      \strng{authorbibnamehash}{226055df81d355b3f21564ce21f881ea}
+      \strng{authornamehash}{226055df81d355b3f21564ce21f881ea}
+      \strng{authorfullhash}{59f3bb8a0bb9863228d1251fd55f7143}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the {IEEE}/{ACM} International Conference on Computer-Aided Design ({ICCAD} 2025)}
+      \field{title}{{FEMU}: An open-source and configurable emulation framework for prototyping {TinyAI} heterogeneous systems}
+      \field{year}{2025}
+    \endentry
+    \entry{x-heep}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=dff791296cb2bdae9dd7ddc6551fedd6}{%
+           family={Machetti},
+           familyi={M\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=a9a2721a044e1591054b8a918cb5e79a}{%
+           family={Ansaloni},
+           familyi={A\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b1a047e19103694fff610fa3ef3991a7}{%
+           family={Peón-Quirós},
+           familyi={P\bibinithyphendelim Q\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d0f3cc9b89f4772ddcc8622587b57a6}
+      \strng{fullhash}{34001aa46f1be4768f1e0bf17f0e5829}
+      \strng{bibnamehash}{34001aa46f1be4768f1e0bf17f0e5829}
+      \strng{authorbibnamehash}{34001aa46f1be4768f1e0bf17f0e5829}
+      \strng{authornamehash}{3d0f3cc9b89f4772ddcc8622587b57a6}
+      \strng{authorfullhash}{34001aa46f1be4768f1e0bf17f0e5829}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2025 {IEEE} Computer Society Annual Symposium on {VLSI} ({ISVLSI} 2025)}
+      \field{title}{{X-HEEP}: An open-source, configurable and extendible {RISC-V} platform for {TinyAI} applications}
+      \field{year}{2025}
+    \endentry
+    \entry{heepocrates}{article}{}
+      \name{author}{6}{}{%
+        {{hash=dff791296cb2bdae9dd7ddc6551fedd6}{%
+           family={Machetti},
+           familyi={M\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=9f63af66e317256048980e008b43afa0}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Thomas\bibnamedelima Christoph},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=8e173bdc19ca87066bf2ae35b38311bf}{%
+           family={Levisse},
+           familyi={L\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b1a047e19103694fff610fa3ef3991a7}{%
+           family={Peón-Quirós},
+           familyi={P\bibinithyphendelim Q\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7802ffdbbda040704a258854bf9ef2e7}
+      \strng{fullhash}{f29226df5eaa1af68f1d4806f89167e0}
+      \strng{bibnamehash}{f29226df5eaa1af68f1d4806f89167e0}
+      \strng{authorbibnamehash}{f29226df5eaa1af68f1d4806f89167e0}
+      \strng{authornamehash}{7802ffdbbda040704a258854bf9ef2e7}
+      \strng{authorfullhash}{f29226df5eaa1af68f1d4806f89167e0}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Europractice Activity Report}
+      \field{title}{{HEEPocrates}: An ultra-low-power {RISC-V} microcontroller for edge-computing healthcare applications}
+      \field{year}{2024}
+    \endentry
+    \entry{pulpissimo}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=cec900c2c76db4ce83099c914c1a9a72}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f8f4296a89a36f9677223ec973701c52}{%
+           family={Pullini},
+           familyi={P\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4a27052be0eeeee143fd7a97e4e4aaa0}{%
+           family={Di\bibnamedelima Mauro},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Alfio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=894ba44bf1d7c10e39b86b4262ef8847}{%
+           family={Conti},
+           familyi={C\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{540519bb95cb964acfc182dcbaeb6994}
+      \strng{fullhash}{b0e92461b845d3a2da8f781268eb75fc}
+      \strng{bibnamehash}{b0e92461b845d3a2da8f781268eb75fc}
+      \strng{authorbibnamehash}{b0e92461b845d3a2da8f781268eb75fc}
+      \strng{authornamehash}{540519bb95cb964acfc182dcbaeb6994}
+      \strng{authorfullhash}{b0e92461b845d3a2da8f781268eb75fc}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2018 {IEEE} {SOI}-3D-Subthreshold Microelectronics Technology Unified Conference ({S3S} 2018)}
+      \field{title}{{Quentin}: An ultra-low-power {PULPissimo} {SoC} in 22 nm {FDX}}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 3}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1109/S3S.2018.8640145
+      \endverb
+    \endentry
+    \entry{gem5}{article}{}
+      \name{author}{16}{}{%
+        {{hash=750fa38aa68adc828e6c2992f84bb51d}{%
+           family={Binkert},
+           familyi={B\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=793d075c342f0e5f7a4fa75b2ef3816b}{%
+           family={Beckmann},
+           familyi={B\bibinitperiod},
+           given={Bradford},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8729e60e92baf584da915e0ddb24328b}{%
+           family={Black},
+           familyi={B\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bc10693d87244d977132baf6d87f7ec8}{%
+           family={Reinhardt},
+           familyi={R\bibinitperiod},
+           given={Steven\bibnamedelima K.},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=4414a147240143c35cd6f4dfeaab3a25}{%
+           family={Saidi},
+           familyi={S\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c2568530e5c47b25c2f98c38736ac0ac}{%
+           family={Basu},
+           familyi={B\bibinitperiod},
+           given={Arkaprava},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bc0ad07085a7782ec1ba0213b277530e}{%
+           family={Hestness},
+           familyi={H\bibinitperiod},
+           given={Joel},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6a50fb13524c9695882499b1b07dc299}{%
+           family={Hower},
+           familyi={H\bibinitperiod},
+           given={Derek\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=e1ce26b15a886cbd409e6a8c2254dd49}{%
+           family={Krishna},
+           familyi={K\bibinitperiod},
+           given={Tushar},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ddb9e3264bbcf2c4b4fae8b811122626}{%
+           family={Sardashti},
+           familyi={S\bibinitperiod},
+           given={Somayeh},
+           giveni={S\bibinitperiod}}}%
+        {{hash=21f922ddca99e4a59e6942caa2935a6f}{%
+           family={Sen},
+           familyi={S\bibinitperiod},
+           given={Rathijit},
+           giveni={R\bibinitperiod}}}%
+        {{hash=18731afaca2b555f3168209cf3b0217e}{%
+           family={Sewell},
+           familyi={S\bibinitperiod},
+           given={Korey},
+           giveni={K\bibinitperiod}}}%
+        {{hash=47575bb6162e1673902319ef01df827b}{%
+           family={Shoaib},
+           familyi={S\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=10dd1b5eda541bcaa709e07bad26e68c}{%
+           family={Vaish},
+           familyi={V\bibinitperiod},
+           given={Nilay},
+           giveni={N\bibinitperiod}}}%
+        {{hash=47b42f84bac2f8d835e3973e96aed32a}{%
+           family={Hill},
+           familyi={H\bibinitperiod},
+           given={Mark\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=90ff7bda6dcccbcbb9072ac658c451ba}{%
+           family={Wood},
+           familyi={W\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{3f0119b3ebab037f4618a561f6412c74}
+      \strng{fullhash}{2dac25be2aaaf066740b3febc8ca707a}
+      \strng{bibnamehash}{3f0119b3ebab037f4618a561f6412c74}
+      \strng{authorbibnamehash}{3f0119b3ebab037f4618a561f6412c74}
+      \strng{authornamehash}{3f0119b3ebab037f4618a561f6412c74}
+      \strng{authorfullhash}{2dac25be2aaaf066740b3febc8ca707a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{SIGARCH} Computer Architecture News}
+      \field{number}{2}
+      \field{title}{The gem5 simulator}
+      \field{volume}{39}
+      \field{year}{2011}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+    \endentry
+    \entry{pathak}{article}{}
+      \name{author}{7}{}{%
+        {{hash=973dff85300abb06dce65aea9bd69305}{%
+           family={Pathak},
+           familyi={P\bibinitperiod},
+           given={Karan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=1beb45fff186614b97b09fca85598819}{%
+           family={Klein},
+           familyi={K\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a9a2721a044e1591054b8a918cb5e79a}{%
+           family={Ansaloni},
+           familyi={A\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e75dc3de803113eaa685795beefafb0f}{%
+           family={Hamdioui},
+           familyi={H\bibinitperiod},
+           given={Said},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e26694de09ab7ace17eff6a741e465a3}{%
+           family={Gaydadjiev},
+           familyi={G\bibinitperiod},
+           given={Georgi},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ff1d78220041dbd806ab7cfe56396c59}{%
+           family={Zapater},
+           familyi={Z\bibinitperiod},
+           given={Marina},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{77a72dd0036aa38d3137536e57b69196}
+      \strng{fullhash}{29fe7c2b7be3da5fc6df287e0cab55d1}
+      \strng{bibnamehash}{77a72dd0036aa38d3137536e57b69196}
+      \strng{authorbibnamehash}{77a72dd0036aa38d3137536e57b69196}
+      \strng{authornamehash}{77a72dd0036aa38d3137536e57b69196}
+      \strng{authorfullhash}{29fe7c2b7be3da5fc6df287e0cab55d1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{ACM} Transactions on Embedded Computing Systems}
+      \field{title}{Towards accurate {RISC-V} full system simulation via component-level calibration}
+      \field{year}{2025}
+    \endentry
+    \entry{fame}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=4df3402943d3dedd525e5580b9fd32c6}{%
+           family={Malladi},
+           familyi={M\bibinitperiod},
+           given={Krishna\bibnamedelima T.},
+           giveni={K\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=07b63527fa4f051a04d8de9841ec8b66}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Mu-Tien},
+           giveni={M\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=0fdaab0faccabfc6d20fd0144d360f75}{%
+           family={Ping},
+           familyi={P\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=07a8ad7f8e59862c8add8578eb6fd46b}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Hongzhong},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{4a3331c35a3841eb3557e35c08d1455b}
+      \strng{fullhash}{7f8565833fd14078559414215e1eda50}
+      \strng{bibnamehash}{7f8565833fd14078559414215e1eda50}
+      \strng{authorbibnamehash}{7f8565833fd14078559414215e1eda50}
+      \strng{authornamehash}{4a3331c35a3841eb3557e35c08d1455b}
+      \strng{authorfullhash}{7f8565833fd14078559414215e1eda50}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 23rd {IEEE} International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems ({MASCOTS} 2015)}
+      \field{title}{{FAME}: A fast and accurate memory emulator for new memory system architecture exploration}
+      \field{year}{2015}
+      \field{pages}{43\bibrangedash 46}
+      \range{pages}{4}
+    \endentry
+    \entry{extrapolator}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=07b63527fa4f051a04d8de9841ec8b66}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Mu-Tien},
+           giveni={M\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=8cb6f552e2b1e7bc6a49f1e49397ea56}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={I.\bibnamedelimi Stephen},
+           giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=c3a4a7be7d1645d3e1c4322ac3ba0d28}{%
+           family={Niu},
+           familyi={N\bibinitperiod},
+           given={Dimin},
+           giveni={D\bibinitperiod}}}%
+        {{hash=07a8ad7f8e59862c8add8578eb6fd46b}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Hongzhong},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{ca4c3fd5a01b324e871a36704a75b306}
+      \strng{fullhash}{17f5bcfbdd6b658899968bdb71055a81}
+      \strng{bibnamehash}{17f5bcfbdd6b658899968bdb71055a81}
+      \strng{authorbibnamehash}{17f5bcfbdd6b658899968bdb71055a81}
+      \strng{authornamehash}{ca4c3fd5a01b324e871a36704a75b306}
+      \strng{authorfullhash}{17f5bcfbdd6b658899968bdb71055a81}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2018 Great Lakes Symposium on {VLSI} ({GLSVLSI} 2018)}
+      \field{title}{Performance impact of emerging memory technologies on big data applications: A latency-programmable system emulation approach}
+      \field{year}{2018}
+      \field{pages}{439\bibrangedash 442}
+      \range{pages}{4}
+    \endentry
+    \entry{ace}{article}{}
+      \name{author}{5}{}{%
+        {{hash=fc399f85ccdd18f7c16d2cd99a42d132}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Yuxuan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8bda20b9e46ee85247877a0732d6b3a6}{%
+           family={Orlandic},
+           familyi={O\bibinitperiod},
+           given={Lara},
+           giveni={L\bibinitperiod}}}%
+        {{hash=dff791296cb2bdae9dd7ddc6551fedd6}{%
+           family={Machetti},
+           familyi={M\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a9a2721a044e1591054b8a918cb5e79a}{%
+           family={Ansaloni},
+           familyi={A\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{aa92943a02ae3a8ccded16442ddb66b3}
+      \strng{fullhash}{585db1ab84fc9d2617f1b92d8c9bf928}
+      \strng{bibnamehash}{585db1ab84fc9d2617f1b92d8c9bf928}
+      \strng{authorbibnamehash}{585db1ab84fc9d2617f1b92d8c9bf928}
+      \strng{authornamehash}{aa92943a02ae3a8ccded16442ddb66b3}
+      \strng{authorfullhash}{585db1ab84fc9d2617f1b92d8c9bf928}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Transactions on Biomedical Circuits and Systems}
+      \field{number}{1}
+      \field{title}{{ACE}: Automated optimization towards iterative classification in edge health monitors}
+      \field{volume}{19}
+      \field{year}{2025}
+      \field{pages}{82\bibrangedash 92}
+      \range{pages}{11}
+    \endentry
+    \entry{lime}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=69deabef0b11b4811750ca9719f282da}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Abhishek\bibnamedelima Kumar},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=b0368ce377a7a8fa5a8693246a46de2d}{%
+           family={Lloyd},
+           familyi={L\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a915d2c96257f7185471ae7af42cfbc6}{%
+           family={Gokhale},
+           familyi={G\bibinitperiod},
+           given={Maya},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b9b51e53af470cd0c2db02b48e2e74cc}
+      \strng{fullhash}{b9b51e53af470cd0c2db02b48e2e74cc}
+      \strng{bibnamehash}{b9b51e53af470cd0c2db02b48e2e74cc}
+      \strng{authorbibnamehash}{b9b51e53af470cd0c2db02b48e2e74cc}
+      \strng{authornamehash}{b9b51e53af470cd0c2db02b48e2e74cc}
+      \strng{authorfullhash}{b9b51e53af470cd0c2db02b48e2e74cc}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2018 {IEEE} 26th Annual International Symposium on Field-Programmable Custom Computing Machines ({FCCM} 2018)}
+      \field{title}{Microscope on memory: {MPSoC}-enabled computer memory system assessments}
+      \field{year}{2018}
+      \field{pages}{173\bibrangedash 180}
+      \range{pages}{8}
+    \endentry
+    \entry{daq}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=6d7aa9e977b8c8f43c5158145163c9e9}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Ye},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d7aa9e977b8c8f43c5158145163c9e9}
+      \strng{fullhash}{6d7aa9e977b8c8f43c5158145163c9e9}
+      \strng{bibnamehash}{6d7aa9e977b8c8f43c5158145163c9e9}
+      \strng{authorbibnamehash}{6d7aa9e977b8c8f43c5158145163c9e9}
+      \strng{authornamehash}{6d7aa9e977b8c8f43c5158145163c9e9}
+      \strng{authorfullhash}{6d7aa9e977b8c8f43c5158145163c9e9}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2011 {IEEE} International Conference on Signal Processing, Communications and Computing ({ICSPCC} 2011)}
+      \field{title}{{FPGA}-based data acquisition system}
+      \field{year}{2011}
+      \field{pages}{1\bibrangedash 3}
+      \range{pages}{3}
+    \endentry
+    \entry{hybrid}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=dbbd102f1e64195fa2575ef3e3a446e9}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Fei},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8cec362fd3c3828c58b8596165a68bcf}{%
+           family={Qin},
+           familyi={Q\bibinitperiod},
+           given={Mian},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b9ff01e42b4d4a72f39b503afdd87ec3}{%
+           family={Gratz},
+           familyi={G\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c7faf737fd83f791b60a568dbea08e21}{%
+           family={Reddy},
+           familyi={R\bibinitperiod},
+           given={Narasimha},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{21e64522f129cc9d2ac732802c620386}
+      \strng{fullhash}{dc00e3c8c5f71454d2fc21cae3c2d820}
+      \strng{bibnamehash}{dc00e3c8c5f71454d2fc21cae3c2d820}
+      \strng{authorbibnamehash}{dc00e3c8c5f71454d2fc21cae3c2d820}
+      \strng{authornamehash}{21e64522f129cc9d2ac732802c620386}
+      \strng{authorfullhash}{dc00e3c8c5f71454d2fc21cae3c2d820}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 31st International Conference on Field-Programmable Logic and Applications ({FPL} 2021)}
+      \field{title}{An {FPGA}-based hybrid memory emulation system}
+      \field{year}{2021}
+      \field{pages}{190\bibrangedash 196}
+      \range{pages}{7}
+    \endentry
+    \entry{hcl}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=37c323ea80fa648bdec1403505c9c356}{%
+           family={Braojos},
+           familyi={B\bibinitperiod},
+           given={Rubén},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a9a2721a044e1591054b8a918cb5e79a}{%
+           family={Ansaloni},
+           familyi={A\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{ae5229ce4511a6345ef0b6a2d72d39cb}
+      \strng{fullhash}{ae5229ce4511a6345ef0b6a2d72d39cb}
+      \strng{bibnamehash}{ae5229ce4511a6345ef0b6a2d72d39cb}
+      \strng{authorbibnamehash}{ae5229ce4511a6345ef0b6a2d72d39cb}
+      \strng{authornamehash}{ae5229ce4511a6345ef0b6a2d72d39cb}
+      \strng{authorfullhash}{ae5229ce4511a6345ef0b6a2d72d39cb}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Design, Automation and Test in Europe Conference ({DATE} 2013)}
+      \field{title}{A methodology for embedded classification of heartbeats using random projections}
+      \field{year}{2013}
+      \field{pages}{899\bibrangedash 904}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.7873/DATE.2013.189
+      \endverb
+    \endentry
+    \entry{plug}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=52b0c0d491fa0ceea17718fc2ca03d9d}{%
+           family={Bellocchi},
+           familyi={B\bibinitperiod},
+           given={Gianluca},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4b64244a8c5ccb811d2ac7e9e6f45c85}{%
+           family={Capotondi},
+           familyi={C\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=894ba44bf1d7c10e39b86b4262ef8847}{%
+           family={Conti},
+           familyi={C\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7928b79c17eb0ad60157057d79d8d85b}{%
+           family={Marongiu},
+           familyi={M\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{dbea5f04bde560b74749b468bf40271a}
+      \strng{fullhash}{76b91c0c649e070c495a0ea71ddf3b7a}
+      \strng{bibnamehash}{76b91c0c649e070c495a0ea71ddf3b7a}
+      \strng{authorbibnamehash}{76b91c0c649e070c495a0ea71ddf3b7a}
+      \strng{authornamehash}{dbea5f04bde560b74749b468bf40271a}
+      \strng{authorfullhash}{76b91c0c649e070c495a0ea71ddf3b7a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 24th Euromicro Conference on Digital System Design ({DSD} 2021)}
+      \field{title}{A {RISC-V}-based {FPGA} overlay to simplify embedded accelerator deployment}
+      \field{year}{2021}
+      \field{pages}{9\bibrangedash 17}
+      \range{pages}{9}
+    \endentry
+    \entry{ulpemu}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=f72886a9acba07e71ccbc90bbf1c1779}{%
+           family={Soriano},
+           familyi={S\bibinitperiod},
+           given={Theo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f125eaaee3d17310775f60a02dff4c89}{%
+           family={Novo},
+           familyi={N\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1efe7fd1ca3e1c956c8ad9c015b2464a}{%
+           family={Benoit},
+           familyi={B\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{600dee83e86239ac51d054291699d32d}
+      \strng{fullhash}{600dee83e86239ac51d054291699d32d}
+      \strng{bibnamehash}{600dee83e86239ac51d054291699d32d}
+      \strng{authorbibnamehash}{600dee83e86239ac51d054291699d32d}
+      \strng{authornamehash}{600dee83e86239ac51d054291699d32d}
+      \strng{authorfullhash}{600dee83e86239ac51d054291699d32d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2021 {IEEE} International Workshop on Rapid System Prototyping ({RSP} 2021)}
+      \field{title}{An {FPGA}-based emulation platform for edge computing node design exploration}
+      \field{year}{2021}
+      \field{pages}{8\bibrangedash 14}
+      \range{pages}{7}
+    \endentry
+    \entry{ace_p}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a76db8d0d3f61f8c9641941149b2390b}{%
+           family={Nurvitadhi},
+           familyi={N\bibinitperiod},
+           given={Eriko},
+           giveni={E\bibinitperiod}}}%
+        {{hash=66d02cc2c9827ffad373ec0da28e2121}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Jumnit},
+           giveni={J\bibinitperiod}}}%
+        {{hash=36b0fe4e09081c416cddb8afca7a3dae}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Shih-Lien},
+           giveni={S\bibinithyphendelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{ae38889929cb76b68ab55b0feffa462b}
+      \strng{fullhash}{ae38889929cb76b68ab55b0feffa462b}
+      \strng{bibnamehash}{ae38889929cb76b68ab55b0feffa462b}
+      \strng{authorbibnamehash}{ae38889929cb76b68ab55b0feffa462b}
+      \strng{authornamehash}{ae38889929cb76b68ab55b0feffa462b}
+      \strng{authorfullhash}{ae38889929cb76b68ab55b0feffa462b}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Transactions on Very Large Scale Integration ({VLSI}) Systems}
+      \field{number}{3}
+      \field{title}{Active cache emulator}
+      \field{volume}{16}
+      \field{year}{2008}
+      \field{pages}{229\bibrangedash 240}
+      \range{pages}{12}
+    \endentry
+    \entry{sniffersoc}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{hash=eb4dbcef96d007daf95b8443fc970845}{%
+           family={Del\bibnamedelima Valle},
+           familyi={D\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Pablo\bibnamedelima G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a21e53612562e5186624548c93bf56c7}{%
+           family={Magan},
+           familyi={M\bibinitperiod},
+           given={Ivan},
+           giveni={I\bibinitperiod}}}%
+        {{hash=cdeff269392f9f9f2708eb048cbd987b}{%
+           family={Flores},
+           familyi={F\bibinitperiod},
+           given={Javier\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=0a80eea04911ce72ae1fa4ca68730390}{%
+           family={Perez},
+           familyi={P\bibinitperiod},
+           given={Esther\bibnamedelima A.},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=81d65d91e5a7e0dee87a58a80a88ba24}{%
+           family={Mendias},
+           familyi={M\bibinitperiod},
+           given={Jose\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f836daa48dbb4365039ceb7f1687bdd5}{%
+           family={De\bibnamedelima Micheli},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{d4c16b1f74358734666d4a510983dbf3}
+      \strng{fullhash}{6e7febd22698656d3192316232aba287}
+      \strng{bibnamehash}{d4c16b1f74358734666d4a510983dbf3}
+      \strng{authorbibnamehash}{d4c16b1f74358734666d4a510983dbf3}
+      \strng{authornamehash}{d4c16b1f74358734666d4a510983dbf3}
+      \strng{authorfullhash}{6e7febd22698656d3192316232aba287}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2006 {IFIP} International Conference on Very Large Scale Integration}
+      \field{title}{A complete multi-processor system-on-chip {FPGA}-based emulation framework}
+      \field{year}{2006}
+      \field{pages}{140\bibrangedash 145}
+      \range{pages}{6}
+    \endentry
+    \entry{thermalmpsoc}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=a5b5642c7d8be3245781353ce1167cfa}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c814b3b8868c38882ed256cbc25977e0}{%
+           family={Del\bibnamedelima Valle},
+           familyi={D\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={P.\bibnamedelimi G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=36512150040133adebd02b3d8cb09836}{%
+           family={Paci},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2c49dbf285bd5282fb269ab2a4b1382e}{%
+           family={Poletti},
+           familyi={P\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=88cd45aaa85fdc68da784758ee629391}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b037ce87fe7be1892771c86c4add53e8}{%
+           family={De\bibnamedelima Micheli},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a6edebed207eb09dd2f6e6b67a656133}{%
+           family={Mendias},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{4e87dccba53816bb9493e49860c7d8e9}
+      \strng{fullhash}{4633b82408909c3e0cafc394900abbc8}
+      \strng{bibnamehash}{4e87dccba53816bb9493e49860c7d8e9}
+      \strng{authorbibnamehash}{4e87dccba53816bb9493e49860c7d8e9}
+      \strng{authornamehash}{4e87dccba53816bb9493e49860c7d8e9}
+      \strng{authorfullhash}{4633b82408909c3e0cafc394900abbc8}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 43rd {ACM}/{IEEE} Design Automation Conference ({DAC} 2006)}
+      \field{title}{A fast {HW}/{SW} {FPGA}-based thermal emulation framework for multi-processor system-on-chip}
+      \field{year}{2006}
+      \field{pages}{618\bibrangedash 623}
+      \range{pages}{6}
+    \endentry
+    \entry{hll}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=45ba1ca46921088eb50990aa5c6cb016}{%
+           family={Lomuscio},
+           familyi={L\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=38d35bd3858486c4ed1e58f9ab8d07c6}{%
+           family={Cardarilli},
+           familyi={C\bibinitperiod},
+           given={Gian\bibnamedelima Carlo},
+           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=52586c1020bf49ae02fd680467de8aa4}{%
+           family={Nannarelli},
+           familyi={N\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=51a48be033404de5c2027a90f13ada68}{%
+           family={Re},
+           familyi={R\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{40ef9c03a23655ce126443bfe51fc668}
+      \strng{fullhash}{2d1e3a57e85f05c2da5a9535d7ae6746}
+      \strng{bibnamehash}{2d1e3a57e85f05c2da5a9535d7ae6746}
+      \strng{authorbibnamehash}{2d1e3a57e85f05c2da5a9535d7ae6746}
+      \strng{authornamehash}{40ef9c03a23655ce126443bfe51fc668}
+      \strng{authorfullhash}{2d1e3a57e85f05c2da5a9535d7ae6746}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2016 International Symposium on Integrated Circuits ({ISIC} 2016)}
+      \field{title}{A hardware framework for on-chip {FPGA} acceleration}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+    \endentry
+    \entry{hero}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=33b8864f34e368372e36d27bf4b33104}{%
+           family={Kurth},
+           familyi={K\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4b64244a8c5ccb811d2ac7e9e6f45c85}{%
+           family={Capotondi},
+           familyi={C\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6ae179db6512a21b4966abb19036614f}{%
+           family={Vogel},
+           familyi={V\bibinitperiod},
+           given={Pirmin},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7928b79c17eb0ad60157057d79d8d85b}{%
+           family={Marongiu},
+           familyi={M\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{10fccbb3328df53717d45a5289ae24d5}
+      \strng{fullhash}{ee868132e022250a7b8c87dd7f3de44a}
+      \strng{bibnamehash}{ee868132e022250a7b8c87dd7f3de44a}
+      \strng{authorbibnamehash}{ee868132e022250a7b8c87dd7f3de44a}
+      \strng{authornamehash}{10fccbb3328df53717d45a5289ae24d5}
+      \strng{authorfullhash}{ee868132e022250a7b8c87dd7f3de44a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2018 International Conference (venue unspecified)}
+      \field{note}{Venue not specified in the original entry}
+      \field{title}{{HERO}: An open-source research platform for {HW}/{SW} exploration of heterogeneous manycore systems}
+      \field{year}{2018}
+    \endentry
+    \entry{softpower}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=439a52972c010ef41f16b1cd6db8d3d2}{%
+           family={Ou},
+           familyi={O\bibinitperiod},
+           given={Jingzhao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=1aed9bac3bee3015f25814766a9b1484}{%
+           family={Prasanna},
+           familyi={P\bibinitperiod},
+           given={V.\bibnamedelimi K.},
+           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d95a6f8cce037d17e64c62e28e95649}
+      \strng{fullhash}{2d95a6f8cce037d17e64c62e28e95649}
+      \strng{bibnamehash}{2d95a6f8cce037d17e64c62e28e95649}
+      \strng{authorbibnamehash}{2d95a6f8cce037d17e64c62e28e95649}
+      \strng{authornamehash}{2d95a6f8cce037d17e64c62e28e95649}
+      \strng{authorfullhash}{2d95a6f8cce037d17e64c62e28e95649}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the {IEEE} International System-on-Chip Conference ({SoCC} 2004)}
+      \field{title}{Rapid energy estimation of computations on {FPGA}-based soft processors}
+      \field{year}{2004}
+      \field{pages}{285\bibrangedash 288}
+      \range{pages}{4}
+    \endentry
+    \entry{zeroriscy}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=894ba44bf1d7c10e39b86b4262ef8847}{%
+           family={Conti},
+           familyi={C\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=cec900c2c76db4ce83099c914c1a9a72}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=66c9b1c8635972378f799424e99af8f8}{%
+           family={Gautschi},
+           familyi={G\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f8f4296a89a36f9677223ec973701c52}{%
+           family={Pullini},
+           familyi={P\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b6a7b4340109867e2717789c9d275f23}{%
+           family={Flamand},
+           familyi={F\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{142cb205e7067a2a10eafbdf5ede692f}
+      \strng{fullhash}{b542ba8e4b434cecc62f277ff974da85}
+      \strng{bibnamehash}{142cb205e7067a2a10eafbdf5ede692f}
+      \strng{authorbibnamehash}{142cb205e7067a2a10eafbdf5ede692f}
+      \strng{authornamehash}{142cb205e7067a2a10eafbdf5ede692f}
+      \strng{authorfullhash}{b542ba8e4b434cecc62f277ff974da85}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the International Symposium on Power and Timing Modeling, Optimization and Simulation ({PATMOS} 2017)}
+      \field{title}{Slow and steady wins the race? A comparison of ultra-low-power {RISC-V} cores for {Internet-of-Things} applications}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+    \endentry
+    \entry{pulp_cluster}{article}{}
+      \name{author}{5}{}{%
+        {{hash=f8f4296a89a36f9677223ec973701c52}{%
+           family={Pullini},
+           familyi={P\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cec900c2c76db4ce83099c914c1a9a72}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=498e4d02d4908002083d9436c1498e5f}{%
+           family={Loi},
+           familyi={L\bibinitperiod},
+           given={Igor},
+           giveni={I\bibinitperiod}}}%
+        {{hash=51d860f19cda6eafd59f2a2124c05bed}{%
+           family={Tagliavini},
+           familyi={T\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{1b4abd395e49e39f7553cc1893d7964f}
+      \strng{fullhash}{d89478eef8126f72015122651bce18f4}
+      \strng{bibnamehash}{d89478eef8126f72015122651bce18f4}
+      \strng{authorbibnamehash}{d89478eef8126f72015122651bce18f4}
+      \strng{authornamehash}{1b4abd395e49e39f7553cc1893d7964f}
+      \strng{authorfullhash}{d89478eef8126f72015122651bce18f4}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Journal of Solid-State Circuits}
+      \field{number}{7}
+      \field{title}{Mr. Wolf: An energy-precision scalable parallel ultra-low-power {SoC} for {IoT} edge processing}
+      \field{volume}{54}
+      \field{year}{2019}
+      \field{pages}{1970\bibrangedash 1981}
+      \range{pages}{12}
+    \endentry
+    \entry{pynq-z2}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6306927a7721611a8f6f9b8cc77efe6f}{%
+           family={{AMD University Program}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6306927a7721611a8f6f9b8cc77efe6f}
+      \strng{fullhash}{6306927a7721611a8f6f9b8cc77efe6f}
+      \strng{bibnamehash}{6306927a7721611a8f6f9b8cc77efe6f}
+      \strng{authorbibnamehash}{6306927a7721611a8f6f9b8cc77efe6f}
+      \strng{authornamehash}{6306927a7721611a8f6f9b8cc77efe6f}
+      \strng{authorfullhash}{6306927a7721611a8f6f9b8cc77efe6f}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Pynq}-{Z2} board}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.amd.com/en/corporate/university-program/aup-boards/pynq-z2.html
+      \endverb
+      \verb{url}
+      \verb https://www.amd.com/en/corporate/university-program/aup-boards/pynq-z2.html
+      \endverb
+    \endentry
+    \entry{sd_image}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a8e78a40c5839c2d312248d1362c7fa2}{%
+           family={{PYNQ Project}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{a8e78a40c5839c2d312248d1362c7fa2}
+      \strng{fullhash}{a8e78a40c5839c2d312248d1362c7fa2}
+      \strng{bibnamehash}{a8e78a40c5839c2d312248d1362c7fa2}
+      \strng{authorbibnamehash}{a8e78a40c5839c2d312248d1362c7fa2}
+      \strng{authornamehash}{a8e78a40c5839c2d312248d1362c7fa2}
+      \strng{authorfullhash}{a8e78a40c5839c2d312248d1362c7fa2}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Pynq}-{Z2} {SD} card image}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.pynq.io/boards.html
+      \endverb
+      \verb{url}
+      \verb https://www.pynq.io/boards.html
+      \endverb
+    \endentry
+    \entry{moisture}{report}{}
+      \name{author}{1}{}{%
+        {{hash=23c2e000e5f9ba4bcc217f9407d7416f}{%
+           family={Nasturzio},
+           familyi={N\bibinitperiod},
+           given={Saverio},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {EPFL}%
+      }
+      \list{location}{1}{%
+        {Lausanne, Switzerland}%
+      }
+      \strng{namehash}{23c2e000e5f9ba4bcc217f9407d7416f}
+      \strng{fullhash}{23c2e000e5f9ba4bcc217f9407d7416f}
+      \strng{bibnamehash}{23c2e000e5f9ba4bcc217f9407d7416f}
+      \strng{authorbibnamehash}{23c2e000e5f9ba4bcc217f9407d7416f}
+      \strng{authornamehash}{23c2e000e5f9ba4bcc217f9407d7416f}
+      \strng{authorfullhash}{23c2e000e5f9ba4bcc217f9407d7416f}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{X-HEEP} application: Wood moisture classification using {DNN}s}
+      \field{type}{Semester project report}
+      \field{year}{2023}
+    \endentry
+    \entry{najafi2024versasens}{article}{}
+      \name{author}{10}{}{%
+        {{hash=19132250c9fbaa7fb82d01286ab9944c}{%
+           family={Najafi},
+           familyi={N\bibinitperiod},
+           given={Taraneh\bibnamedelima Aminosharieh},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6df459500c8a7b6a8d8af69422ee00a6}{%
+           family={Miranda\bibnamedelima Calero},
+           familyi={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={José\bibnamedelima Angel},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0e249b113e13f87d7276733bafba12f5}{%
+           family={Thevenot},
+           familyi={T\bibinitperiod},
+           given={Jérôme},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bd189ae0a58a7b637324cf15747d5bc8}{%
+           family={Duc},
+           familyi={D\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a3dc62dc73d0dfd715a968e265a36805}{%
+           family={Albini},
+           familyi={A\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=52e86905863daf8d162734a9a4a569e1}{%
+           family={Amirshahi},
+           familyi={A\bibinitperiod},
+           given={Alireza},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1eb623875add0b3d3b543ab80e6e092a}{%
+           family={Taji},
+           familyi={T\bibinitperiod},
+           given={Hossein},
+           giveni={H\bibinitperiod}}}%
+        {{hash=39d489e533c62683dc5df195fab4c3f0}{%
+           family={Belda\bibnamedelima Beneyto},
+           familyi={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={María\bibnamedelima José},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=235376e9c14633419e8f8684f48507ee}{%
+           family={Affanni},
+           familyi={A\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{6969d806bc1768e9a0f8f9dcdef0a5a6}
+      \strng{fullhash}{000323110262fc493f9e672774bbd889}
+      \strng{bibnamehash}{6969d806bc1768e9a0f8f9dcdef0a5a6}
+      \strng{authorbibnamehash}{6969d806bc1768e9a0f8f9dcdef0a5a6}
+      \strng{authornamehash}{6969d806bc1768e9a0f8f9dcdef0a5a6}
+      \strng{authorfullhash}{000323110262fc493f9e672774bbd889}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Transactions on Circuits and Systems for Artificial Intelligence}
+      \field{title}{{VersaSens}: An extendable multimodal platform for next-generation edge-{AI} wearables}
+      \field{year}{2024}
+    \endentry
+    \entry{carpentieri2024performance}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=5223a91b868951dd8f8a0a806065ce21}{%
+           family={Carpentieri},
+           familyi={C\bibinitperiod},
+           given={Nicolò},
+           giveni={N\bibinitperiod}}}%
+        {{hash=fcfb810767d5738a4397ed1e174509a7}{%
+           family={Sapriza},
+           familyi={S\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e7d42b0a5caf397a069ea518a80aa2a0}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=17d62922d8732188b9b4343e08cf9c4b}{%
+           family={Jahier\bibnamedelima Pagliari},
+           familyi={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={Daniele},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d54d5e19c6524816ff5be4faa209a88f}{%
+           family={Martina},
+           familyi={M\bibinitperiod},
+           given={Maurizio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5d414e25842244bf7a3119c989cc9f01}{%
+           family={Burrello},
+           familyi={B\bibinitperiod},
+           given={Alessio},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{475f054dfe14db629a38079947a197aa}
+      \strng{fullhash}{6d3ac2ac3edca4a8c6fa4802e153ab65}
+      \strng{bibnamehash}{475f054dfe14db629a38079947a197aa}
+      \strng{authorbibnamehash}{475f054dfe14db629a38079947a197aa}
+      \strng{authornamehash}{475f054dfe14db629a38079947a197aa}
+      \strng{authorfullhash}{6d3ac2ac3edca4a8c6fa4802e153ab65}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 21st {ACM} International Conference on Computing Frontiers: Workshops and Special Sessions ({CF} 2024)}
+      \field{title}{Performance evaluation of acceleration of convolutional layers on {OpenEdgeCGRA}}
+      \field{year}{2024}
+      \field{pages}{67\bibrangedash 70}
+      \range{pages}{4}
+    \endentry
+    \entry{denkinger2022vwr2a}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=5a497c637bc20ceb7862e83ccd555011}{%
+           family={Denkinger},
+           familyi={D\bibinitperiod},
+           given={Benoît\bibnamedelima W.},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=b1a047e19103694fff610fa3ef3991a7}{%
+           family={Peón-Quirós},
+           familyi={P\bibinithyphendelim Q\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9153fdcbbb6d8858045bf0e525c904f1}{%
+           family={Konijnenburg},
+           familyi={K\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=19dac040bf427e8a0d1d8a681954cfa0}{%
+           family={Catthoor},
+           familyi={C\bibinitperiod},
+           given={Francky},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{75d75fef1b5d3c024e5d1f2cf7f673ef}
+      \strng{fullhash}{4382aaf491c7c97df18dcb4011fea980}
+      \strng{bibnamehash}{4382aaf491c7c97df18dcb4011fea980}
+      \strng{authorbibnamehash}{4382aaf491c7c97df18dcb4011fea980}
+      \strng{authornamehash}{75d75fef1b5d3c024e5d1f2cf7f673ef}
+      \strng{authorfullhash}{4382aaf491c7c97df18dcb4011fea980}
+      \field{extraname}{1}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 59th {ACM}/{IEEE} Design Automation Conference ({DAC} 2022)}
+      \field{title}{{VWR2A}: A very-wide-register reconfigurable-array architecture for low-power embedded devices}
+      \field{year}{2022}
+      \field{pages}{895\bibrangedash 900}
+      \range{pages}{6}
+    \endentry
+    \entry{cnn-accel}{inproceedings}{}
+      \name{author}{17}{}{%
+        {{hash=894ba44bf1d7c10e39b86b4262ef8847}{%
+           family={Conti},
+           familyi={C\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=cec900c2c76db4ce83099c914c1a9a72}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b96ba358b5ffba1101beb6b1701b0b2e}{%
+           family={Paulin},
+           familyi={P\bibinitperiod},
+           given={Gianna},
+           giveni={G\bibinitperiod}}}%
+        {{hash=80df5ee394f745a65810910f4b40ab82}{%
+           family={Garofalo},
+           familyi={G\bibinitperiod},
+           given={Angelo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4a27052be0eeeee143fd7a97e4e4aaa0}{%
+           family={Di\bibnamedelima Mauro},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Alfio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7e5ae13c17a6f11184035d534dbbd041}{%
+           family={Rutishauer},
+           familyi={R\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=56759baa97540eeb8507191ee060965e}{%
+           family={Ottavi},
+           familyi={O\bibinitperiod},
+           given={Gian\bibnamedelima Marco},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=823d7cf844f6f06cea54d180d8200dd2}{%
+           family={Eggimann},
+           familyi={E\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3581406b35a0e01f62563673e9c72afc}{%
+           family={Okuhara},
+           familyi={O\bibinitperiod},
+           given={Hayate},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f39619682099f437bbbb0a2d211c4531}{%
+           family={Huard},
+           familyi={H\bibinitperiod},
+           given={Vincent},
+           giveni={V\bibinitperiod}}}%
+        {{hash=115f57beefd67214993d73030d1795ae}{%
+           family={Montfort},
+           familyi={M\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+        {{hash=9be736a387433732922cf464f204eaae}{%
+           family={Jure},
+           familyi={J\bibinitperiod},
+           given={Lionel},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b162442117f8652069e163baf339ffed}{%
+           family={Exibard},
+           familyi={E\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod}}}%
+        {{hash=f1f1163f790435141dd036369ccab714}{%
+           family={Gouedo},
+           familyi={G\bibinitperiod},
+           given={Pascal},
+           giveni={P\bibinitperiod}}}%
+        {{hash=87237d4271a7f61e3958f76ee64b046a}{%
+           family={Louvat},
+           familyi={L\bibinitperiod},
+           given={Mathieu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9a9e3a3ccc9441ea4d314e60d890d13f}{%
+           family={Botte},
+           familyi={B\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1d6ad7a854e1f2cb5d58dd5d80de2ab}
+      \strng{fullhash}{f07db485bdb90045a0204ca1a4837aa3}
+      \strng{bibnamehash}{a1d6ad7a854e1f2cb5d58dd5d80de2ab}
+      \strng{authorbibnamehash}{a1d6ad7a854e1f2cb5d58dd5d80de2ab}
+      \strng{authornamehash}{a1d6ad7a854e1f2cb5d58dd5d80de2ab}
+      \strng{authorfullhash}{f07db485bdb90045a0204ca1a4837aa3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2023 {IEEE} International Solid-State Circuits Conference ({ISSCC} 2023)}
+      \field{title}{A 12.4 {TOPS}/{W} @ 136 {GOPS} {AI}-{IoT} system-on-chip with 16 {RISC-V}, 2-to-8b precision-scalable {DNN} acceleration and 30\%-boost adaptive body biasing}
+      \field{year}{2023}
+      \field{pages}{21\bibrangedash 23}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1109/ISSCC42615.2023.10067643
+      \endverb
+    \endentry
+    \entry{keccak}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=bc30c8702852a0194aef484075e71d89}{%
+           family={Dolmeta},
+           familyi={D\bibinitperiod},
+           given={Alessandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=758783764db3e46e311a3ec3cdd13f4f}{%
+           family={Mirigaldi},
+           familyi={M\bibinitperiod},
+           given={Mattia},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d54d5e19c6524816ff5be4faa209a88f}{%
+           family={Martina},
+           familyi={M\bibinitperiod},
+           given={Maurizio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=88be4d83174b4cee56d166ea89be89f9}{%
+           family={Masera},
+           familyi={M\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Bologna, Italy}%
+      }
+      \strng{namehash}{61bbb13abf314d54041cf91be2ef12a7}
+      \strng{fullhash}{7654094a00735ee95b536e44635d980a}
+      \strng{bibnamehash}{7654094a00735ee95b536e44635d980a}
+      \strng{authorbibnamehash}{7654094a00735ee95b536e44635d980a}
+      \strng{authornamehash}{61bbb13abf314d54041cf91be2ef12a7}
+      \strng{authorfullhash}{7654094a00735ee95b536e44635d980a}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 20th {ACM} International Conference on Computing Frontiers ({CF} 2023)}
+      \field{series}{{CF} '23}
+      \field{title}{Implementation and integration of {Keccak} accelerator on {RISC-V} for {CRYSTALS}-{Kyber}}
+      \field{year}{2023}
+      \field{pages}{381\bibrangedash 382}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1145/3587135.3591432
+      \endverb
+      \keyw{Post-Quantum cryptography,{RISC-V},{CRYSTALS}-{Kyber},{Keccak}}
+    \endentry
+    \entry{blackparrot}{article}{}
+      \name{author}{14}{}{%
+        {{hash=c4c78f282ac7ccd74a0b871ea9e9ed48}{%
+           family={Petrisko},
+           familyi={P\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=355342b9d6fe30b9effe6e0c0bf83759}{%
+           family={Gilani},
+           familyi={G\bibinitperiod},
+           given={Farzam},
+           giveni={F\bibinitperiod}}}%
+        {{hash=642b672d305ea59daa341d208bc5eaec}{%
+           family={Wyse},
+           familyi={W\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3d4778076ab81b5b3f9a980566be7efd}{%
+           family={Jung},
+           familyi={J\bibinitperiod},
+           given={Dai\bibnamedelima Cheol},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=f87f00d4aaa189302b869cd9297441dd}{%
+           family={Davidson},
+           familyi={D\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e6324e9ff8a2ffd231c0ef418c03fb88}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d6f42dd069b0700af390591223ded2fb}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Chun},
+           giveni={C\bibinitperiod}}}%
+        {{hash=0cec3529538c88612b7d74a66a336596}{%
+           family={Azad},
+           familyi={A\bibinitperiod},
+           given={Zahra},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=31d48d00a683c28b205040ac90ad73bc}{%
+           family={Canakci},
+           familyi={C\bibinitperiod},
+           given={Sadullah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=4c83af55373e2037eed74f64639df015}{%
+           family={Veluri},
+           familyi={V\bibinitperiod},
+           given={Bandhav},
+           giveni={B\bibinitperiod}}}%
+        {{hash=ed4b6cc4a743d0f1daf50b50b8030253}{%
+           family={Guarino},
+           familyi={G\bibinitperiod},
+           given={Tavio},
+           giveni={T\bibinitperiod}}}%
+        {{hash=39cdcbc7cae917eac0c484707294d25a}{%
+           family={Joshi},
+           familyi={J\bibinitperiod},
+           given={Ajay},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1f81a4afa95a375fc2ffabddc989d383}{%
+           family={Oskin},
+           familyi={O\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ae0af6faf5ddb3d094a1ddb914dd7f81}{%
+           family={Taylor},
+           familyi={T\bibinitperiod},
+           given={Michael\bibnamedelima Bedford},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{f99bf12e0ec4cdacd8f2a016ab9f5e3b}
+      \strng{fullhash}{b79803edb898ca166f31b377c9386047}
+      \strng{bibnamehash}{f99bf12e0ec4cdacd8f2a016ab9f5e3b}
+      \strng{authorbibnamehash}{f99bf12e0ec4cdacd8f2a016ab9f5e3b}
+      \strng{authornamehash}{f99bf12e0ec4cdacd8f2a016ab9f5e3b}
+      \strng{authorfullhash}{b79803edb898ca166f31b377c9386047}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Micro}
+      \field{number}{4}
+      \field{title}{BlackParrot: An agile open-source {RISC-V} multicore for accelerator {SoC}s}
+      \field{volume}{40}
+      \field{year}{2020}
+      \field{pages}{93\bibrangedash 102}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/MM.2020.2996145
+      \endverb
+    \endentry
+    \entry{chipyard}{article}{}
+      \name{author}{17}{}{%
+        {{hash=c23fce7b125a36f85cca05854f8a6c4d}{%
+           family={Amid},
+           familyi={A\bibinitperiod},
+           given={Alon},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c1fe0279d3e8bb3c64af3cd902dbf951}{%
+           family={Biancolin},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6fe708a2fa871b31d00696b6b2506873}{%
+           family={Gonzalez},
+           familyi={G\bibinitperiod},
+           given={Abraham},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b27508800aac030bbf11e7d7f3bbeb6d}{%
+           family={Grubb},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=951aee03fb78f679d559b47d2ddc67c6}{%
+           family={Karandikar},
+           familyi={K\bibinitperiod},
+           given={Sagar},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a16cc7f25bc0dcf678822a8260a03ea5}{%
+           family={Liew},
+           familyi={L\bibinitperiod},
+           given={Harrison},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8fc6c8551d9032dbae0b5e99439577f0}{%
+           family={Magyar},
+           familyi={M\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8e15364f9347e55946743c2ecbb4b730}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Howard},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f70f596ff3552f7ba8b2d3a34d0e45ae}{%
+           family={Ou},
+           familyi={O\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5cce26607d158a6e8a4b379f364c309d}{%
+           family={Pemberton},
+           familyi={P\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=e4f89e55b42c506cdb74b1b46b2fde67}{%
+           family={Rigge},
+           familyi={R\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=2e792f36e61d7d912c5d0eb46d201fb8}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Colin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=08d606d3cdd9e3e64020f253922ab631}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c69f88d352b6ce03d823a873989dec4b}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5ae543a74f5aea9db02a342f9e67f360}{%
+           family={Shao},
+           familyi={S\bibinitperiod},
+           given={Yakun\bibnamedelima Sophia},
+           giveni={Y\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=6e7da264d2a1b506dc85ba97a65f086a}{%
+           family={Asanović},
+           familyi={A\bibinitperiod},
+           given={Krste},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f3b356fc7eba2695ae0ec47a044491e6}{%
+           family={Nikolić},
+           familyi={N\bibinitperiod},
+           given={Borivoje},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{5e3d6cbc8d2864e3f549a058f69f4957}
+      \strng{fullhash}{fec3debdb979da0858dad3409c2f8b2a}
+      \strng{bibnamehash}{5e3d6cbc8d2864e3f549a058f69f4957}
+      \strng{authorbibnamehash}{5e3d6cbc8d2864e3f549a058f69f4957}
+      \strng{authornamehash}{5e3d6cbc8d2864e3f549a058f69f4957}
+      \strng{authorfullhash}{fec3debdb979da0858dad3409c2f8b2a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Micro}
+      \field{number}{4}
+      \field{title}{Chipyard: Integrated design, simulation, and implementation framework for custom {SoC}s}
+      \field{volume}{40}
+      \field{year}{2020}
+      \field{pages}{10\bibrangedash 21}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/MM.2020.2996616
+      \endverb
+    \endentry
+    \entry{x-heep_1}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=dff791296cb2bdae9dd7ddc6551fedd6}{%
+           family={Machetti},
+           familyi={M\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b1a047e19103694fff610fa3ef3991a7}{%
+           family={Peón-Quirós},
+           familyi={P\bibinithyphendelim Q\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e6ba2c8c53df12f0773cc1062583008d}{%
+           family={Miranda},
+           familyi={M\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod}}}%
+        {{hash=27a12e354738b01d4fef2e7291d229a6}{%
+           family={Denkinger},
+           familyi={D\bibinitperiod},
+           given={Benoît},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9f63af66e317256048980e008b43afa0}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Thomas\bibnamedelima Christoph},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=15a28d636482d8b332acd0e709d856c0}{%
+           family={Rodríguez},
+           familyi={R\bibinitperiod},
+           given={Rubén},
+           giveni={R\bibinitperiod}}}%
+        {{hash=23c2e000e5f9ba4bcc217f9407d7416f}{%
+           family={Nasturzio},
+           familyi={N\bibinitperiod},
+           given={Saverio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{a782b2aa48533e5fb5ac3d1fcb92892d}
+      \strng{fullhash}{e2b0ee93b8ffa245d8fd563c29bb9eaa}
+      \strng{bibnamehash}{a782b2aa48533e5fb5ac3d1fcb92892d}
+      \strng{authorbibnamehash}{a782b2aa48533e5fb5ac3d1fcb92892d}
+      \strng{authornamehash}{a782b2aa48533e5fb5ac3d1fcb92892d}
+      \strng{authorfullhash}{e2b0ee93b8ffa245d8fd563c29bb9eaa}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2023 {ACM} International Conference on Computing Frontiers ({CF} 2023)}
+      \field{title}{{X-HEEP}: An open-source, configurable and extendible {RISC-V} microcontroller}
+      \field{year}{2023}
+      \field{pages}{379\bibrangedash 380}
+      \range{pages}{2}
+    \endentry
+    \entry{x-heep_2}{online}{}
+      \name{author}{5}{}{%
+        {{hash=dff791296cb2bdae9dd7ddc6551fedd6}{%
+           family={Machetti},
+           familyi={M\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=9f63af66e317256048980e008b43afa0}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Thomas\bibnamedelima Christoph},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=b1a047e19103694fff610fa3ef3991a7}{%
+           family={Peón-Quirós},
+           familyi={P\bibinithyphendelim Q\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7802ffdbbda040704a258854bf9ef2e7}
+      \strng{fullhash}{7a55495031f17a8fc339f89c7ecb9029}
+      \strng{bibnamehash}{7a55495031f17a8fc339f89c7ecb9029}
+      \strng{authorbibnamehash}{7a55495031f17a8fc339f89c7ecb9029}
+      \strng{authornamehash}{7802ffdbbda040704a258854bf9ef2e7}
+      \strng{authorfullhash}{7a55495031f17a8fc339f89c7ecb9029}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{title}{{\mbox{X-HEEP}}: An open-source, configurable and extendible {RISC-V} microcontroller for the exploration of ultra-low-power edge accelerators}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 2401.05548
+      \endverb
+    \endentry
+    \entry{cea_imc}{article}{}
+      \name{author}{9}{}{%
+        {{hash=f565cea0e4d2b04094cbc92f82e9dea3}{%
+           family={Kooli},
+           familyi={K\bibinitperiod},
+           given={Maha},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5dd7811cc674d20b59dd5308a7b5363c}{%
+           family={Heraud},
+           familyi={H\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f44361a1803b185a30ff223945b65927}{%
+           family={Charles},
+           familyi={C\bibinitperiod},
+           given={Henri-Pierre},
+           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=74ef22ed14ba265184da06aa666d4425}{%
+           family={Giraud},
+           familyi={G\bibinitperiod},
+           given={Bastien},
+           giveni={B\bibinitperiod}}}%
+        {{hash=703698ba81220616d7a2a156647f0bf0}{%
+           family={Gauchi},
+           familyi={G\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod}}}%
+        {{hash=20eed9b5bf859cc78fe709e8eee1b4a8}{%
+           family={Ezzadeen},
+           familyi={E\bibinitperiod},
+           given={Mona},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c3d947f6659389fcff9c80864f0cde38}{%
+           family={Mambu},
+           familyi={M\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ade6ae0d57ad09dae1b481f10f550c3d}{%
+           family={Egloff},
+           familyi={E\bibinitperiod},
+           given={Valentin},
+           giveni={V\bibinitperiod}}}%
+        {{hash=5586e49e4ca8f6fd0d00c2f617520b74}{%
+           family={Noel},
+           familyi={N\bibinitperiod},
+           given={Jean-Philippe},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{87030edc53442c7e5f1b713f4d53fa50}
+      \strng{fullhash}{81f69921f04c18f6053762e21e601aec}
+      \strng{bibnamehash}{87030edc53442c7e5f1b713f4d53fa50}
+      \strng{authorbibnamehash}{87030edc53442c7e5f1b713f4d53fa50}
+      \strng{authornamehash}{87030edc53442c7e5f1b713f4d53fa50}
+      \strng{authorfullhash}{81f69921f04c18f6053762e21e601aec}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1550-4832}
+      \field{journaltitle}{Journal of Emerging Technologies in Computing Systems ({JETC})}
+      \field{number}{2}
+      \field{title}{Towards a truly integrated vector processing unit for memory-bound applications based on a cost-competitive computational {SRAM} design solution}
+      \field{volume}{18}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1145/3485823
+      \endverb
+      \keyw{Computational {SRAM},in- and near-memory computing,simulation,{AES},{MobileNetV2}}
+    \endentry
+    \entry{ri5cy}{article}{}
+      \name{author}{9}{}{%
+        {{hash=66c9b1c8635972378f799424e99af8f8}{%
+           family={Gautschi},
+           familyi={G\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=92bdac4b8a713c2e476fb5c5ea7be081}{%
+           family={Traber},
+           familyi={T\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=498e4d02d4908002083d9436c1498e5f}{%
+           family={Loi},
+           familyi={L\bibinitperiod},
+           given={Igor},
+           giveni={I\bibinitperiod}}}%
+        {{hash=f8f4296a89a36f9677223ec973701c52}{%
+           family={Pullini},
+           familyi={P\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cec900c2c76db4ce83099c914c1a9a72}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=b6a7b4340109867e2717789c9d275f23}{%
+           family={Flamand},
+           familyi={F\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=5797ea2545525fd7b77b2fb6c8c0054f}{%
+           family={Gürkaynak},
+           familyi={G\bibinitperiod},
+           given={Frank\bibnamedelima K.},
+           giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{98268b42308c12aceb291a6b026d2911}
+      \strng{fullhash}{80feeca82c4f82c43d127e754e132b47}
+      \strng{bibnamehash}{98268b42308c12aceb291a6b026d2911}
+      \strng{authorbibnamehash}{98268b42308c12aceb291a6b026d2911}
+      \strng{authornamehash}{98268b42308c12aceb291a6b026d2911}
+      \strng{authorfullhash}{80feeca82c4f82c43d127e754e132b47}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Transactions on Very Large Scale Integration ({VLSI}) Systems}
+      \field{number}{10}
+      \field{title}{Near-threshold {RISC-V} core with {DSP} extensions for scalable {IoT} endpoint devices}
+      \field{volume}{25}
+      \field{year}{2017}
+      \field{pages}{2700\bibrangedash 2713}
+      \range{pages}{14}
+    \endentry
+    \entry{fft}{online}{}
+      \name{author}{8}{}{%
+        {{hash=f0fb84307925f2d46ac71a5f3c80543f}{%
+           family={Sinigaglia},
+           familyi={S\bibinitperiod},
+           given={Mattia},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3f375d2ef5db5be82bd87547bb2bfc2a}{%
+           family={Bertaccini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6cb67f461f5921684d30aadd3e3120c4}{%
+           family={Valente},
+           familyi={V\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=80df5ee394f745a65810910f4b40ab82}{%
+           family={Garofalo},
+           familyi={G\bibinitperiod},
+           given={Angelo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=827269a2d37dfe60be4b8a7adaa9d625}{%
+           family={Benatti},
+           familyi={B\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=894ba44bf1d7c10e39b86b4262ef8847}{%
+           family={Conti},
+           familyi={C\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=cec900c2c76db4ce83099c914c1a9a72}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{21b8a4ae3a625058e6f7c5f20ff6586c}
+      \strng{fullhash}{7f2ac68a62044597bacb07c9fc84ced3}
+      \strng{bibnamehash}{21b8a4ae3a625058e6f7c5f20ff6586c}
+      \strng{authorbibnamehash}{21b8a4ae3a625058e6f7c5f20ff6586c}
+      \strng{authornamehash}{21b8a4ae3a625058e6f7c5f20ff6586c}
+      \strng{authorfullhash}{7f2ac68a62044597bacb07c9fc84ced3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{title}{Echoes: A 200 {GOPS}/{W} frequency-domain {SoC} with {FFT} processor and {I2S} {DSP} for flexible data acquisition from microphone arrays}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2305.07325
+      \endverb
+    \endentry
+    \entry{cnn}{article}{}
+      \name{author}{6}{}{%
+        {{hash=22a2a8b602b182ce41298c303ec40767}{%
+           family={Gómez},
+           familyi={G\bibinitperiod},
+           given={Catalina},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a2e469525d819a078d47774a74a8fcb6}{%
+           family={Arbeláez},
+           familyi={A\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=32c01930406f67f20099c57cb2517e9e}{%
+           family={Navarrete},
+           familyi={N\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=cf708df46b5eb7511c904f3d08e91145}{%
+           family={Alvarado-Rojas},
+           familyi={A\bibinithyphendelim R\bibinitperiod},
+           given={Catalina},
+           giveni={C\bibinitperiod}}}%
+        {{hash=341ed35bf06514b7759be78286dea2c8}{%
+           family={Le\bibnamedelima Van\bibnamedelima Quyen},
+           familyi={L\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim Q\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2a26fb7996c16df5ded012650d0b615d}{%
+           family={Valderrama},
+           familyi={V\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{dfa4d3ff5271238fa745ad20bba4ced5}
+      \strng{fullhash}{678408f2eebbf2da43eace74d5cfed38}
+      \strng{bibnamehash}{678408f2eebbf2da43eace74d5cfed38}
+      \strng{authorbibnamehash}{678408f2eebbf2da43eace74d5cfed38}
+      \strng{authornamehash}{dfa4d3ff5271238fa745ad20bba4ced5}
+      \strng{authorfullhash}{678408f2eebbf2da43eace74d5cfed38}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Scientific Reports}
+      \field{number}{1}
+      \field{title}{Automatic seizure detection based on imaged-{EEG} signals through fully convolutional networks}
+      \field{volume}{10}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 13}
+      \range{pages}{13}
+    \endentry
+    \entry{arnold}{article}{}
+      \name{author}{8}{}{%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=cec900c2c76db4ce83099c914c1a9a72}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4a27052be0eeeee143fd7a97e4e4aaa0}{%
+           family={Di\bibnamedelima Mauro},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Alfio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5797ea2545525fd7b77b2fb6c8c0054f}{%
+           family={Gürkaynak},
+           familyi={G\bibinitperiod},
+           given={Frank\bibnamedelima K.},
+           giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=8959aa4620bc19d37f4a0c3210cf607f}{%
+           family={Saxe},
+           familyi={S\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b23e194fcc5da1e448e948e4035d9e32}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Mao},
+           giveni={M\bibinitperiod}}}%
+        {{hash=73ba8d775558c865bd79b7e073d30398}{%
+           family={Yap},
+           familyi={Y\bibinitperiod},
+           given={Ket\bibnamedelima Chong},
+           giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{213e380fe96dd11eb54e4e0fd8b56bc2}
+      \strng{fullhash}{7652d312535f41828e6b131bbd4e60fb}
+      \strng{bibnamehash}{213e380fe96dd11eb54e4e0fd8b56bc2}
+      \strng{authorbibnamehash}{213e380fe96dd11eb54e4e0fd8b56bc2}
+      \strng{authornamehash}{213e380fe96dd11eb54e4e0fd8b56bc2}
+      \strng{authorfullhash}{7652d312535f41828e6b131bbd4e60fb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Transactions on Very Large Scale Integration ({VLSI}) Systems}
+      \field{number}{4}
+      \field{title}{Arnold: An {eFPGA}-augmented {RISC-V} {SoC} for flexible and low-power {IoT} end nodes}
+      \field{volume}{29}
+      \field{year}{2021}
+      \field{pages}{677\bibrangedash 690}
+      \range{pages}{14}
+    \endentry
+    \entry{ariane}{article}{}
+      \name{author}{2}{}{%
+        {{hash=fcfd21d588f8a0f0536268109cc49131}{%
+           family={Zaruba},
+           familyi={Z\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{730943e9ee628ef6875bda4348cb7c80}
+      \strng{fullhash}{730943e9ee628ef6875bda4348cb7c80}
+      \strng{bibnamehash}{730943e9ee628ef6875bda4348cb7c80}
+      \strng{authorbibnamehash}{730943e9ee628ef6875bda4348cb7c80}
+      \strng{authornamehash}{730943e9ee628ef6875bda4348cb7c80}
+      \strng{authorfullhash}{730943e9ee628ef6875bda4348cb7c80}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Transactions on Very Large Scale Integration ({VLSI}) Systems}
+      \field{number}{11}
+      \field{title}{The cost of application-class processing: Energy and performance analysis of a {Linux}-ready 1.7-{GHz} 64-bit {RISC-V} core in 22-nm {FDSOI} technology}
+      \field{volume}{27}
+      \field{year}{2019}
+      \field{pages}{2629\bibrangedash 2640}
+      \range{pages}{12}
+    \endentry
+    \entry{vortex}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=f286317ae36343b6c3591237cf6ea91a}{%
+           family={Tine},
+           familyi={T\bibinitperiod},
+           given={Blaise},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0f68ded1ff0a63d689fd36449cb5c6ea}{%
+           family={Yalamarthy},
+           familyi={Y\bibinitperiod},
+           given={Krishna\bibnamedelima Praveen},
+           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=3ebc317806647e14d635076273630afd}{%
+           family={Elsabbagh},
+           familyi={E\bibinitperiod},
+           given={Fares},
+           giveni={F\bibinitperiod}}}%
+        {{hash=60dbc360b4710afc9209a902883503d8}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hyesoon},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Virtual Event, Greece}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{1c2b3bc73e0fda6142c4796c17f056e6}
+      \strng{fullhash}{2878fbaffea4887127dec1746a1fcf96}
+      \strng{bibnamehash}{2878fbaffea4887127dec1746a1fcf96}
+      \strng{authorbibnamehash}{2878fbaffea4887127dec1746a1fcf96}
+      \strng{authornamehash}{1c2b3bc73e0fda6142c4796c17f056e6}
+      \strng{authorfullhash}{2878fbaffea4887127dec1746a1fcf96}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 54th Annual {IEEE}/{ACM} International Symposium on Microarchitecture ({\mbox{MICRO}} 2021)}
+      \field{title}{Vortex: Extending the {RISC-V} {ISA} for {GPGPU} and 3D-graphics}
+      \field{year}{2021}
+      \field{pages}{754\bibrangedash 766}
+      \range{pages}{13}
+    \endentry
+    \entry{fp}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=1eb9acb45239a293a171227993743f43}{%
+           family={Bocco},
+           familyi={B\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4574f8d00fe1108f8079888ce42deedc}{%
+           family={Durand},
+           familyi={D\bibinitperiod},
+           given={Yves},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=84bfc5e2ec423d2da02844f500bcc811}{%
+           family={De\bibnamedelima Dinechin},
+           familyi={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Florent},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{0ae2b8b904218e50c61f21781d097156}
+      \strng{fullhash}{0ae2b8b904218e50c61f21781d097156}
+      \strng{bibnamehash}{0ae2b8b904218e50c61f21781d097156}
+      \strng{authorbibnamehash}{0ae2b8b904218e50c61f21781d097156}
+      \strng{authornamehash}{0ae2b8b904218e50c61f21781d097156}
+      \strng{authorfullhash}{0ae2b8b904218e50c61f21781d097156}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the {ACM} Conference for Next Generation Arithmetic ({CoNGA} 2019)}
+      \field{title}{{SMURF}: Scalar multiple-precision {UNUM} {RISC-V} floating-point accelerator for scientific computing}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1145/3316279.3316280
+      \endverb
+      \keyw{{ASIC},Coprocessor,{FPGA},Hardware architecture,Scientific computing,Floating-point,{UNUM},Instruction set design,Variable precision,Multiple precision,{RISC-V}}
+    \endentry
+    \entry{posit}{online}{}
+      \name{author}{3}{}{%
+        {{hash=0d858daf31107dd3a0e21f84cfb3ead3}{%
+           family={Mallasén},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0dff2695906c607f4658b4f270e5f53c}{%
+           family={Del\bibnamedelima Barrio},
+           familyi={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Alberto\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=79466f88312a8b5cc48ca124013f69e2}{%
+           family={Prieto-Matias},
+           familyi={P\bibinithyphendelim M\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{af2baac6a2529c24aaf00cb8dcbe6230}
+      \strng{fullhash}{af2baac6a2529c24aaf00cb8dcbe6230}
+      \strng{bibnamehash}{af2baac6a2529c24aaf00cb8dcbe6230}
+      \strng{authorbibnamehash}{af2baac6a2529c24aaf00cb8dcbe6230}
+      \strng{authornamehash}{af2baac6a2529c24aaf00cb8dcbe6230}
+      \strng{authorfullhash}{af2baac6a2529c24aaf00cb8dcbe6230}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{title}{Big-{PERCIVAL}: Exploring the native use of 64-bit posit arithmetic in scientific computing}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 2305.06946
+      \endverb
+    \endentry
+    \entry{pqcry}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f01c72a61cc0d5f09f5a0c1aca3c765d}{%
+           family={Fritzmann},
+           familyi={F\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e667bb75f672d6b53b669f117a54dc64}{%
+           family={Sigl},
+           familyi={S\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1ad5cdc790612074c634c73e6ad9e9a2}{%
+           family={Sepúlveda},
+           familyi={S\bibinitperiod},
+           given={Johanna},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d94fe06f2710caa74becd54ad26241ee}
+      \strng{fullhash}{d94fe06f2710caa74becd54ad26241ee}
+      \strng{bibnamehash}{d94fe06f2710caa74becd54ad26241ee}
+      \strng{authorbibnamehash}{d94fe06f2710caa74becd54ad26241ee}
+      \strng{authornamehash}{d94fe06f2710caa74becd54ad26241ee}
+      \strng{authorfullhash}{d94fe06f2710caa74becd54ad26241ee}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IACR} Transactions on Cryptographic Hardware and Embedded Systems}
+      \field{number}{4}
+      \field{title}{{RISQ-V}: Tightly coupled {RISC-V} accelerators for post-quantum cryptography}
+      \field{year}{2020}
+      \field{pages}{239\bibrangedash 280}
+      \range{pages}{42}
+      \verb{doi}
+      \verb 10.13154/tches.v2020.i4.239-280
+      \endverb
+    \endentry
+    \entry{complex}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=bc03c5d284160242dcaad287546b96c7}{%
+           family={Varma},
+           familyi={V\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2e00af4ba6380a3a91be41be78c6de02}{%
+           family={Tull},
+           familyi={T\bibinitperiod},
+           given={M.\bibnamedelimi P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{93aac066841616122b562ab8a51c3889}
+      \strng{fullhash}{93aac066841616122b562ab8a51c3889}
+      \strng{bibnamehash}{93aac066841616122b562ab8a51c3889}
+      \strng{authorbibnamehash}{93aac066841616122b562ab8a51c3889}
+      \strng{authornamehash}{93aac066841616122b562ab8a51c3889}
+      \strng{authorfullhash}{93aac066841616122b562ab8a51c3889}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the {IEEE} Region 5 Conference: Annual Technical and Leadership Workshop}
+      \field{title}{Architectural design of a complex arithmetic signal processor ({CASP})}
+      \field{year}{2004}
+      \field{pages}{69\bibrangedash 76}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/REG5.2004.1300163
+      \endverb
+    \endentry
+    \entry{cheshire}{article}{}
+      \name{author}{4}{}{%
+        {{hash=f4c3a87b8ca31e5523ca3e891bd9f12d}{%
+           family={Ottaviano},
+           familyi={O\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3e97c9682f1164d1e7de10cf75ac0101}{%
+           family={Benz},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=334b13afaadf44caceacd3436cfc6d87}{%
+           family={Scheffler},
+           familyi={S\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{554d5b410bfb4602e03e23224f467d82}
+      \strng{fullhash}{a61a9b19c92605fd5967aa3416b29ea8}
+      \strng{bibnamehash}{a61a9b19c92605fd5967aa3416b29ea8}
+      \strng{authorbibnamehash}{a61a9b19c92605fd5967aa3416b29ea8}
+      \strng{authornamehash}{554d5b410bfb4602e03e23224f467d82}
+      \strng{authorfullhash}{a61a9b19c92605fd5967aa3416b29ea8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Transactions on Circuits and Systems {II}: Express Briefs}
+      \field{note}{Early access}
+      \field{title}{Cheshire: A lightweight, {Linux}-capable {RISC-V} host platform for domain-specific accelerator plug-in}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 1}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1109/TCSII.2023.3289186
+      \endverb
+    \endentry
+    \entry{rocket}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a9673155dd59d4fc74efe1a57b4a0e2b}{%
+           family={{CHIPS Alliance}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{a9673155dd59d4fc74efe1a57b4a0e2b}
+      \strng{fullhash}{a9673155dd59d4fc74efe1a57b4a0e2b}
+      \strng{bibnamehash}{a9673155dd59d4fc74efe1a57b4a0e2b}
+      \strng{authorbibnamehash}{a9673155dd59d4fc74efe1a57b4a0e2b}
+      \strng{authornamehash}{a9673155dd59d4fc74efe1a57b4a0e2b}
+      \strng{authorfullhash}{a9673155dd59d4fc74efe1a57b4a0e2b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Rocket}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/chipsalliance/rocket-chip
+      \endverb
+      \verb{url}
+      \verb https://github.com/chipsalliance/rocket-chip
+      \endverb
+    \endentry
+    \entry{litex}{online}{}
+      \name{author}{4}{}{%
+        {{hash=e9c489119ad4942770b6bd4290d69375}{%
+           family={Kermarrec},
+           familyi={K\bibinitperiod},
+           given={Florent},
+           giveni={F\bibinitperiod}}}%
+        {{hash=479a53c5a446112e15597ab9d2449ab3}{%
+           family={Bourdeauducq},
+           familyi={B\bibinitperiod},
+           given={Sébastien},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ecc88262d0859218b92bffd3edf4edc9}{%
+           family={Le\bibnamedelima Lann},
+           familyi={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Jean-Christophe},
+           giveni={J\bibinithyphendelim C\bibinitperiod}}}%
+        {{hash=fd9d5491f21d165dc3c02f7a57ae9e2c}{%
+           family={Badier},
+           familyi={B\bibinitperiod},
+           given={Hannah},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{19d8848071ca27cf08bc9a70c3d357e1}
+      \strng{fullhash}{aa11a5759477ef806fba0697935016a1}
+      \strng{bibnamehash}{aa11a5759477ef806fba0697935016a1}
+      \strng{authorbibnamehash}{aa11a5759477ef806fba0697935016a1}
+      \strng{authornamehash}{19d8848071ca27cf08bc9a70c3d357e1}
+      \strng{authorfullhash}{aa11a5759477ef806fba0697935016a1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.AR}
+      \field{eprinttype}{arXiv}
+      \field{title}{Lite{X}: An open-source {SoC} builder and library based on {Migen} {Python} {DSL}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 2005.02506
+      \endverb
+    \endentry
+    \entry{esp}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{hash=ef17d511222d7e359f156896aa8075de}{%
+           family={Mantovani},
+           familyi={M\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f8dd0ff4f8d74375d0bd0274037fd7a9}{%
+           family={Giri},
+           familyi={G\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0e456cf027a1ad5d559b5ba940f691a9}{%
+           family={Di\bibnamedelima Guglielmo},
+           familyi={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c435fc5aedaeda39ce75e49eaffa6d13}{%
+           family={Piccolboni},
+           familyi={P\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d87ef18790996ec8cca76525b26a884e}{%
+           family={Zuckerman},
+           familyi={Z\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=abcf31b59c079c0f46b8a6d8259f8288}{%
+           family={Cota},
+           familyi={C\bibinitperiod},
+           given={Emilio\bibnamedelima G.},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=6455ded748c91d49418bc8b937d7f32d}{%
+           family={Petracca},
+           familyi={P\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4761db73cfa0608885454fd896a56c4e}{%
+           family={Pilato},
+           familyi={P\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ed9a63eb6d181d99afcca8a2f54f6aa6}{%
+           family={Carloni},
+           familyi={C\bibinitperiod},
+           given={Luca\bibnamedelima P.},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{df1ad3040545184bac0fb8d4ba6d61de}
+      \strng{fullhash}{09d0e49c4c21dba4461583101fc96099}
+      \strng{bibnamehash}{df1ad3040545184bac0fb8d4ba6d61de}
+      \strng{authorbibnamehash}{df1ad3040545184bac0fb8d4ba6d61de}
+      \strng{authornamehash}{df1ad3040545184bac0fb8d4ba6d61de}
+      \strng{authorfullhash}{09d0e49c4c21dba4461583101fc96099}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2020 {IEEE}/{ACM} International Conference on Computer-Aided Design ({ICCAD} 2020)}
+      \field{title}{Agile {SoC} development with Open {ESP}: Invited paper}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 9}
+      \range{pages}{9}
+    \endentry
+    \entry{obi}{online}{}
+      \name{author}{1}{}{%
+        {{hash=223360d594705903bbb0666ee2d1e430}{%
+           family={{OpenHW Group}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{223360d594705903bbb0666ee2d1e430}
+      \strng{fullhash}{223360d594705903bbb0666ee2d1e430}
+      \strng{bibnamehash}{223360d594705903bbb0666ee2d1e430}
+      \strng{authorbibnamehash}{223360d594705903bbb0666ee2d1e430}
+      \strng{authornamehash}{223360d594705903bbb0666ee2d1e430}
+      \strng{authorfullhash}{223360d594705903bbb0666ee2d1e430}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Open bus interface protocol}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/openhwgroup/obi
+      \endverb
+      \verb{url}
+      \verb https://github.com/openhwgroup/obi
+      \endverb
+    \endentry
+    \entry{freertos}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6e408c861eb1e189c2e2aecf70bc93e8}{%
+           family={{Real Time Engineers Ltd.}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{6e408c861eb1e189c2e2aecf70bc93e8}
+      \strng{fullhash}{6e408c861eb1e189c2e2aecf70bc93e8}
+      \strng{bibnamehash}{6e408c861eb1e189c2e2aecf70bc93e8}
+      \strng{authorbibnamehash}{6e408c861eb1e189c2e2aecf70bc93e8}
+      \strng{authornamehash}{6e408c861eb1e189c2e2aecf70bc93e8}
+      \strng{authorfullhash}{6e408c861eb1e189c2e2aecf70bc93e8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{FreeRTOS}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.freertos.org/
+      \endverb
+      \verb{url}
+      \verb https://www.freertos.org/
+      \endverb
+    \endentry
+    \entry{fusesoc}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b4a23fe3ab823c1d07e1f154d84d2eb1}{%
+           family={Kindgren},
+           familyi={K\bibinitperiod},
+           given={Olof},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{b4a23fe3ab823c1d07e1f154d84d2eb1}
+      \strng{fullhash}{b4a23fe3ab823c1d07e1f154d84d2eb1}
+      \strng{bibnamehash}{b4a23fe3ab823c1d07e1f154d84d2eb1}
+      \strng{authorbibnamehash}{b4a23fe3ab823c1d07e1f154d84d2eb1}
+      \strng{authornamehash}{b4a23fe3ab823c1d07e1f154d84d2eb1}
+      \strng{authorfullhash}{b4a23fe3ab823c1d07e1f154d84d2eb1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fuse{SoC}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/olofk/fusesoc
+      \endverb
+      \verb{url}
+      \verb https://github.com/olofk/fusesoc
+      \endverb
+    \endentry
+    \entry{flleth}{article}{}
+      \name{author}{2}{}{%
+        {{hash=57383a1d1edfe947253a9f5f3cfd9e2e}{%
+           family={Bellasi},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{eccd4fd0968a9d818bcbce66eed945fd}
+      \strng{fullhash}{eccd4fd0968a9d818bcbce66eed945fd}
+      \strng{bibnamehash}{eccd4fd0968a9d818bcbce66eed945fd}
+      \strng{authorbibnamehash}{eccd4fd0968a9d818bcbce66eed945fd}
+      \strng{authornamehash}{eccd4fd0968a9d818bcbce66eed945fd}
+      \strng{authorfullhash}{eccd4fd0968a9d818bcbce66eed945fd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Transactions on Circuits and Systems {I}: Regular Papers}
+      \field{number}{9}
+      \field{title}{Smart energy-efficient clock synthesizer for duty-cycled sensor {SoC}s in 65 nm/28 nm {CMOS}}
+      \field{volume}{64}
+      \field{year}{2017}
+      \field{pages}{2322\bibrangedash 2333}
+      \range{pages}{12}
+    \endentry
+    \entry{biomed}{online}{}
+      \name{author}{7}{}{%
+        {{hash=1f81c99f26245f3fb7ac1208578d4b2a}{%
+           family={Samakovlis},
+           familyi={S\bibinitperiod},
+           given={Dimitrios},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a3dc62dc73d0dfd715a968e265a36805}{%
+           family={Albini},
+           familyi={A\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a67f0c1a560e181a498b5945c517e79b}{%
+           family={Rodríguez\bibnamedelima Álvarez},
+           familyi={R\bibinitperiod\bibinitdelim Á\bibinitperiod},
+           given={Rubén},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a0839a97a282bfdc566926dec0560cc9}{%
+           family={Constantinescu},
+           familyi={C\bibinitperiod},
+           given={Denisa-Andreea},
+           giveni={D\bibinithyphendelim A\bibinitperiod}}}%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=04ff58fa3473eb1e1cc61207657372ca}{%
+           family={Peón\bibnamedelima Quirós},
+           familyi={P\bibinitperiod\bibinitdelim Q\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{f4c2181b24405071e7cda8cc88be8722}
+      \strng{fullhash}{363d85da9ba12ecaf848a25340b84711}
+      \strng{bibnamehash}{f4c2181b24405071e7cda8cc88be8722}
+      \strng{authorbibnamehash}{f4c2181b24405071e7cda8cc88be8722}
+      \strng{authornamehash}{f4c2181b24405071e7cda8cc88be8722}
+      \strng{authorfullhash}{363d85da9ba12ecaf848a25340b84711}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{{BiomedBench}: A benchmark suite of {TinyML} biomedical applications for low-power wearables}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2406.03886
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2406.03886
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2406.03886
+      \endverb
+    \endentry
+    \entry{nmc}{article}{}
+      \name{author}{7}{}{%
+        {{hash=31bdbda4d67532f0f2365d9ce789ee89}{%
+           family={Caon},
+           familyi={C\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+        {{hash=726b5b06660c25e6852e9d77f91f3baa}{%
+           family={Choné},
+           familyi={C\bibinitperiod},
+           given={Clément},
+           giveni={C\bibinitperiod}}}%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=8e173bdc19ca87066bf2ae35b38311bf}{%
+           family={Levisse},
+           familyi={L\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=88be4d83174b4cee56d166ea89be89f9}{%
+           family={Masera},
+           familyi={M\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d54d5e19c6524816ff5be4faa209a88f}{%
+           family={Martina},
+           familyi={M\bibinitperiod},
+           given={Maurizio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d6535e724d4073a21b333bdcdbe8ac5}
+      \strng{fullhash}{d84415ad5864bbe6fc98dcdff7baee3a}
+      \strng{bibnamehash}{3d6535e724d4073a21b333bdcdbe8ac5}
+      \strng{authorbibnamehash}{3d6535e724d4073a21b333bdcdbe8ac5}
+      \strng{authornamehash}{3d6535e724d4073a21b333bdcdbe8ac5}
+      \strng{authorfullhash}{d84415ad5864bbe6fc98dcdff7baee3a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Transactions on Emerging Topics in Computing}
+      \field{note}{Early access}
+      \field{title}{Scalable and {RISC-V} programmable near-memory computing architectures for edge nodes}
+      \field{year}{2025}
+      \field{pages}{1\bibrangedash 15}
+      \range{pages}{15}
+    \endentry
+    \entry{systolic_array}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=fab699ccd57557921fb37bed3f2245ff}{%
+           family={Palacios\bibnamedelima Almendros},
+           familyi={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=06cadcf63dbdfd3d504d3dd82170a2e2}{%
+           family={Medina\bibnamedelima Morillas},
+           familyi={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a9a2721a044e1591054b8a918cb5e79a}{%
+           family={Ansaloni},
+           familyi={A\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{03a834e0756a894532f3452cf473daf6}
+      \strng{fullhash}{38b0965eabe64038a1742682e4f3ba0d}
+      \strng{bibnamehash}{38b0965eabe64038a1742682e4f3ba0d}
+      \strng{authorbibnamehash}{38b0965eabe64038a1742682e4f3ba0d}
+      \strng{authornamehash}{03a834e0756a894532f3452cf473daf6}
+      \strng{authorfullhash}{38b0965eabe64038a1742682e4f3ba0d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the {ACM} International Conference on Computing Frontiers ({CF} 2025)}
+      \field{title}{{\mbox{HEEPstor}}: An open-hardware co-design framework for quantized machine learning at the edge}
+      \field{year}{2025}
+    \endentry
+    \entry{strela}{online}{}
+      \name{author}{6}{}{%
+        {{hash=bf22eb144e2737347b22a7bf8ab2355e}{%
+           family={Vazquez},
+           familyi={V\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e6ba2c8c53df12f0773cc1062583008d}{%
+           family={Miranda},
+           familyi={M\bibinitperiod},
+           given={José},
+           giveni={J\bibinitperiod}}}%
+        {{hash=73aeba4c16f921b90a834eeecb711444}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={Alfonso},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7dca551f2fa5ed9ad30a84cf8c2bd274}{%
+           family={Otero},
+           familyi={O\bibinitperiod},
+           given={Andres},
+           giveni={A\bibinitperiod}}}%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{ce1e53d620d1d886374059406df25ca7}
+      \strng{fullhash}{6557a127aac3d8117e8278b794d01318}
+      \strng{bibnamehash}{6557a127aac3d8117e8278b794d01318}
+      \strng{authorbibnamehash}{6557a127aac3d8117e8278b794d01318}
+      \strng{authornamehash}{ce1e53d620d1d886374059406df25ca7}
+      \strng{authorfullhash}{6557a127aac3d8117e8278b794d01318}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{title}{{STRELA}: {STReaming} {ELA}stic {CGRA} accelerator for embedded systems}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2404.12503
+      \endverb
+    \endentry
+    \entry{dma}{online}{}
+      \name{author}{8}{}{%
+        {{hash=c24628ed458b1b2c3b0568f5aff17bdc}{%
+           family={Terzano},
+           familyi={T\bibinitperiod},
+           given={Tommaso},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d595647500648b6beab123720d90c5ed}{%
+           family={Giuffrida},
+           familyi={G\bibinitperiod},
+           given={Luigi},
+           giveni={L\bibinitperiod}}}%
+        {{hash=fcfb810767d5738a4397ed1e174509a7}{%
+           family={Sapriza},
+           familyi={S\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=88be4d83174b4cee56d166ea89be89f9}{%
+           family={Masera},
+           familyi={M\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=aa3df9e1e954ff2f354f76d5767231ef}{%
+           family={Lavagno},
+           familyi={L\bibinitperiod},
+           given={Luciano},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d54d5e19c6524816ff5be4faa209a88f}{%
+           family={Martina},
+           familyi={M\bibinitperiod},
+           given={Maurizio},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c8fab0d19cbce791a72ec983e73efa66}
+      \strng{fullhash}{be077099fdf5a5c05c8694ee8b6120ee}
+      \strng{bibnamehash}{c8fab0d19cbce791a72ec983e73efa66}
+      \strng{authorbibnamehash}{c8fab0d19cbce791a72ec983e73efa66}
+      \strng{authornamehash}{c8fab0d19cbce791a72ec983e73efa66}
+      \strng{authorfullhash}{be077099fdf5a5c05c8694ee8b6120ee}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{title}{Just {TestIt}! An {SBST} approach to automate system-integration testing}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2504.07555
+      \endverb
+    \endentry
+    \entry{percival}{online}{}
+      \name{author}{5}{}{%
+        {{hash=0d858daf31107dd3a0e21f84cfb3ead3}{%
+           family={Mallasén},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=0dff2695906c607f4658b4f270e5f53c}{%
+           family={Del\bibnamedelima Barrio},
+           familyi={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Alberto\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=79466f88312a8b5cc48ca124013f69e2}{%
+           family={Prieto-Matias},
+           familyi={P\bibinithyphendelim M\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{33d2b91ceaacfc340a829f37d1e29a65}
+      \strng{fullhash}{afe6ae685424fe5df172da5a404e1fda}
+      \strng{bibnamehash}{afe6ae685424fe5df172da5a404e1fda}
+      \strng{authorbibnamehash}{afe6ae685424fe5df172da5a404e1fda}
+      \strng{authornamehash}{33d2b91ceaacfc340a829f37d1e29a65}
+      \strng{authorfullhash}{afe6ae685424fe5df172da5a404e1fda}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{title}{Increasing the energy-efficiency of wearables using low-precision posit arithmetic with {PHEE}}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2501.18253
+      \endverb
+    \endentry
+    \entry{athos}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bc30c8702852a0194aef484075e71d89}{%
+           family={Dolmeta},
+           familyi={D\bibinitperiod},
+           given={Alessandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d54d5e19c6524816ff5be4faa209a88f}{%
+           family={Martina},
+           familyi={M\bibinitperiod},
+           given={Maurizio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=88be4d83174b4cee56d166ea89be89f9}{%
+           family={Masera},
+           familyi={M\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{d972b33a09ede051ad0a8efa35897719}
+      \strng{fullhash}{d972b33a09ede051ad0a8efa35897719}
+      \strng{bibnamehash}{d972b33a09ede051ad0a8efa35897719}
+      \strng{authorbibnamehash}{d972b33a09ede051ad0a8efa35897719}
+      \strng{authornamehash}{d972b33a09ede051ad0a8efa35897719}
+      \strng{authorfullhash}{d972b33a09ede051ad0a8efa35897719}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Access}
+      \field{title}{{ATHOS}: A hybrid accelerator for {PQC} {CRYSTALS}-algorithms exploiting new {CV-X-IF} interface}
+      \field{volume}{12}
+      \field{year}{2024}
+      \field{pages}{182340\bibrangedash 182352}
+      \range{pages}{13}
+    \endentry
+    \entry{arcane}{online}{}
+      \name{author}{6}{}{%
+        {{hash=41ecee8343a15a9c27943dd988dfa200}{%
+           family={Petrolo},
+           familyi={P\bibinitperiod},
+           given={Vincenzo},
+           giveni={V\bibinitperiod}}}%
+        {{hash=59bf13f808c1bf2f842a8a81336a7616}{%
+           family={Guella},
+           familyi={G\bibinitperiod},
+           given={Flavia},
+           giveni={F\bibinitperiod}}}%
+        {{hash=31bdbda4d67532f0f2365d9ce789ee89}{%
+           family={Caon},
+           familyi={C\bibinitperiod},
+           given={Michele},
+           giveni={M\bibinitperiod}}}%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=88be4d83174b4cee56d166ea89be89f9}{%
+           family={Masera},
+           familyi={M\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d54d5e19c6524816ff5be4faa209a88f}{%
+           family={Martina},
+           familyi={M\bibinitperiod},
+           given={Maurizio},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{bbff00312905799ca156d757188ff3aa}
+      \strng{fullhash}{65c20a571057d03e9bbdf8463ca401e1}
+      \strng{bibnamehash}{65c20a571057d03e9bbdf8463ca401e1}
+      \strng{authorbibnamehash}{65c20a571057d03e9bbdf8463ca401e1}
+      \strng{authornamehash}{bbff00312905799ca156d757188ff3aa}
+      \strng{authorfullhash}{65c20a571057d03e9bbdf8463ca401e1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{title}{{ARCANE}: Adaptive {RISC-V} cache architecture for near-memory extensions}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2504.02533
+      \endverb
+    \endentry
+    \entry{quadrilatero}{online}{}
+      \name{author}{7}{}{%
+        {{hash=d619afcb78fa4b55cf38bc3582c4f20e}{%
+           family={Cammarata},
+           familyi={C\bibinitperiod},
+           given={Danilo},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f27fd45861a4c909d0d81bface9e0a46}{%
+           family={Perotti},
+           familyi={P\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=52146de9c904ee3768825d0f3c596a9f}{%
+           family={Bertuletti},
+           familyi={B\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=80df5ee394f745a65810910f4b40ab82}{%
+           family={Garofalo},
+           familyi={G\bibinitperiod},
+           given={Angelo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=db415b781704ce2ed1595becb900e133}{%
+           family={Schiavone},
+           familyi={S\bibinitperiod},
+           given={Pasquale\bibnamedelima Davide},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{cfba79c535cbeae0fc1f50f01f951398}
+      \strng{fullhash}{38abc26aaa026b1e36b5a32cbba472aa}
+      \strng{bibnamehash}{cfba79c535cbeae0fc1f50f01f951398}
+      \strng{authorbibnamehash}{cfba79c535cbeae0fc1f50f01f951398}
+      \strng{authornamehash}{cfba79c535cbeae0fc1f50f01f951398}
+      \strng{authorfullhash}{38abc26aaa026b1e36b5a32cbba472aa}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{title}{Quadrilatero: A {RISC-V} programmable matrix coprocessor for low-power edge applications}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2504.07565
+      \endverb
+    \endentry
+    \entry{pocl}{article}{}
+      \name{author}{6}{}{%
+        {{hash=75ed48bf94c99a2b7bf2481b69fb1766}{%
+           family={Jääskeläinen},
+           familyi={J\bibinitperiod},
+           given={Pekka},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7640b2ccb5553b67b3140db80c6ccd49}{%
+           family={Sánchez\bibnamedelima Lama},
+           familyi={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=937549ffa2de880ce4feb55ddff1bf68}{%
+           family={Schnetter},
+           familyi={S\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=092393d19259cf3ebeef2fbda0635b5d}{%
+           family={Raiskila},
+           familyi={R\bibinitperiod},
+           given={Kalle},
+           giveni={K\bibinitperiod}}}%
+        {{hash=755680ac7ff271c430f3b35bb120f7b6}{%
+           family={Takala},
+           familyi={T\bibinitperiod},
+           given={Jarmo},
+           giveni={J\bibinitperiod}}}%
+        {{hash=63c340bf32ad3a476bf1f335ff9ab902}{%
+           family={Berg},
+           familyi={B\bibinitperiod},
+           given={Heikki},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{e38564280d9c43a898ada20489e56cf7}
+      \strng{fullhash}{a2dbb053efc130c1e3c8334c712f9e6e}
+      \strng{bibnamehash}{a2dbb053efc130c1e3c8334c712f9e6e}
+      \strng{authorbibnamehash}{a2dbb053efc130c1e3c8334c712f9e6e}
+      \strng{authornamehash}{e38564280d9c43a898ada20489e56cf7}
+      \strng{authorfullhash}{a2dbb053efc130c1e3c8334c712f9e6e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Parallel Programming}
+      \field{number}{5}
+      \field{title}{pocl: A performance-portable {OpenCL} implementation}
+      \field{volume}{43}
+      \field{year}{2015}
+      \field{pages}{752\bibrangedash 785}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1007/s10766-014-0320-y
+      \endverb
+    \endentry
+    \entry{vwr2a}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=5a497c637bc20ceb7862e83ccd555011}{%
+           family={Denkinger},
+           familyi={D\bibinitperiod},
+           given={Benoît\bibnamedelima W.},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=b1a047e19103694fff610fa3ef3991a7}{%
+           family={Peón-Quirós},
+           familyi={P\bibinithyphendelim Q\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9153fdcbbb6d8858045bf0e525c904f1}{%
+           family={Konijnenburg},
+           familyi={K\bibinitperiod},
+           given={Mario},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=19dac040bf427e8a0d1d8a681954cfa0}{%
+           family={Catthoor},
+           familyi={C\bibinitperiod},
+           given={Francky},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {San Francisco, CA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{75d75fef1b5d3c024e5d1f2cf7f673ef}
+      \strng{fullhash}{4382aaf491c7c97df18dcb4011fea980}
+      \strng{bibnamehash}{4382aaf491c7c97df18dcb4011fea980}
+      \strng{authorbibnamehash}{4382aaf491c7c97df18dcb4011fea980}
+      \strng{authornamehash}{75d75fef1b5d3c024e5d1f2cf7f673ef}
+      \strng{authorfullhash}{4382aaf491c7c97df18dcb4011fea980}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 59th {ACM}/{IEEE} Design Automation Conference ({DAC} 2022)}
+      \field{isbn}{9781450391429}
+      \field{series}{{DAC} '22}
+      \field{title}{{VWR2A}: A very-wide-register reconfigurable-array architecture for low-power embedded devices}
+      \field{year}{2022}
+      \field{pages}{895\bibrangedash 900}
+      \range{pages}{6}
+    \endentry
+    \entry{maxwell}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=1f7e985e9175553647768c61fa1c4de2}{%
+           family={Eggermann},
+           familyi={E\bibinitperiod},
+           given={Grégoire\bibnamedelima Axel},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a9a2721a044e1591054b8a918cb5e79a}{%
+           family={Ansaloni},
+           familyi={A\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{13db978ea86ec20a63391f9c869bfee8}
+      \strng{fullhash}{13db978ea86ec20a63391f9c869bfee8}
+      \strng{bibnamehash}{13db978ea86ec20a63391f9c869bfee8}
+      \strng{authorbibnamehash}{13db978ea86ec20a63391f9c869bfee8}
+      \strng{authornamehash}{13db978ea86ec20a63391f9c869bfee8}
+      \strng{authorfullhash}{13db978ea86ec20a63391f9c869bfee8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 26th International Symposium on Quality Electronic Design ({ISQED} 2025)}
+      \field{note}{Forthcoming publication}
+      \field{title}{Keep all in memory with {Maxwell}: A near-{SRAM} computing architecture for edge {AI} applications}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://infoscience.epfl.ch/handle/20.500.14299/246884
+      \endverb
+      \verb{url}
+      \verb https://infoscience.epfl.ch/handle/20.500.14299/246884
+      \endverb
+    \endentry
+    \entry{nvidia}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{NVIDIA} {GPUs}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nvidia.com/de-de/geforce/graphics-cards/
+      \endverb
+      \verb{url}
+      \verb https://www.nvidia.com/de-de/geforce/graphics-cards/
+      \endverb
+    \endentry
+    \entry{amd}{online}{}
+      \name{author}{1}{}{%
+        {{hash=bf70e453946d5be989799409fe1e53b9}{%
+           family={{Advanced Micro Devices, Inc.}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{bf70e453946d5be989799409fe1e53b9}
+      \strng{fullhash}{bf70e453946d5be989799409fe1e53b9}
+      \strng{bibnamehash}{bf70e453946d5be989799409fe1e53b9}
+      \strng{authorbibnamehash}{bf70e453946d5be989799409fe1e53b9}
+      \strng{authornamehash}{bf70e453946d5be989799409fe1e53b9}
+      \strng{authorfullhash}{bf70e453946d5be989799409fe1e53b9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{AMD} {GPUs}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.amd.com/en/products/graphics/desktops/radeon.html
+      \endverb
+      \verb{url}
+      \verb https://www.amd.com/en/products/graphics/desktops/radeon.html
+      \endverb
+    \endentry
+    \entry{arm}{online}{}
+      \name{author}{1}{}{%
+        {{hash=644dd70990f258f8e2be8a6b5037e58d}{%
+           family={{Arm Ltd.}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{644dd70990f258f8e2be8a6b5037e58d}
+      \strng{fullhash}{644dd70990f258f8e2be8a6b5037e58d}
+      \strng{bibnamehash}{644dd70990f258f8e2be8a6b5037e58d}
+      \strng{authorbibnamehash}{644dd70990f258f8e2be8a6b5037e58d}
+      \strng{authornamehash}{644dd70990f258f8e2be8a6b5037e58d}
+      \strng{authorfullhash}{644dd70990f258f8e2be8a6b5037e58d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Arm} {GPUs}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.arm.com/products/silicon-ip-multimedia
+      \endverb
+      \verb{url}
+      \verb https://www.arm.com/products/silicon-ip-multimedia
+      \endverb
+    \endentry
+    \entry{imagtech}{online}{}
+      \name{author}{1}{}{%
+        {{hash=52c56fe02afa664001833176d4eb5d44}{%
+           family={{Imagination Technologies}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{52c56fe02afa664001833176d4eb5d44}
+      \strng{fullhash}{52c56fe02afa664001833176d4eb5d44}
+      \strng{bibnamehash}{52c56fe02afa664001833176d4eb5d44}
+      \strng{authorbibnamehash}{52c56fe02afa664001833176d4eb5d44}
+      \strng{authornamehash}{52c56fe02afa664001833176d4eb5d44}
+      \strng{authorfullhash}{52c56fe02afa664001833176d4eb5d44}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Imagination Technologies} {GPUs}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.imaginationtech.com/products/gpu/
+      \endverb
+      \verb{url}
+      \verb https://www.imaginationtech.com/products/gpu/
+      \endverb
+    \endentry
+    \entry{qualcomm}{online}{}
+      \name{author}{1}{}{%
+        {{hash=f8c27bb3873ae494445b84cfc42c894c}{%
+           family={{Qualcomm Technologies, Inc.}},
+           familyi={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{f8c27bb3873ae494445b84cfc42c894c}
+      \strng{fullhash}{f8c27bb3873ae494445b84cfc42c894c}
+      \strng{bibnamehash}{f8c27bb3873ae494445b84cfc42c894c}
+      \strng{authorbibnamehash}{f8c27bb3873ae494445b84cfc42c894c}
+      \strng{authornamehash}{f8c27bb3873ae494445b84cfc42c894c}
+      \strng{authorfullhash}{f8c27bb3873ae494445b84cfc42c894c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Qualcomm} {GPUs}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.qualcomm.com/products/technology/processors/adreno
+      \endverb
+      \verb{url}
+      \verb https://www.qualcomm.com/products/technology/processors/adreno
+      \endverb
+    \endentry
+    \entry{android}{online}{}
+      \name{author}{1}{}{%
+        {{hash=95be71cdb26faec7f2920771a45d9f43}{%
+           family={{Android Open Source Project}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{95be71cdb26faec7f2920771a45d9f43}
+      \strng{fullhash}{95be71cdb26faec7f2920771a45d9f43}
+      \strng{bibnamehash}{95be71cdb26faec7f2920771a45d9f43}
+      \strng{authorbibnamehash}{95be71cdb26faec7f2920771a45d9f43}
+      \strng{authornamehash}{95be71cdb26faec7f2920771a45d9f43}
+      \strng{authorfullhash}{95be71cdb26faec7f2920771a45d9f43}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Android}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.android.com/
+      \endverb
+      \verb{url}
+      \verb https://www.android.com/
+      \endverb
+    \endentry
+    \entry{linux}{online}{}
+      \name{author}{1}{}{%
+        {{hash=365a10e9d9359da2cd0af1e1da9a90e8}{%
+           family={{Linux Project}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{365a10e9d9359da2cd0af1e1da9a90e8}
+      \strng{fullhash}{365a10e9d9359da2cd0af1e1da9a90e8}
+      \strng{bibnamehash}{365a10e9d9359da2cd0af1e1da9a90e8}
+      \strng{authorbibnamehash}{365a10e9d9359da2cd0af1e1da9a90e8}
+      \strng{authornamehash}{365a10e9d9359da2cd0af1e1da9a90e8}
+      \strng{authorfullhash}{365a10e9d9359da2cd0af1e1da9a90e8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Linux}}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.linux.it/
+      \endverb
+      \verb{url}
+      \verb https://www.linux.it/
+      \endverb
+    \endentry
+    \entry{skybox}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=f286317ae36343b6c3591237cf6ea91a}{%
+           family={Tine},
+           familyi={T\bibinitperiod},
+           given={Blaise},
+           giveni={B\bibinitperiod}}}%
+        {{hash=49f97c300985adb711065e8947c1904e}{%
+           family={Saxena},
+           familyi={S\bibinitperiod},
+           given={Varun},
+           giveni={V\bibinitperiod}}}%
+        {{hash=a5176b280cd78ddfd014ce01ff0ad12b}{%
+           family={Srivatsan},
+           familyi={S\bibinitperiod},
+           given={Santosh},
+           giveni={S\bibinitperiod}}}%
+        {{hash=22ed0ba517ff2fac6db67fd6f0673987}{%
+           family={Simpson},
+           familyi={S\bibinitperiod},
+           given={Joshua\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=7eed55b8af8a4870dc5eae79e1be75b8}{%
+           family={Alzammar},
+           familyi={A\bibinitperiod},
+           given={Fadi},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f1b2d71742eed046f0a7c7d848dc46a8}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={Liam},
+           giveni={L\bibinitperiod}}}%
+        {{hash=60dbc360b4710afc9209a902883503d8}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hyesoon},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vancouver, BC, Canada}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{04903edb4a2cb0a3110a2d61bad32ccd}
+      \strng{fullhash}{a2bde988d5f53b29097683fb1baf818f}
+      \strng{bibnamehash}{04903edb4a2cb0a3110a2d61bad32ccd}
+      \strng{authorbibnamehash}{04903edb4a2cb0a3110a2d61bad32ccd}
+      \strng{authornamehash}{04903edb4a2cb0a3110a2d61bad32ccd}
+      \strng{authorfullhash}{a2bde988d5f53b29097683fb1baf818f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 28th {ACM} International Conference on Architectural Support for Programming Languages and Operating Systems, Volume~3 ({ASPLOS} 2023)}
+      \field{series}{{ASPLOS} 2023}
+      \field{title}{Skybox: Open-source graphic rendering on programmable {RISC-V} {GPU}s}
+      \field{year}{2023}
+      \field{pages}{616\bibrangedash 630}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1145/3582016.3582024
+      \endverb
+    \endentry
+    \entry{metasat}{online}{}
+      \name{author}{3}{}{%
+        {{hash=e0ec66b4abeda5a9af0fa0278a0884aa}{%
+           family={Solé\bibnamedelimb i\bibnamedelima Bonet},
+           familyi={S\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7d5f56c7174ead0d9a1d3b8e45b5022c}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Jannis},
+           giveni={J\bibinitperiod}}}%
+        {{hash=59b6a5d662a70256279c26f29dff889a}{%
+           family={Kosmidis},
+           familyi={K\bibinitperiod},
+           given={Leonidas},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{7992e04aa920d2488c418bb7b1643030}
+      \strng{fullhash}{7992e04aa920d2488c418bb7b1643030}
+      \strng{bibnamehash}{7992e04aa920d2488c418bb7b1643030}
+      \strng{authorbibnamehash}{7992e04aa920d2488c418bb7b1643030}
+      \strng{authornamehash}{7992e04aa920d2488c418bb7b1643030}
+      \strng{authorfullhash}{7992e04aa920d2488c418bb7b1643030}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{title}{A {RISC-V} multicore and {GPU} {SoC} platform with a qualifiable software stack for safety critical systems}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 2502.21027
+      \endverb
+    \endentry
+    \entry{virgo}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=3acc57d1c6a96e8817815fb3ba78c3e3}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hansung},
+           giveni={H\bibinitperiod}}}%
+        {{hash=cf90d27e068f75602d5f3103186a2bd9}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Ruohan\bibnamedelima Richard},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=aebac82d6795e072a9118f5517e750ac}{%
+           family={You},
+           familyi={Y\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod}}}%
+        {{hash=966f1597931d318a925d0967cd726929}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Tieliang\bibnamedelima Vamber},
+           giveni={T\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=5ae543a74f5aea9db02a342f9e67f360}{%
+           family={Shao},
+           familyi={S\bibinitperiod},
+           given={Yakun\bibnamedelima Sophia},
+           giveni={Y\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rotterdam, Netherlands}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{9bdd2bfd4e3d6d876bbc208194b09298}
+      \strng{fullhash}{b5c19b2119d83e7d1ce75efcda8fb269}
+      \strng{bibnamehash}{b5c19b2119d83e7d1ce75efcda8fb269}
+      \strng{authorbibnamehash}{b5c19b2119d83e7d1ce75efcda8fb269}
+      \strng{authornamehash}{9bdd2bfd4e3d6d876bbc208194b09298}
+      \strng{authorfullhash}{b5c19b2119d83e7d1ce75efcda8fb269}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 30th {ACM} International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2 ({ASPLOS} 2025)}
+      \field{series}{{ASPLOS} '25}
+      \field{title}{Virgo: Cluster-level matrix unit integration in {GPU}s for scalability and energy efficiency}
+      \field{year}{2025}
+      \field{pages}{1382\bibrangedash 1399}
+      \range{pages}{18}
+      \keyw{accelerators,{GPU}s,machine learning,microarchitecture,power and energy,scalability}
+    \endentry
+    \entry{ventus}{inproceedings}{}
+      \name{author}{12}{}{%
+        {{hash=344b55c3e47ad157c56c023e3fb5b313}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jingzhou},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0a3f003ec9fc9e24588ddce2c4d77019}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Kexiang},
+           giveni={K\bibinitperiod}}}%
+        {{hash=60c67d5d7689116c41378a10dadb796d}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Chufeng},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b65e195c2f4fa1de9da518e52422d864}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Xudong},
+           giveni={X\bibinitperiod}}}%
+        {{hash=f1ffe4bad6424c581cec4d73d09452df}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Zexia},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=9385c7bf50d35166e129d762c26eb30c}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Fangfei},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f64e17d43bc08e5db9f1851005688300}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Yujie},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=982005a069e21014fd66fd854dbbd863}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Mingyuan},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b197475e797655a23b023149c258737b}{%
+           family={Kong},
+           familyi={K\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ac696aa3d4b6ac91f76d77e438aadcbf}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e7da09769202a2a1d161cf58f2a794ac}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Hualin},
+           giveni={H\bibinitperiod}}}%
+        {{hash=49655624e076d0b3363d3ab2d2ecdb59}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Hu},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{36350bfd97cd57e133a7b028bf8eb69e}
+      \strng{fullhash}{12a3165c538c9d9cc417307ff77a8fb9}
+      \strng{bibnamehash}{36350bfd97cd57e133a7b028bf8eb69e}
+      \strng{authorbibnamehash}{36350bfd97cd57e133a7b028bf8eb69e}
+      \strng{authornamehash}{36350bfd97cd57e133a7b028bf8eb69e}
+      \strng{authorfullhash}{12a3165c538c9d9cc417307ff77a8fb9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2024 {IEEE} 42nd International Conference on Computer Design ({ICCD} 2024)}
+      \field{title}{Ventus: A high-performance open-source {GPGPU} based on {RISC-V} and its vector extension}
+      \field{year}{2024}
+      \field{pages}{276\bibrangedash 279}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ICCD63220.2024.00049
+      \endverb
+    \endentry
+    \entry{GPGPU-sim}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=5654df9320bfc85f573ce41a1a791900}{%
+           family={Bakhoda},
+           familyi={B\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2cb6fdb5dbe0f60e2b8608a3a1ae2a70}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={George\bibnamedelima L.},
+           giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=3a6a5f077503c12a06dec25603ddb48c}{%
+           family={Fung},
+           familyi={F\bibinitperiod},
+           given={Wilson\bibnamedelimb W.\bibnamedelimi L.},
+           giveni={W\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=219e19bca487076611582e7355ce1595}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Henry},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f397f8f041fb3b4aa7cb6ab3f93d1754}{%
+           family={Aamodt},
+           familyi={A\bibinitperiod},
+           given={Tor\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{bacb7a5741d9ac822a983170e81d569a}
+      \strng{fullhash}{916e5b2ec0a7cc2174ceff8677cc125e}
+      \strng{bibnamehash}{916e5b2ec0a7cc2174ceff8677cc125e}
+      \strng{authorbibnamehash}{916e5b2ec0a7cc2174ceff8677cc125e}
+      \strng{authornamehash}{bacb7a5741d9ac822a983170e81d569a}
+      \strng{authorfullhash}{916e5b2ec0a7cc2174ceff8677cc125e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2009 {IEEE} International Symposium on Performance Analysis of Systems and Software ({ISPASS} 2009)}
+      \field{title}{Analyzing {CUDA} workloads using a detailed {GPU} simulator}
+      \field{year}{2009}
+      \field{pages}{163\bibrangedash 174}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/ISPASS.2009.4919648
+      \endverb
+    \endentry
+    \entry{gem5-gpu}{article}{}
+      \name{author}{5}{}{%
+        {{hash=0281096ef8370f800667d098fbb6c5e5}{%
+           family={Power},
+           familyi={P\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bc0ad07085a7782ec1ba0213b277530e}{%
+           family={Hestness},
+           familyi={H\bibinitperiod},
+           given={Joel},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c3800f14aa9b86a26d64d918b3f55af0}{%
+           family={Orr},
+           familyi={O\bibinitperiod},
+           given={Marc\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=47b42f84bac2f8d835e3973e96aed32a}{%
+           family={Hill},
+           familyi={H\bibinitperiod},
+           given={Mark\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=90ff7bda6dcccbcbb9072ac658c451ba}{%
+           family={Wood},
+           familyi={W\bibinitperiod},
+           given={David\bibnamedelima A.},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f32eb90fb2624c16a545b999f44e69b}
+      \strng{fullhash}{dda6642052c5d6ce2f080dcd4ddb26a1}
+      \strng{bibnamehash}{dda6642052c5d6ce2f080dcd4ddb26a1}
+      \strng{authorbibnamehash}{dda6642052c5d6ce2f080dcd4ddb26a1}
+      \strng{authornamehash}{5f32eb90fb2624c16a545b999f44e69b}
+      \strng{authorfullhash}{dda6642052c5d6ce2f080dcd4ddb26a1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Computer Architecture Letters}
+      \field{number}{1}
+      \field{title}{gem5-gpu: A heterogeneous {CPU}-{GPU} simulator}
+      \field{volume}{14}
+      \field{year}{2015}
+      \field{pages}{34\bibrangedash 36}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1109/LCA.2014.2299539
+      \endverb
+    \endentry
+    \entry{multi2sim}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=cb0c350d16ca9dc17e6e2d6d0cc59ddf}{%
+           family={Ubal},
+           familyi={U\bibinitperiod},
+           given={Rafael},
+           giveni={R\bibinitperiod}}}%
+        {{hash=85e4091cc8f4a6d49c38d5feba5f7039}{%
+           family={Jang},
+           familyi={J\bibinitperiod},
+           given={Byunghyun},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8cfad02d566c7e2318fdde10f3904d86}{%
+           family={Mistry},
+           familyi={M\bibinitperiod},
+           given={Perhaad},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d1fa84e91f36aab9b7b1dfac1b4f554a}{%
+           family={Schaa},
+           familyi={S\bibinitperiod},
+           given={Dana},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7f42decef9a33d245e91363cb423ad21}{%
+           family={Kaeli},
+           familyi={K\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{a219aaec8cd2ff053f95d16c0a614994}
+      \strng{fullhash}{05b0aff3de83cc5240f184c4cf711c94}
+      \strng{bibnamehash}{05b0aff3de83cc5240f184c4cf711c94}
+      \strng{authorbibnamehash}{05b0aff3de83cc5240f184c4cf711c94}
+      \strng{authornamehash}{a219aaec8cd2ff053f95d16c0a614994}
+      \strng{authorfullhash}{05b0aff3de83cc5240f184c4cf711c94}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 21st International Conference on Parallel Architectures and Compilation Techniques ({PACT} 2012)}
+      \field{title}{Multi2Sim: A simulation framework for {CPU}-{GPU} computing}
+      \field{year}{2012}
+      \field{pages}{335\bibrangedash 344}
+      \range{pages}{10}
+    \endentry
+    \entry{zjx-rgpu}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=72c6096b37b23b6876848088495a3092}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Yuzhi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=56e103a0c0d9df1a3196efa7f3e10ee5}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Xi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=a63ede2cbc794f252e232b89e016f8e2}{%
+           family={Xiang},
+           familyi={X\bibinitperiod},
+           given={Tian},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Singapore}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{9ba175d7eddce20eeda601723be9f746}
+      \strng{fullhash}{9ba175d7eddce20eeda601723be9f746}
+      \strng{bibnamehash}{9ba175d7eddce20eeda601723be9f746}
+      \strng{authorbibnamehash}{9ba175d7eddce20eeda601723be9f746}
+      \strng{authornamehash}{9ba175d7eddce20eeda601723be9f746}
+      \strng{authorfullhash}{9ba175d7eddce20eeda601723be9f746}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2020 2nd International Conference on Big Data Engineering and Technology ({BDET} 2020)}
+      \field{title}{{RISC-V} graphics rendering instruction set extensions for embedded {AI} chips implementation}
+      \field{year}{2020}
+      \field{pages}{85\bibrangedash 88}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1145/3378904.3378926
+      \endverb
+    \endentry
+    \entry{bus}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=0b497ed5a887992a6ac07166406458d2}{%
+           family={Rahimi},
+           familyi={R\bibinitperiod},
+           given={Abbas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=498e4d02d4908002083d9436c1498e5f}{%
+           family={Loi},
+           familyi={L\bibinitperiod},
+           given={Igor},
+           giveni={I\bibinitperiod}}}%
+        {{hash=d554ec53dc22852e047cf048a922affa}{%
+           family={Kakoee},
+           familyi={K\bibinitperiod},
+           given={Mohammad\bibnamedelima Reza},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a9f7e9337d5d74bf7d49f26691ad801a}
+      \strng{fullhash}{0b9171946823b6441864d3601f2f59b3}
+      \strng{bibnamehash}{0b9171946823b6441864d3601f2f59b3}
+      \strng{authorbibnamehash}{0b9171946823b6441864d3601f2f59b3}
+      \strng{authornamehash}{a9f7e9337d5d74bf7d49f26691ad801a}
+      \strng{authorfullhash}{0b9171946823b6441864d3601f2f59b3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2011 Design, Automation and Test in Europe Conference ({DATE} 2011)}
+      \field{title}{A fully-synthesizable single-cycle interconnection network for shared-{L1} processor clusters}
+      \field{year}{2011}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/DATE.2011.5763085
+      \endverb
+    \endentry
+    \entry{newlib}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3db411d732b625c612024ac53cc6fa4a}{%
+           family={Vinschen},
+           familyi={V\bibinitperiod},
+           given={Corinna},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{3db411d732b625c612024ac53cc6fa4a}
+      \strng{fullhash}{3db411d732b625c612024ac53cc6fa4a}
+      \strng{bibnamehash}{3db411d732b625c612024ac53cc6fa4a}
+      \strng{authorbibnamehash}{3db411d732b625c612024ac53cc6fa4a}
+      \strng{authornamehash}{3db411d732b625c612024ac53cc6fa4a}
+      \strng{authorfullhash}{3db411d732b625c612024ac53cc6fa4a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Newlib}
+      \field{urlday}{5}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2005}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://sourceware.org/newlib
+      \endverb
+      \verb{url}
+      \verb http://sourceware.org/newlib
+      \endverb
+    \endentry
+    \entry{mbio_tracker}{article}{}
+      \name{author}{5}{}{%
+        {{hash=b60c683ea8e036dc9f96c19633d1a9df}{%
+           family={Dell'Agnola},
+           familyi={D\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=6f383435e4afb17bb524bfda12982fe5}{%
+           family={Pale},
+           familyi={P\bibinitperiod},
+           given={Una},
+           giveni={U\bibinitperiod}}}%
+        {{hash=60ae3855b607f8c52041c265f4c47776}{%
+           family={Marino},
+           familyi={M\bibinitperiod},
+           given={Rodrigo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=e380be46858c37df19899fbd39296a4f}{%
+           family={Arza},
+           familyi={A\bibinitperiod},
+           given={Adriana},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{10271a8d31032e5507f0e4bab9a5dadd}
+      \strng{fullhash}{d2394e0e08851e78f99c0b35e0f3b2ed}
+      \strng{bibnamehash}{d2394e0e08851e78f99c0b35e0f3b2ed}
+      \strng{authorbibnamehash}{d2394e0e08851e78f99c0b35e0f3b2ed}
+      \strng{authornamehash}{10271a8d31032e5507f0e4bab9a5dadd}
+      \strng{authorfullhash}{d2394e0e08851e78f99c0b35e0f3b2ed}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{IEEE} Transactions on Biomedical Circuits and Systems}
+      \field{number}{5}
+      \field{title}{{MBioTracker}: Multimodal self-aware bio-monitoring wearable system for online workload detection}
+      \field{volume}{15}
+      \field{year}{2021}
+      \field{pages}{994\bibrangedash 1007}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/TBCAS.2021.3110317
+      \endverb
+    \endentry
+    \entry{wukong}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=103e43f76fa40a8630997566914f11c9}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Pengbo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=97086af6f9b912b0d193298184bd518f}{%
+           family={Ponzina},
+           familyi={P\bibinitperiod},
+           given={Flavio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8e173bdc19ca87066bf2ae35b38311bf}{%
+           family={Levisse},
+           familyi={L\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ddf6e4def73c97eaa75c896704e51f97}{%
+           family={Biswas},
+           familyi={B\bibinitperiod},
+           given={Dwaipayan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a9a2721a044e1591054b8a918cb5e79a}{%
+           family={Ansaloni},
+           familyi={A\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c724e73ec61ecb6de11c11c87dba095e}{%
+           family={Atienza},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=19dac040bf427e8a0d1d8a681954cfa0}{%
+           family={Catthoor},
+           familyi={C\bibinitperiod},
+           given={Francky},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{b845a3dea4e7f1edec9509660cb2f25b}
+      \strng{fullhash}{47fd52c72778ea70e379379367680f28}
+      \strng{bibnamehash}{b845a3dea4e7f1edec9509660cb2f25b}
+      \strng{authorbibnamehash}{b845a3dea4e7f1edec9509660cb2f25b}
+      \strng{authornamehash}{b845a3dea4e7f1edec9509660cb2f25b}
+      \strng{authorfullhash}{47fd52c72778ea70e379379367680f28}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2024 {IEEE} Computer Society Annual Symposium on {VLSI} ({ISVLSI} 2024)}
+      \field{title}{{DBFS}: Dynamic bitwidth-frequency scaling for efficient software-defined {SIMD}}
+      \field{year}{2024}
+      \field{pages}{204\bibrangedash 209}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ISVLSI61997.2024.00046
+      \endverb
+    \endentry
+    \entry{eros}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=893ca2dbca34d70c88530f193b96fe3e}{%
+           family={Waucquez},
+           familyi={W\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+        {{hash=73aeba4c16f921b90a834eeecb711444}{%
+           family={Rodriguez},
+           familyi={R\bibinitperiod},
+           given={Alfonso},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{ccf4d5f79caf9ca3117cfdbef5d27555}
+      \strng{fullhash}{ccf4d5f79caf9ca3117cfdbef5d27555}
+      \strng{bibnamehash}{ccf4d5f79caf9ca3117cfdbef5d27555}
+      \strng{authorbibnamehash}{ccf4d5f79caf9ca3117cfdbef5d27555}
+      \strng{authornamehash}{ccf4d5f79caf9ca3117cfdbef5d27555}
+      \strng{authorfullhash}{ccf4d5f79caf9ca3117cfdbef5d27555}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 22nd {ACM} International Conference on Computing Frontiers: Workshops and Special Sessions ({CF} '25 Companion)}
+      \field{title}{{EROS}: Extensible reliable offloading solution}
+      \field{year}{2025}
+      \field{pages}{82\bibrangedash 85}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1145/3706594.3726982
+      \endverb
+      \keyw{RISC-V,open-source hardware,safety-critical systems,adaptive and custom accelerators}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

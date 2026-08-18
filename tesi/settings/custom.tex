@@ -1,0 +1,61 @@
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+\fancyhead[RE]{\textbf{\leftmark}}
+\fancyhead[LE]{\textbf{\chaptername\ \thechapter\ }}
+\fancyhead[LO]{\textbf{\leftmark}}
+\fancyhead[RO]{\textbf{\chaptername\ \thechapter\ }}
+
+\usepackage{acronym}
+\usepackage{stfloats}
+\usepackage{enumitem}
+\usepackage{pdfpages}
+\usepackage{pifont}
+\usepackage{amsmath,amsfonts}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{textcomp}
+\usepackage[per-mode=symbol,retain-explicit-plus,separate-uncertainty=true,detect-all=true]{siunitx}
+\usepackage{xcolor} % options x11names,dvipsnames passed in main.tex (xcolor is loaded by template.tex)
+
+\newcommand{\cmark}{\ding{51}} % ✓
+\newcommand{\xmark}{\ding{55}} % ✗
+
+\definecolor{mygreen}{HTML}{007480}
+\definecolor{myred}{HTML}{6D1A36}
+
+\lstdefinestyle{python}{
+    language=Python,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{orange},
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    columns=fullflexible,
+    backgroundcolor=\color{white},
+    captionpos=b
+}
+
+\usepackage{csquotes}
+\usepackage[style=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
+\addbibresource{tail/References.bib}
+
+% Stop biblatex from changing the case of titles/booktitles
+\DeclareFieldFormat{titlecase}{#1}
+\DeclareFieldFormat{sentencecase}{#1}
+\DefineBibliographyExtras{italian}{
+  \protected\def\mkbibsentencecase#1{#1}
+}
+
+\renewcommand{\thefootnote}{\Roman{footnote}}
+
+\newcommand{\insertblankpages}[1]{
+  \clearpage
+  \null
+  \thispagestyle{empty}
+  \newpage
+  \ifnum #1>1
+    \insertblankpages{\numexpr#1-1\relax}
+  \fi
+}

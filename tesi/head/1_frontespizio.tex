@@ -1,0 +1,53 @@
+% =============================================================================
+% Campi del frontespizio: compilare qui, il layout sotto non va toccato.
+% =============================================================================
+\newcommand{\Dipartimento}{DIPARTIMENTO DI SCIENZE DELLA FORMAZIONE}
+\newcommand{\CorsoDiLaurea}{CORSO DI LAUREA IN}
+\newcommand{\TitoloTesi}{-TITOLO DELLA TESI-}
+\newcommand{\Relatore}{Nome Cognome}
+\newcommand{\Correlatore}{Nome Cognome}
+\newcommand{\Candidato}{Nome Cognome}
+\newcommand{\AnnoAccademico}{ANNO ACCADEMICO}
+% =============================================================================
+
+\begin{titlepage}
+\begin{center}
+
+    \includegraphics[width=4.4cm]{images/logo_unige.png}
+
+    \vspace{1.4cm}
+
+    {\fontsize{18}{22}\selectfont \Dipartimento \par}
+
+    \vspace{2.4cm}
+
+    {\fontsize{20}{24}\selectfont \CorsoDiLaurea \par}
+
+    \vspace{2.4cm}
+
+    {\fontsize{18}{22}\selectfont \TitoloTesi \par}
+
+\end{center}
+
+\vfill
+
+\begin{flushright}
+    \begin{minipage}{0.42\textwidth}
+        {\fontsize{14}{25}\selectfont
+            \textit{Relatore:}\\
+            \Relatore\\[0.6em]
+            \textit{Correlatore:}\\
+            \Correlatore\\[0.6em]
+            \textit{Candidato:}\\
+            \Candidato \par
+        }
+    \end{minipage}
+\end{flushright}
+
+\vfill
+
+\begin{center}
+    {\fontsize{18}{22}\selectfont\bfseries \AnnoAccademico \par}
+\end{center}
+
+\end{titlepage}

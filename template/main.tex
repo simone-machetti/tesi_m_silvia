@@ -1,0 +1,59 @@
+\documentclass[a4paper,12pt,fleqn]{book}
+
+\PassOptionsToPackage{x11names,dvipsnames}{xcolor}
+
+\input{settings/epfl_template.tex}
+\input{settings/custom.tex}
+
+\begin{document}
+\frontmatter
+\input{head/1_titlepage.tex}
+\input{head/2_dedication}
+\input{head/3_acknowledgements}
+\setcounter{page}{0}
+% \pagestyle{plain}
+\input{head/4_abstracts}
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+\tableofcontents
+\cleardoublepage
+
+\setlength{\parskip}{1em}
+
+\mainmatter
+% \pagestyle{fancy}
+\input{main/1_introduction}
+\input{main/2_femu}
+\input{main/3_x-heep}
+\input{main/4_e-gpu}
+\input{main/5_conclusions}
+
+% \pagestyle{plain}
+\input{tail/chip_gallery}
+
+\pagestyle{plain}
+\phantomsection
+\addcontentsline{toc}{chapter}{List of figures}
+\listoffigures
+\cleardoublepage
+
+\phantomsection
+\addcontentsline{toc}{chapter}{List of tables}
+\listoftables
+\cleardoublepage
+
+% \pagestyle{fancy}
+
+\backmatter
+\input{tail/biblio}
+
+\cleardoublepage
+\phantomsection               
+% \addcontentsline{toc}{chapter}{Curriculum vitae}
+
+\includepdf[pages=-]{tail/CV_PhD_Thesis.pdf}
+% \includepdf[pages=-, link=true]{tail/CV_PhD_Thesis.pdf}
+
+\end{document}

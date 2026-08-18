@@ -1,0 +1,84 @@
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+\fancyhead[RE]{\textbf{\leftmark}}
+\fancyhead[LE]{\textbf{\chaptername\ \thechapter\ }}
+\fancyhead[LO]{\textbf{\leftmark}}
+\fancyhead[RO]{\textbf{\chaptername\ \thechapter\ }}
+
+\usepackage[version=4]{mhchem}
+\usepackage{chemist}
+\usepackage{chemfig}
+\usepackage{acronym}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage{stfloats}
+\usepackage{titlesec}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{subcaption}
+\usepackage{pdfpages}
+\usepackage{pifont}
+\usepackage{orcidlink}
+\usepackage{amsmath,amsfonts}
+\usepackage{algorithmic}
+\usepackage{array}
+\usepackage[per-mode=symbol,retain-explicit-plus,separate-uncertainty=true,detect-all=true]{siunitx}
+\usepackage{xcolor} % options x11names,dvipsnames passed in main.tex (xcolor is loaded by epfl_template.tex)
+\DeclareSIUnit{\cycle}{cycle}
+\DeclareSIUnit{\gateequiv}{GE}
+\DeclareSIUnit{\kilogateequiv}{kGE}
+
+\newcommand{\cmark}{\ding{51}} % ✓
+\newcommand{\xmark}{\ding{55}} % ✗
+
+\definecolor{mygreen}{HTML}{007480}
+\definecolor{myred}{HTML}{6D1A36}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{array}
+
+\lstdefinestyle{python}{
+    language=Python,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{orange},
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    columns=fullflexible,
+    backgroundcolor=\color{white},
+    captionpos=b
+}
+
+\usepackage{textcomp}
+\usepackage{stfloats}
+
+\usepackage{csquotes}
+% \usepackage[backend=biber,style=apa]{biblatex}
+% \addbibresource{tail/References.bib}
+
+\usepackage[style=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
+\addbibresource{tail/References.bib}
+
+% Stop biblatex from changing the case of titles/booktitles
+\DeclareFieldFormat{titlecase}{#1}
+\DeclareFieldFormat{sentencecase}{#1}
+\DefineBibliographyExtras{english}{
+  \protected\def\mkbibsentencecase#1{#1}
+}
+
+\renewcommand{\thefootnote}{\Roman{footnote}}
+
+\newcommand{\insertblankpages}[1]{
+  \clearpage
+  \null
+  \thispagestyle{empty}
+  \newpage
+  \ifnum #1>1
+    \insertblankpages{\numexpr#1-1\relax}
+  \fi
+}

@@ -1,0 +1,35 @@
+\babel@toc {english}{}\relax 
+\babel@toc {french}{}\relax 
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Block diagram of the thesis structure and contribution flow.\relax }}{13}{figure.caption.5}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Block diagram of the \mbox {FEMU} framework for prototyping TinyAI heterogeneous systems.\relax }}{26}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Design cycle for prototyping and evaluating TinyAI accelerators.\relax }}{31}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Block diagram of the \mbox {X-HEEP-FEMU} platform focusing on the programmable logic, implemented on the Xilinx Zynq-7020 on the Pynq-Z2 board.\relax }}{34}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Block diagram of the \mbox {X-HEEP-FEMU} platform focusing on the processing system, implemented on the Xilinx Zynq-7020 on the Pynq-Z2 board.\relax }}{35}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Pinout of the Pynq-Z2 board.\relax }}{38}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Code snippet of an HelloWorld application using the proposed \mbox {X-HEEP} Python class from Jupyter Notebooks.\relax }}{44}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Normalized acquisition time and energy on the \mbox {X-HEEP-FEMU} platform and the \mbox {HEEPocrates} chip for a \SI {5}{\second } acquisition window, with sampling frequency varying from \SI {100}{\hertz } to \SI {100}{\kilo \hertz }.\relax }}{52}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Normalized processing time and energy on the \mbox {X-HEEP-FEMU} platform and the \mbox {HEEPocrates} chip for three representative kernels executed on both the CPU and the CGRA accelerator.\relax }}{54}{figure.caption.19}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces High-level architecture of the \textit {X-HEEP} platform.\relax }}{69}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Block diagram of the \textit {HEEPocrates} architecture.\relax }}{81}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces \textit {HEEPocrates} layout, silicon photo, and physical chip (on a Swiss 5-cent franc coin).\relax }}{83}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces \textit {HEEPocrates} testing board under design.\relax }}{87}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Area and leakage distributions among the internal components of the \mbox {X-HEEP platform}.\relax }}{93}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Comparison of area (kGE) and sustained memory bandwidth (bits/cycle) for different interconnect configurations.\relax }}{95}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Voltage scaling impact on frequency, total power, leakage power, and dynamic power density for the \mbox {HEEPocrates} chip.\relax }}{97}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Energy consumption of our benchmark running on common healthcare microcontrollers and on \mbox {HEEPocrates} at \SI {0.8}{\volt }. P: Processing; I: Idle.\relax }}{99}{figure.caption.36}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Block diagram of the OpenCL platform model.\relax }}{120}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Block diagram of the OpenCL execution model.\relax }}{121}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Block diagram of the OpenCL memory model.\relax }}{122}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces High-level architecture of the proposed \mbox {e-GPU} platform, highlighting its modular components.\relax }}{125}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Block diagram of the \mbox {Tiny-OpenCL} kernel compilation flow.\relax }}{131}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Code snippet of a matrix multiplication in OpenCL.\relax }}{133}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Integration of the proposed \mbox {e-GPU} with the X-HEEP host~\blx@tocontentsinit {0}\cite {x-heep}, resulting in the complete APU system.\relax }}{135}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Breakdown of area and leakage power for the selected e-GPU systems compared to the baseline host system.\relax }}{144}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Breakdown of execution time (in logarithmic scale) and normalized execution time for the selected e-GPU systems across matrix multiplication kernels.\relax }}{146}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Speed-up and energy reduction of the TinyBio benchmark on the selected e-GPU systems compared to the baseline host system.\relax }}{148}{figure.caption.53}%
+\addvspace {10\p@ }

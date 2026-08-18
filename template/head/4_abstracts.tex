@@ -1,0 +1,96 @@
+\cleardoublepage
+\chapter*{Abstract}
+% \pagestyle{plain}
+~\newline~\newline~
+\addcontentsline{toc}{chapter}{Abstract (English/Français)}
+\thispagestyle{plain}
+
+\setlength{\parskip}{1em}
+
+    % Edge domain
+    The increasing demand for real-time machine learning applications has driven the rapid growth of edge computing. By performing data processing directly on local devices rather than relying on remote cloud infrastructure, edge computing minimizes latency, strengthens data privacy, and enhances energy efficiency. Nonetheless, edge workloads impose strict constraints on processing power, responsiveness, and energy consumption, highlighting the need for tailored hardware solutions.
+    
+    % Problem: exploration challenges
+    This is particularly critical for ultra-low-power edge applications (\mbox{TinyAI}), where balancing performance, power, and area presents significant challenges. The adopted devices are often battery-powered, operating under stringent power budgets, typically in the tens of milliwatts, and constrained by strict area limitations, with entire systems-on-chip (SoC) occupying only a few square millimeters. Prototyping and evaluating such systems demand tight hardware/software co-design and flexible exploration platforms capable of supporting real-time execution and delivering accurate performance and energy measurements. This involves evaluating various acquisition schemes using real sampled data, as well as exploring multiple processing algorithms for efficient computation. 
+    
+    % SOTA + Limitations of SOTA
+    Existing register-transfer level (RTL) platforms offer cycle-accurate modeling but are often slow, inflexible, and require complete hardware implementations, making them unsuitable for early-stage exploration. Conversely, software-based simulators are faster and easier to use but typically lack the fidelity to guide reliable design decisions for critical \mbox{TinyAI} systems.
+    
+    Field-programmable gate array (FPGA)-based platforms aim to bridge this gap by enabling real-time execution and hardware prototyping. However, many existing platforms are server-based, relying on host-FPGA models that do not reflect the needs of resource-constrained devices or require complex external setups and connectivity to emulate realistic sensor acquisitions, which limits their usability. Furthermore, most lack integrated mechanisms for accurate performance and energy estimation, a critical requirement for this domain.
+
+    % My solution: Methodology
+    To overcome these challenges, I developed the \textit{FPGA EMUlation (\mbox{FEMU})}, an open-source and configurable RISC-V framework for prototyping and evaluating \mbox{TinyAI} applications on SoC-based FPGAs. This approach combines a heterogeneous system implemented in reconfigurable logic with a software environment running on an application-class processor under a standard operating system (OS). The input/output peripherals are virtualized on the OS, enabling flexible communication and processing of comprehensive signal databases to evaluate the correctness of the system. Custom accelerators can be incorporated as virtualized software models on the OS for early-stage testing or as RTL modules in reconfigurable logic. The framework supports system-level performance and energy estimation using models derived from real-world silicon measurements. Developers interact with the framework through an OS-based interface, which simplifies communication and accelerates design space exploration.
+    
+    \thispagestyle{plain}
+    % Problem: host configurability
+    At the core of \mbox{FEMU} lies the heterogeneous system, which combines a flexible host to run control and communication tasks with specialized accelerators tailored to specific application domains. However, each accelerator presents unique requirements regarding ports, bandwidth, performance, area, and power trade-offs. As a result, a highly configurable host is essential to adapt both hardware and software to the diverse needs of these accelerators.
+    
+    % SOTA + Limitations of SOTA
+    Various open-source host platforms have emerged in recent years. However, many lack the configurability to customize internal components and seamlessly integrate accelerators. Consequently, developers who aim to connect custom IPs frequently encounter substantial design overhead, requiring extensive manual modifications to hardware and software stacks.
+    
+    % My solution: X-HEEP
+    To address these limitations, I designed the \textit{eXtendible Heterogeneous Energy Efficient Platform (X-HEEP)}, an open-source and configurable RISC-V platform that flexibly integrates within \mbox{FEMU} for supporting the connection of \mbox{TinyAI} accelerators. X-HEEP offers extensive configurability of CPUs, memory, interconnects, and peripherals, and features the eXtendible Accelerator InterFace (XAIF), which enables integration of accelerators with varying requirements. Moreover, it supports diverse development flows, including FPGA prototyping, application-specific integrated circuits (ASIC) implementation, and mixed SystemC and RTL simulation, facilitating efficient design space exploration and optimization.
+    
+    % Problem: more flexibility
+    While most accelerators target domain-specific tasks, more versatile solutions are required when addressing a broader range of applications with varying demands. In this context, graphics processing units (GPUs) have proven particularly effective in exploiting data parallelism across diverse workloads, from computer graphics to machine learning. When integrated with a host like X-HEEP, GPUs form accelerated processing units (APUs), creating unified systems capable of efficiently handling both control-oriented and compute-intensive tasks.
+    
+    % SOTA + Limitations of SOTA
+    Although various GPU architectures exist, ranging from high-performance to edge-oriented designs, their applicability to \mbox{TinyAI} devices remains largely underexplored due to stringent power and area constraints. Furthermore, the lack of file systems and multi-threading support in such platforms limits compatibility with standard GPU programming frameworks, such as conventional OpenCL implementations, thereby necessitating custom software stacks.
+
+    \thispagestyle{plain}
+    % My solution: e-GPU
+    To bridge these gaps, I introduced the \textit{embedded GPU (e-GPU)}, an open-source and configurable RISC-V platform that flexibly integrates within X-HEEP for investigating the feasibility and trade-offs of leveraging GPUs in the \mbox{TinyAI} domain. Its extensive configurability enables area and power optimization to meet the requirements of these applications. Furthermore, a custom tiny open computing language (Tiny-OpenCL) implementation provides a lightweight programming framework for these resource-constrained devices.
+    
+    % Conclusion
+    In conclusion, this thesis presents a comprehensive set of contributions toward enabling efficient and flexible \mbox{TinyAI} systems. Through the realization of the \mbox{FEMU} framework for prototyping and evaluation, the development of the X-HEEP platform for accelerator integration, and the introduction of the e-GPU platform for exploring GPU-based acceleration, I addressed key challenges spanning configurability, extendability, and programmability. These contributions demonstrate how dedicated hardware/software co-design can empower the next generation of \mbox{TinyAI} devices.
+
+\setlength{\parskip}{0em}
+
+\begin{otherlanguage}{french}
+\cleardoublepage
+\chapter*{Résumé}
+~\newline~\newline~
+
+\setlength{\parskip}{1em}
+
+    % Domaine de l’edge computing
+    La demande croissante pour les applications d’apprentissage automatique en temps réel a stimulé le rapide développement de calculs en périphérie. En traitant les données directement sur des dispositifs locaux plutôt qu’en s’appuyant sur des infrastructures cloud à distance, l’edge computing réduit la latence, renforce la confidentialité des données et améliore l’efficacité énergétique. Toutefois, effectuer des calculs sur l'edge impose des contraintes strictes en termes de puissance de calcul, de réactivité et de consommation énergétique, soulignant ainsi la nécessité de solutions matérielles adaptées.
+
+    \thispagestyle{plain}
+    % Problème : défis de l’exploration
+    Cette problématique est particulièrement critique pour les applications edge à très faible consommation (\mbox{TinyAI}), où l’équilibre entre performances, consommation et surface constitue un défi majeur. Les dispositifs employés sont souvent alimentés par batterie, soumis à des budgets énergétiques très limités, généralement de l’ordre de quelques dizaines de milliwatts, et hautement limités en termes de surface, les systèmes-sur-puce (SoC) ne dépassant que rarement quelques millimètres carrés. Le prototypage et l’évaluation de tels systèmes exigent une co-conception matériel/logiciel étroite ainsi que des plateformes d’exploration flexibles, capables de supporter l’exécution en temps réel tout en fournissant des mesures précises de performances et de consommation. Cela implique d’évaluer différents schémas d’acquisition à partir de données réelles, ainsi que d’explorer plusieurs algorithmes de traitement pour un calcul efficace.
+    
+    % État de l’art + limitations
+    Les plateformes RTL actuelles (register-transfer level) offrent une modélisation précise au cycle près, mais elles sont souvent lentes, rigides et requièrent une implémentation matérielle complète, ce qui les rend inadaptées aux phases initiales d’exploration. À l’inverse, les simulateurs logiciels sont plus rapides et faciles à utiliser, mais manquent généralement de fidélité pour guider de manière fiable les décisions de conception de systèmes \mbox{TinyAI} hautement contraints.
+    
+    Les plateformes basées sur l'utilisation de FPGA (Field-Programmable Gate Array) visent à combler cet écart en permettant l’exécution en temps réel et le prototypage matériel. Cependant, nombre d’entre elles sont hébergées sur des serveurs, reposant sur des modèles hôte-FPGA qui ne reflètent pas les besoins des dispositifs à ressources limitées. Certaines nécessitent également des configurations externes complexes ainsi qu’une connectivité particulière pour émuler des acquisitions de capteurs réalistes, ce qui limite leur maniabilité. De plus, la plupart ne disposent pas de mécanismes intégrés pour estimer avec précision les performances et la consommation énergétique, bien que essentiels dans ce domaine.
+
+    \thispagestyle{plain}
+    % Ma solution : Méthodologie
+    Pour surmonter ces défis, j’ai développé \textit{FPGA EMUlation (\mbox{FEMU})}, un framework RISC-V open source et configurable pour le prototypage et l’évaluation d’applications \mbox{TinyAI} sur des FPGA de type SoC. Cette approche combine un système hétérogène implémenté en logique reconfigurable avec un environnement logiciel s’exécutant sur un processeur de classe applicative sous un système d’exploitation (OS) standard. Les périphériques d’entrée/sortie sont virtualisés au niveau du système d’exploitation, ce qui permet d’assurer une communication flexible ainsi que le traitement de bases de données de signaux exhaustives, en vue d’évaluer avec précision la validité du système. Des accélérateurs personnalisés peuvent être intégrés soit comme modèles logiciels virtualisés dans l’OS pour des tests précoces, soit comme modules RTL dans la logique reconfigurable. Le framework prend en charge l’estimation des performances et de la consommation au niveau du système à partir de modèles dérivés de mesures réelles sur silicium. Les développeurs interagissent avec le framework via une interface OS, ce qui simplifie la communication et accélère l’exploration de l’espace de conception.
+    
+    % Problème : configurabilité de l’hôte
+    Au cœur du \mbox{FEMU} se trouve un système hétérogène associant un hôte flexible, dédié aux tâches de contrôle et de communication, à des accélérateurs spécialisés adaptés à des domaines d’application spécifiques. Toutefois, chaque accélérateur présente des besoins uniques en matière d'interface, de bande passante, de performances, de surface et de consommation. Un hôte hautement configurable est donc indispensable pour adapter simultanément les exigences matériel et logiciel de ces accélérateurs.
+    
+    % État de l’art + limitations
+    Ces dernières années, plusieurs plateformes hôtes libre d'accès ont vu le jour. Cependant, beaucoup ne permettent pas de personnaliser suffisamment les composants internes ni d’intégrer facilement de nouveaux accélérateurs. Ainsi, les développeurs souhaitant connecter des IP personnalisées se heurtent souvent à une charge additionnelle de travail, nécessitant de nombreuses modifications manuelles des piles matérielles et logicielles.
+    
+    % Ma solution : X-HEEP
+    Pour répondre à ces limitations, j’ai conçu \textit{eXtendible Heterogeneous Energy Efficient Platform (X-HEEP)}, une plateforme RISC-V libre d'àccès et configurable, intégrée de manière flexible à \mbox{FEMU} afin de faciliter la connexion d’accélérateurs \mbox{TinyAI}. X-HEEP offre une large configurabilité des processeurs, de la mémoire, des interconnexions et des périphériques, et intègre l’\textit{eXtendible Accelerator InterFace} (XAIF) ce qui permet l’intégration d’accélérateurs aux caractéristiques variées. Elle supporte différents flux de développement, allant du prototypage FPGA à l’implémentation ASIC, en passant par la simulation combinée SystemC/RTL, ce qui en facilite l'exploration et l'optimisation de l’espace de conception.
+
+    \thispagestyle{plain}
+    % Problème : plus de flexibilité
+    Alors que la plupart des accélérateurs ciblent des tâches spécifiques à un domaine, des solutions plus polyvalentes sont nécessaires pour couvrir une gamme plus large d’applications aux exigences diverses. Dans ce contexte, les processeurs graphiques (GPU) se sont avérés particulièrement efficaces pour exploiter le parallélisme des données dans des charges de travail variées, allant du rendu graphique à l’apprentissage automatique. Lorsqu’ils sont intégrés dans un hôte tel que X-HEEP, les GPU forment des unités de traitement accélérées (APU), créant des systèmes unifiés capables de gérer efficacement à la fois des tâches de contrôle et des tâches intensives en calcul.
+    
+    % État de l’art + limitations
+    Bien que diverses architectures GPU existent, allant des modèles hautes performances aux conceptions optimisées pour l’edge, leur utilisation dans le domaine \mbox{TinyAI} reste largement inexplorée en raison de contraintes sévères en puissance et en surface. Par ailleurs, l’absence de systèmes de fichiers et de support du multithreading sur ces plateformes limite la compatibilité avec les frameworks standards de programmation GPU, tels que les implémentations OpenCL classiques, rendant nécessaire le développement de piles logicielles spécifiques.
+    
+    % Ma solution : e-GPU
+    Pour combler ces lacunes, j’ai introduit \textit{embedded GPU (e-GPU)}, une plateforme RISC-V libre d'accès et configurable, intégrée de façon flexible à X-HEEP pour étudier la faisabilité et les compromis liés à l’utilisation de GPU dans le domaine \mbox{TinyAI}. Sa grande configurabilité permet d’optimiser la surface et la consommation de puissance afin de répondre aux contraintes de ces applications. De plus, une implémentation légère et spécifique du \textit{tiny open computing language} (Tiny-OpenCL) fournit un environnement de programmation adapté aux dispositifs à ressources limitées.
+    
+    % Conclusion
+    En conclusion, cette thèse présente un ensemble complet de contributions visant à concevoir des systèmes \mbox{TinyAI} à la fois efficaces et flexibles. Grâce à la mise en œuvre du framework \mbox{FEMU} pour le prototypage et l’évaluation, au développement de la plateforme X-HEEP pour l’intégration d’accélérateurs, et à l’introduction de la plateforme e-GPU pour l’exploration de l’accélération GPU, j’ai relevé des défis majeurs en matière de configurabilité, d’extensibilité et de programmabilité. Ces travaux démontrent comment une conception combinée matériel/logiciel ciblée peut soutenir la prochaine génération de dispositifs \mbox{TinyAI}.
+
+\setlength{\parskip}{0em}
+
+\end{otherlanguage}

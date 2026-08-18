@@ -1,0 +1,169 @@
+\chapter{Conclusions}
+
+    \section{Summary}
+    
+        The work presented in this thesis has been carried out in the context of the growing demand for real-time machine learning applications across domains such as healthcare, autonomous robotics, precision agriculture, and industrial automation. These emerging use cases have driven a paradigm shift toward on-device intelligence, where systems must not only execute complex inference tasks but also meet strict requirements in terms of latency, data privacy, and energy efficiency to ensure long-term autonomous operation. Traditional cloud-based computing approaches, in which raw sensor data is transmitted to remote servers for processing, are ill-suited to such constraints. Although centralized computation offers scalability and raw performance, it suffers from high communication delays, a higher risk of data breaches, and significant energy costs associated with continuous wireless transmission.
+        
+        Edge computing has emerged as a viable alternative by relocating computation closer to the data source, either directly on the device or within its immediate environment. This approach minimizes latency for time-critical decision making, enhances privacy by keeping sensitive data local, and reduces energy consumption by limiting unnecessary data transfers. These properties are particularly relevant to the ultra-low power edge domain, also known as TinyAI, which encompasses devices operating under severe power, silicon area, and latency constraints~\cite{co-design_vision}. In such systems, prolonged autonomy, compact form factors, and immediate responsiveness are mandatory. Typical TinyAI workloads can be decomposed into two interdependent phases~\cite{bio_apps}: acquisition, where data from sensors is collected through low-power analog-to-digital converters and peripheral interfaces~\cite{taji2024energy}; and processing, where the data undergo digital signal processing or lightweight machine learning inference. These phases often overlap, requiring precise real-time coordination to meet throughput and energy targets.
+        
+        Addressing these challenges has led to the widespread adoption of heterogeneous systems, combining a general-purpose central processing unit (CPU) for control and orchestration with one or more domain-specific accelerators~\cite{e-gpu, asip, oe-cgra, blade} for computationally intensive tasks. This task division allows designers to balance flexibility and efficiency, tailoring accelerators to application-specific throughput, precision, and memory access requirements, while employing aggressive power management to minimize leakage during idle periods. Open-source hardware ecosystems offer an ideal foundation for such systems, enabling rapid prototyping, reproducibility, and design extensibility without the restrictions of proprietary solutions.
+        
+        In this context, the RISC-V ISA stands out as a particularly suitable enabler for TinyAI platforms. Its modular design allows for the inclusion of only essential functionality to reduce power and area, or the addition of custom instructions to accelerate targeted workloads. An extensive ecosystem of RISC-V-compatible IPs and standardized interfaces facilitates seamless integration with accelerators and peripherals, while open toolchains, debuggers, and simulators enable complete end-to-end development pipelines.
+        
+        Building upon these foundations, this thesis has developed a set of open-source, configurable, and energy-efficient platforms tailored to the stringent requirements of TinyAI applications. The contributions span the complete design stack, from real-time system prototyping and energy-accurate evaluation methodologies to flexible host architectures and programmable accelerators. The remainder of this chapter analyses each of these contributions individually, summarizing their objectives, the technical innovations they introduced, and the results achieved through their experimental validation.
+        
+        \subsection*{Contribution 1: The FEMU Framework}
+        
+            The design of heterogeneous systems for TinyAI must reconcile extreme constraints in power, area, and computational resources with the need for rapid iteration and thorough evaluation. Achieving optimal balance requires a development flow that supports functional validation, design space exploration, and energy-sensitive optimization under realistic operating conditions. However, existing methodologies force one to make a choice between accuracy and agility. RTL simulation offers detailed insight but at the cost of impractically slow execution for large workloads; high-level simulation enables faster iteration but lacks the fidelity needed for fine-grained performance and energy analysis; and FPGA-based prototyping provides a promising compromise but is often geared toward high-performance domains, requiring complex setups and offering limited support for integrated monitoring in the TinyAI context.
+
+            To address these limitations, this work proposes the FPGA EMUlation (FEMU)~\cite{femu}, an open-source and configurable emulation framework for prototyping and evaluating TinyAI heterogeneous systems. This approach leverages the capability of SoC-based FPGAs to combine the under-development system implemented in a reconfigurable hardware region (RH) for quick prototyping, with a software environment running under a standard operating system on a control software region (CS) for supervision and communication. The system peripherals are virtualized on the CS, whereas accelerators can be integrated as virtualized software models on the CS for early-stage testing or as RTL modules in the RH for later-stage development. The framework supports system-level performance and energy estimation using models derived from real-world silicon measurements. Developers interact with \mbox{FEMU} via a software interface, which simplifies communication and accelerates design space exploration.
+        
+            The key innovations of my PhD thesis are summarized as follows:
+
+            \vspace{-1em}
+            \begin{itemize}
+                \item \mbox{FEMU}~\cite{femu}: A reusable and modular emulation framework for prototyping and evaluating heterogeneous systems tailored for TinyAI applications.
+        
+                \item A hybrid hardware/software co-design strategy that enables system-level virtualization of debuggers, ADCs, and flash memories, and supports accelerator integration during both early-stage development using software models and later-stage deployment with RTL implementations.
+        
+                \item A system-level performance and energy estimation approach that combines runtime monitoring with technology-specific models, enabling accurate and practical system evaluation.
+        
+                \item \mbox{X-HEEP-FEMU}: a complete emulation platform realized by instantiating the proposed framework with real-world hardware and software components, released as open source.
+
+                \item A publicly released open-source repository that includes the complete code and documentation of \mbox{X-HEEP-FEMU} to support future research on TinyAI heterogeneous systems.\footnote{The complete code and documentation of the \mbox{X-HEEP-FEMU} platform are available at \url{https://github.com/esl-epfl/x-heep-femu} and \url{https://github.com/esl-epfl/x-heep-femu-sdk}.}
+            \end{itemize}
+            \vspace{-1em}
+
+            The \mbox{X-HEEP-FEMU} platform was evaluated across a series of representative use cases. The experimental campaign demonstrated strong alignment with silicon-based measurements, confirming both timing fidelity and accurate energy estimation. In particular, the following quantitative outcomes were obtained:
+    
+            \vspace{-1em}
+            \begin{itemize}
+                \item \textbf{Signal acquisition characterization:} Data acquisition often dominates TinyAI system activity during long idle phases, making accurate modeling of peripheral behavior and energy use essential. This experiment verified that the ADC virtualization infrastructure replicates real-time sampling and power patterns across a wide frequency range. For a \SI{5}{\second} window, emulation matched silicon timing exactly, with energy errors below \SI{5}{\percent}, and reproduced the shift from sleep-dominated operation at \SI{100}{\hertz} (CPU active less than \SI{1}{\percent}) to active-dominated at \SI{100}{\kilo\hertz} (CPU active more than \SI{70}{\percent}), confirming its ability to model duty-cycle-dependent energy behavior.
+            
+                \item \textbf{Computation of typical TinyAI workloads:} Core kernels such as matrix multiplication, convolution, and fast Fourier transform (FFT) were evaluated in CPU-only and CGRA-accelerated modes to quantify performance and energy gains. CGRA execution improved performance by approximately \SI{5}{\times} for matrix multiplication, \SI{7}{\times} for FFT, and nearly \SI{9}{\times} for convolution, with energy reductions of \SI{3}{\times} to \SI{6}{\times}. Energy trends matched silicon within \SI{5}{\percent} for CPU-only mode and about \SI{20}{\percent} for CGRA mode, supporting its use for accelerator trade-off studies.
+            
+                \item \textbf{Sample collection and storage:} Many TinyAI applications require efficient dataset storage, yet physical flash introduces bandwidth and latency bottlenecks. Flash virtualization removed these constraints, reducing per-window transfer from \SI{2.5}{\second} to less than \SI{10}{\milli\second}, achieving a \SI{250}{\times} speedup and cutting 240-window acquisition from more than \SI{10}{\minute} to \SI{2.4}{\second}, enabling rapid, large-scale dataset collection in development and testing.
+            \end{itemize}
+            \vspace{-1em}
+     
+            In conclusion, \mbox{FEMU} provides a flexible, extensible, and realistic environment for the development and evaluation of heterogeneous systems in the TinyAI domain. Its support for early-stage experimentation through virtualization, seamless accelerator integration, and accurate performance and energy assessment enables rapid iteration and informed design decisions. As a result, \mbox{FEMU} significantly reduces development effort and risk, representing a critical advancement in the prototyping of next-generation ultra-low-power intelligent systems.
+            
+        \subsection*{Contribution 2: The X-HEEP Platform}
+            
+            Although an emulation framework can accelerate the development and evaluation of TinyAI systems, its value ultimately depends on the availability of a host platform that can accommodate the diverse computational, memory, and interface requirements of heterogeneous accelerators. In practice, many open-source platforms provide only minimal configurability, focusing narrowly on the CPU core and lacking standardized mechanisms for accelerator integration. This limited flexibility constrains the scope of architectural exploration, increases the engineering effort for each new design, and complicates the transition from prototype to silicon-ready implementations.
+            
+            To overcome these challenges, this work introduces the eXtendible Heterogeneous Energy Efficient Platform (\mbox{X-HEEP})~\cite{x-heep}, an open source, configurable, and extendible RISC-V platform to support the exploration of TinyAI accelerators. \mbox{X-HEEP} features the eXtendible Accelerator InterFace (XAIF), which enables straightforward and flexible integration of accelerators with varying interface constraints. Furthermore, \mbox{X-HEEP} provides extensive internal configurability, enabling fine-grained optimizations based on domain-specific requirements. Through its modular design, \mbox{X-HEEP} allows users to explore various hardware design trade-offs and supporting development workflows across FPGA prototyping, ASIC implementation, and mixed SystemC-RTL modeling.
+        
+            The key innovations of this part of my work are summarized as follows:
+
+            \vspace{-1em}
+            \begin{itemize}
+                \item \mbox{X-HEEP}~\cite{x-heep}: A configurable and extensible RISC-V host platform for supporting the exploration of TinyAI accelerators.
+        
+                \item \mbox{XAIF}: A highly adaptable accelerator interface that enables straightforward and flexible integration of accelerators with varying interface constraints.
+
+                \item Extensive internal configurability that enables fine-grained optimizations to match application requirements.
+        
+                \item \mbox{HEEPocrates}~\cite{heepocrates}: A full SoC implementation in TSMC \SI{65}{\nano\meter} low-power CMOS technology, featuring the integration of a coarse-grained reconfigurable array (CGRA)~\cite{oe-cgra} and an in-memory computing (IMC)~\cite{nmc} accelerator as a real-world use case of \mbox{X-HEEP}~\cite{x-heep}.
+        
+                \item A publicly released open-source repository that includes the complete code and documentation of \mbox{X-HEEP} to support future research on TinyAI heterogeneous systems.\footnote{The complete code and documentation of the \mbox{X-HEEP platform} are available at \url{https://github.com/esl-epfl/x-heep}.}
+            \end{itemize}
+            \vspace{-1em}
+
+            The experimental campaign validated the platform from three complementary perspectives:
+    
+            \vspace{-1em}
+            \begin{itemize}
+                \item \textbf{X-HEEP characterization:} Designed to serve as a flexible host for TinyAI heterogeneous systems, \mbox{X-HEEP} was evaluated to quantify its integration cost, leakage profile, and scalability. The baseline configuration occupies only \SI{0.15}{\milli\meter\squared} and dissipates \SI{29}{\micro\watt} of leakage power, while its modular memory system and configurable interconnect enable fine-grained area–bandwidth trade-offs. This allows the architecture to be tailored to the performance and efficiency needs of diverse workloads.
+            
+                \item \textbf{HEEPocrates silicon characterization:} To support energy-aware workload scheduling, the fabricated \mbox{HEEPocrates} SoC was characterized for functional operating range and power–performance scaling. It maintains stable operation from \SI{0.8}{\volt} to \SI{1.2}{\volt}, with maximum frequencies of \SI{170}{\mega\hertz} and \SI{470}{\mega\hertz}, respectively. Total power increases from \SI{7.8}{\milli\watt} at \SI{170}{\mega\hertz} and \SI{0.8}{\volt} to \SI{48}{\milli\watt} at \SI{470}{\mega\hertz} and \SI{1.2}{\volt}, providing a broad DVFS envelope for optimizing performance and energy efficiency.
+            
+                \item \textbf{HEEPocrates run-time evaluation:} The platform was benchmarked on representative TinyAI bio-signal processing workloads to assess real-world performance and energy efficiency against state-of-the-art ultra-low-power systems. \mbox{HEEPocrates} delivers competitive or superior processing efficiency in medium- and high-duty-cycle applications, while its idle leakage remains higher than that of the most aggressively power-gated SoC. These results confirm its suitability for compute-intensive edge healthcare workloads that require both high throughput and flexible execution modes.
+            \end{itemize}
+            \vspace{-1em}
+            
+            In summary, \mbox{X-HEEP} advances the state-of-the-art in open-source host platforms for TinyAI by combining high architectural configurability, a standardized and extendible accelerator interface, and ASIC-ready implementation flows. The silicon-proven \mbox{HEEPocrates} implementation demonstrates that these design principles translate effectively into competitive, energy-efficient platforms suitable for deployment in real-world applications. This combination of configurability, extensibility, and implementation readiness establishes \mbox{X-HEEP} as a versatile foundation for future exploration of domain-specific accelerators and next-generation TinyAI systems.
+        
+        \subsection*{Contribution 3: The e-GPU Platform}
+
+            Even with a flexible host platform, supporting the rapidly expanding range of TinyAI workloads requires accelerators that combine high computational efficiency with broad programmability. Domain-specific designs achieve excellent results for targeted applications but are inherently limited when algorithms evolve or new use cases emerge. Conversely, graphics processing units (GPUs) offer a versatile programming model and excel at exploiting fine-grained parallelism. Yet, existing implementations are generally too large, power-hungry, or software-heavy to operate within the strict energy, area, and runtime constraints of TinyAI devices.
+
+            To address this gap, this work presents the embedded GPU (\mbox{e-GPU})~\cite{e-gpu}, an open-source and configurable RISC-V platform for exploring the feasibility and trade-offs of utilizing GPUs in TinyAI scenarios. \mbox{e-GPU} is developed for seamless integration with \mbox{X-HEEP}~\cite{x-heep}, and its extensive configurability enables area and power optimizations to meet tight constraints. Moreover, a custom Tiny Open Computing Language (Tiny-OpenCL) implementation overcomes the compilation limitations of this domain and provides a lightweight programming framework specifically tailored for resource-constrained devices.
+        
+            The key innovations of this part of my work are summarized as follows:
+
+            \vspace{-1em}
+            \begin{itemize}
+                \item \mbox{e-GPU}~\cite{e-gpu}, an open-source and configurable RISC-V platform for exploring the feasibility and trade-offs of using GPUs in TinyAI applications.
+
+                \item \mbox{Tiny-OpenCL}, a lightweight OpenCL implementation tailored to constrained devices to overcome the programming limitations of this application domain.
+        
+                \item Extensive internal configurability that enables fine-grained optimizations to match application requirements.
+
+                \item \mbox{Accelerated processing unit (APU)}: A full system integration of e-GPU with the \mbox{X-HEEP} host~\cite{x-heep} to demonstrate the adaptability of the proposed platform in real-world scenarios.
+        
+                \item A publicly released open-source repository including the complete code and documentation of \mbox{e-GPU} to support future research on TinyAI heterogeneous systems.\footnote{The complete code and documentation of the e-GPU platform are available at \url{https://github.com/esl-epfl/e-gpu}.}
+            \end{itemize}
+            \vspace{-1em}
+
+            Multiple \mbox{e-GPU} configurations were synthesized using TSMC \SI{16}{\nano\meter} CMOS technology, operating at \SI{300}{\mega\hertz} and \SI{0.8}{\volt}. The experimental campaign was organized into four complementary evaluations, each addressing a specific architectural question and revealing key insights:
+
+            \vspace{-1em}
+            \begin{itemize}
+                \item \textbf{Static characterization:} The silicon cost and leakage of integrating the \mbox{e-GPU} into a minimal RISC-V host are evaluated. The total area grows from \SI{0.24}{\milli\meter\squared} in the 4-thread configuration to \SI{0.38}{\milli\meter\squared} in the 16-thread configuration, while leakage increases from \SI{130}{\micro\watt} to \SI{305}{\micro\watt}. Most of this growth comes from compute units that expand with additional threads and pipelines, whereas instruction caches remain constant. Data cache size increases slightly with higher bank counts (2–8) to sustain bandwidth.
+            
+                \item \textbf{Overhead characterization:} The non-computational costs of data transfers and scheduling are analyzed using a GeMM benchmark for matrix sizes from $32 \times 32$ to $256 \times 256$. Data transfers consistently account for about \SI{20}{\percent} of execution time, with higher-parallelism designs benefiting from wider cache lines that improve burst efficiency. Scheduling latency remains fixed at \SI{25}{\micro\second}, representing \SI{15}{\percent} of runtime for small kernels but falling below \SI{1}{\percent} for problem sizes equal to or larger than a $256 \times 256$ matrix multiplication.
+            
+                \item \textbf{TinyBio benchmark characterization:} The MBio-Tracker benchmark~\cite{mbio_tracker}, which includes finite impulse response (FIR) filtering, control-heavy delineation, FFT-based feature extraction, and SVM prediction, is evaluated. The \mbox{e-GPU} delivers speed-ups between \SI{3.1}{\times} and \SI{15.1}{\times} with energy savings from \SI{1.5}{\times} to \SI{3.1}{\times}, while keeping power consumption below \SI{28}{\milli\watt} in the 16-thread configuration. Data-parallel stages such as FIR and FFT achieve the highest gains, while delineation still benefits despite warp divergence.
+            \end{itemize}
+            \vspace{-1em}
+            
+            In summary, this work presents a fully open-source, configurable, and energy-efficient GPU platform, complemented by a corresponding software stack, to facilitate GPU acceleration in TinyAI workloads. The \mbox{e-GPU} supports diverse architectural configurations, maintains a compact and low-leakage footprint, and demonstrates clear benefits on both synthetic and real-world workloads. These results establish a strong foundation for further exploration of GPU-based architectures in resource-constrained domains, paving the way for next-generation heterogeneous processors at the extreme edge.
+
+    \section{Future Work}
+    
+        The contributions presented in this thesis establish a set of open-source, configurable, and energy-efficient platforms for the design, prototyping, and evaluation of TinyAI heterogeneous systems. Although these developments advance the state-of-the-art, several opportunities for further research have emerged, driven by the limitations identified throughout this work and by the rapidly evolving requirements of ultra-low-power edge intelligence. The following directions outline how each platform --- \mbox{X-HEEP-FEMU}, \mbox{X-HEEP}, and \mbox{e-GPU} --- can be extended to overcome current constraints and broaden their applicability.
+        
+        \subsection{Extending the X-HEEP-FEMU Platform}
+        
+            Although the current \mbox{X-HEEP-FEMU} platform~\cite{femu} already offers a robust virtualization infrastructure for peripherals such as debuggers, ADCs, flash memories, and accelerators, it remains limited in modeling the full diversity of sensor interfaces and memory subsystems found in emerging TinyAI devices. These limitations restrict the accuracy of system-level estimations, particularly when exploring heterogeneous configurations with complex data-movement patterns. Addressing these gaps requires extending the virtualization layer to capture a broader spectrum of communication protocols and memory hierarchies. Two concrete enhancements are proposed:
+            
+            \vspace{-1em}
+            \begin{itemize}
+                \item \textbf{Expanded ADC virtualization:} The current SPI-based ADC virtualization provides an effective foundation for prototyping sensor-driven systems, but it cannot yet emulate the wide variety of low-power sensor interfaces used in practice. Extending support to include I\textsuperscript{2}C, integrated interchip sound (I\textsuperscript{2}S), and other custom serial protocols would allow more realistic emulation of biomedical, environmental, and industrial sensing applications. By virtualizing these interfaces within the processing system region, developers could evaluate sampling accuracy, bandwidth utilization, and interface-specific latency or energy overheads early in the design process, without requiring physical hardware integration.
+            
+                \item \textbf{Memory hierarchy virtualization:} The current \mbox{X-HEEP-FEMU} implementation provides a simplified host memory hierarchy composed of multiple on-chip SRAM banks with uniform access latency. While this setup is sufficient for functional prototyping and basic performance estimation, it restricts the exploration of more complex and effective memory hierarchies that are increasingly relevant in modern TinyAI systems. Introducing a configurable virtual memory hierarchy, which includes caches, scratchpads, multi-bank SRAMs, and external DRAM models, would enable the emulation of realistic latency, contention, and bandwidth characteristics. Implementing this functionality within the processing system region would enable the accurate evaluation of accelerator–memory co-design trade-offs and the early identification of data movement bottlenecks, without requiring the full synthesis of complex memory subsystems in the programmable logic region.
+            \end{itemize}
+            \vspace{-1em}
+        
+        \subsection{Evolving the X-HEEP Platform}
+        
+            The \mbox{X-HEEP} platform~\cite{x-heep} has demonstrated high configurability and efficiency as a host for heterogeneous TinyAI systems. However, its accessibility and flexibility are currently limited by two main factors: dependence on proprietary ASIC toolchains and process design kits, which hinder widespread adoption, and the absence of support for general-purpose operating systems, which prevents the execution of complex applications and development tools that cannot run in bare-metal environments. Addressing these issues would significantly broaden the applicability of \mbox{X-HEEP}, making it a more versatile platform for research, education, and early-stage software–hardware co-development.
+            
+            \vspace{-1em}
+            \begin{itemize}
+                \item \textbf{Open-source ASIC implementation flow:} Current \mbox{X-HEEP} implementations rely on commercial design flows using proprietary process design kits (PDKs), such as \mbox{TSMC}~\SI{65}{\nano\meter}, which entail significant licensing costs and restrict reproducibility. Integrating a complete open-source ASIC implementation flow, based on technologies such as \mbox{SkyWater}~\SI{130}{\nano\meter}, and leveraging open-source toolchains like OpenROAD, would overcome this limitation. Providing fully automated scripts, configuration files, and verification frameworks would allow researchers, educators, and startups to fabricate customized \mbox{X-HEEP} instances without commercial barriers, thereby democratizing access to low-cost silicon prototyping and accelerating the validation of novel architectures.
+            
+                \item \textbf{Support for a standard OS environment:} The current \mbox{X-HEEP} software stack, designed for lightweight RTOS and bare-metal execution, cannot support complex applications and frameworks that depend on operating system services. Many development tools and middleware layers require process management, virtual memory, and file system support, which are absent in bare-metal configurations. Enabling \mbox{X-HEEP} to run a general-purpose OS, such as embedded Linux or Ubuntu, would overcome this limitation and expand its use to software-driven co-design, debugging, and application-level testing. Achieving this goal requires a more capable CPU with memory management unit (MMU) support and hardware multi-threading. The resulting OS-capable setup would serve as a development platform supporting standard toolchains and profiling utilities, while final TinyAI deployments would continue to use RTOS or bare-metal environments to preserve energy efficiency.
+            \end{itemize}
+            \vspace{-1em}
+        
+        \subsection{Advancing the e-GPU Platform}
+        
+            The proposed \mbox{e-GPU} platform~\cite{e-gpu} demonstrates the feasibility of integrating programmable GPU-like accelerators within the stringent area and power constraints of TinyAI systems. While effective for data-parallel workloads, its current implementation faces two main limitations: the lack of native mixed-precision arithmetic, which hinders energy proportionality and performance scalability, and the absence of vector-processing capabilities, which reduces efficiency on structured workloads. To address these issues and improve both flexibility and efficiency, two complementary hardware extensions are proposed:
+        
+            \vspace{-1em}
+            \begin{itemize}
+                \item \textbf{Hardware support for mixed-precision execution:} The current \mbox{e-GPU} implementation executes all arithmetic operations at a fixed precision of 32 bits, which can lead to unnecessary energy consumption and reduced throughput for applications that tolerate lower numerical accuracy. Incorporating mixed-precision execution capabilities, such as INT8 and FP16 arithmetic coupled with hardware-assisted accumulation and dynamic precision selection, would enable the accelerator to adapt precision per kernel based on workload requirements. This feature would significantly improve performance and energy efficiency for neural network inference and signal processing tasks, aligning the architecture with modern TinyAI algorithmic trends.
+            
+                \item \textbf{Integration of vector extensions:} Many TinyAI kernels, such as FIR filtering, matrix multiplication, and FFTs, exhibit regular vector processing patterns that are not fully exploited by the current SIMT-based execution model. Integrating a vector extension directly into the \mbox{e-GPU} pipeline would equip the architecture with dedicated hardware support to efficiently execute vector-style operations alongside SIMT execution. This enhancement would enable higher computational efficiency for workloads with strong data regularity, reduce control overhead for structured computations, and improve overall resource utilization across workloads. In general, the combination of SIMT and vector execution paradigms would make \mbox{e-GPU} a more versatile and energy-efficient accelerator for the diverse processing requirements of TinyAI applications.
+            \end{itemize}
+            \vspace{-1em}
+        
+    \section{Final Considerations}
+    
+        The directions outlined in the future work highlight how each platform introduced in this thesis, the \mbox{FEMU} framework~\cite{femu}, the \mbox{X-HEEP} platform~\cite{x-heep}, and the \mbox{e-GPU} platform~\cite{e-gpu}, can continue to evolve to address emerging requirements in the TinyAI domain. Together, these extensions point toward a coherent long-term vision: enabling heterogeneous systems that are not only energy-efficient and silicon-ready, but also highly adaptable to shifting application needs, hardware capabilities, and software ecosystems.
+        
+        By combining configurability, accurate performance, energy modeling, and lightweight programmability, the proposed platforms bridge the gap between early research prototypes and deployable systems. The open-source nature of all contributions further amplifies their relevance, fostering reproducibility, collaborative development, and long-term sustainability across both academic and industrial contexts.
+        
+        Ultimately, the work presented here lays a solid foundation for the continued exploration of domain-specific acceleration, heterogeneous integration, and system-level optimization in ultra-low-power intelligent systems. As emerging applications demand even greater adaptability, efficiency, and responsiveness, the principles and platforms introduced in this thesis will remain directly applicable, providing both the tools and the design philosophy to guide the next wave of innovation in TinyAI.
