@@ -13,12 +13,22 @@
 \usepackage{amsmath,amsfonts}
 \usepackage{array}
 \usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{ragged2e}
+\usepackage{pdflscape}
 \usepackage{textcomp}
 \usepackage[per-mode=symbol,retain-explicit-plus,separate-uncertainty=true,detect-all=true]{siunitx}
 \usepackage{xcolor} % options x11names,dvipsnames passed in main.tex (xcolor is loaded by template.tex)
 
 \newcommand{\cmark}{\ding{51}} % ✓
 \newcommand{\xmark}{\ding{55}} % ✗
+
+% \paragraph come titolo a se' stante e non a capoverso: serve per le intestazioni
+% non numerate del capitolo 4 ("Scheda di sintesi", "Prestazione al Baby-FE", ...)
+\titleformat{\paragraph}[hang]{\normalfont\bfseries}{}{0pt}{#1}
+\titlespacing*{\paragraph}{0pt}{13.2pt}{*0}
 
 \definecolor{mygreen}{HTML}{007480}
 \definecolor{myred}{HTML}{6D1A36}
@@ -37,8 +47,11 @@
     captionpos=b
 }
 
+\usepackage{xurl} % consente di spezzare i DOI lunghi in bibliografia
 \usepackage{csquotes}
-\usepackage[style=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
+% doi e url sono attivi (a differenza del template di riferimento) per non perdere
+% i DOI presenti nella bibliografia del Word.
+\usepackage[style=ieee,doi=true,isbn=false,url=true,eprint=false]{biblatex}
 \addbibresource{tail/References.bib}
 
 % Stop biblatex from changing the case of titles/booktitles

@@ -1,0 +1,17 @@
+{
+  "input": "/tmp/claude-1000/-home-simone-Downloads-tesi-m-silvia/4d74be00-3d12-4c77-9974-5780b0160f34/scratchpad/conv/capitolo_1.tex",
+  "output": "/home/simone/Downloads/tesi_m_silvia/tesi/main/1_capitolo_1.tex",
+  "number": 1,
+  "label": "uno",
+  "title": "L'autoregolazione nello sviluppo tipico",
+  "pagestyle": true,
+  "narrative": {
+    "Kopp (1982)": "kopp1982",
+    "Sameroff (2009)": "sameroff2009",
+    "Sroufe (1996)": "sroufe1996",
+    "Calkins (2007)": "calkins2007",
+    "Clancy Blair e Cybele Raver (2015)": "blair2015",
+    "Miyake e colleghi (2000)": "miyake2000",
+    "Diamond (2013)": "diamond2013"
+  }
+}

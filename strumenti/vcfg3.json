@@ -1,0 +1,11 @@
+{
+ "md": "/tmp/claude-1000/-home-simone-Downloads-tesi-m-silvia/4d74be00-3d12-4c77-9974-5780b0160f34/scratchpad/conv/capitolo_3_testo.md",
+ "tex": "/home/simone/Downloads/tesi_m_silvia/tesi/main/3_capitolo_3.tex",
+ "out": "/home/simone/Downloads/tesi_m_silvia/cap_3.md",
+ "number": 3,
+ "narrative": {
+  "Berni e colleghi (2025)": "berni2025",
+  "Hughes e Graham (2002)": "hughes2002"
+ },
+ "note": "Il confronto riguarda il testo del capitolo fino alla sezione 3.8 compresa. L'**Appendice 1** (protocollo Baby-FE, 15 tabelle) non è ancora stata migrata: è in sospeso in attesa di decidere se lasciarla in fondo al capitolo 3, come nel Word, o spostarla in appendice a fine tesi."
+}
