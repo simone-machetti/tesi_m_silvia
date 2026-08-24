@@ -1,16 +1,17 @@
 % =============================================================================
 % Bibliografia della tesi.
 %
-% Le 99 voci provengono da source/bibliografia.docx (elenco alfabetico "pulito").
+% Le voci provengono da source/bibliografia.docx (elenco alfabetico "pulito").
 % La sezione "BRUTTA BOZZA" in fondo a quel file NON e' stata riportata: conteneva
 % solo duplicati di voci gia' presenti qui.
 %
-% I dati (titoli, riviste, volumi, pagine, DOI) sono riprodotti come nel Word,
-% refusi compresi. Le anomalie sono elencate in bib.md, non corrette qui.
+% I dati sono stati poi rivisti e corretti: le anomalie del Word (voci mancanti,
+% doppioni, anni e volumi sbagliati, titoli troncati) sono state sistemate una per
+% una e verificate su fonte. Il registro degli interventi e' in tasks.md, l'elenco
+% dei problemi di partenza in bib.md.
 %
-% Le voci marcate "SEGNAPOSTO -- DA VERIFICARE" corrispondono a citazioni presenti
-% nel testo ma assenti dalla bibliografia del Word: contengono solo autore e anno
-% ricavati dal testo, nessun dato inventato. Vanno completate nel controllo finale.
+% Le voci sono numerate nell'ordine in cui compaiono nel testo: e' il comportamento
+% predefinito dello stile IEEE, quindi nessun file di ordinamento e' necessario.
 % =============================================================================
 
 @article{allotey2018,
@@ -22,28 +23,6 @@
     pages   = {361--367},
     year    = {2018},
     doi     = {10.1001/jamapediatrics.2017.5858},
-}
-
-@article{astle2021,
-    author  = {Astle, D. E. and Holmes, J. and Kievit, R. and Gathercole, S. E.},
-    title   = {Annual research review: Transdiagnostic approaches to mental health problems in childhood and adolescence},
-    journal = {Journal of Child Psychology and Psychiatry},
-    volume  = {62},
-    number  = {8},
-    pages   = {922--943},
-    year    = {2021},
-    doi     = {10.1111/jcpp.13354},
-}
-
-@article{astle2021b,
-    author  = {Astle, D. E. and Holmes, J. and Kievit, R. and Gathercole, S. E.},
-    title   = {Annual research review: The transdiagnostic revolution in neurodevelopmental disorders},
-    journal = {Journal of Child Psychology and Psychiatry},
-    volume  = {62},
-    number  = {4},
-    pages   = {397--417},
-    year    = {2021},
-    doi     = {10.1111/jcpp.13381},
 }
 
 @article{barkley1997,
@@ -80,9 +59,10 @@
 }
 
 @article{berni2025,
-    author  = {Berni, M. and Guzzetta, A. and Scatigna, S. and Pecini, C. and Igliozzi, R. and Mazzotti, S. and Calderoni, S. and Martinelli, A. and Tancredi, R.},
+    author  = {Berni, M. and Scatigna, S. and Igliozzi, R. and Mazzotti, S. and Calderoni, S. and Martinelli, A. and Tancredi, R. and Guzzetta, A. and Pecini, C.},
     title   = {Exploring the predictive role of early executive functions and self-regulation on functional outcome in neurodevelopmental disorders: A systematic review and meta-analysis},
     journal = {Neuropsychology Review},
+    note    = {Advance online publication},
     year    = {2025},
     doi     = {10.1007/s11065-025-09683-5},
 }
@@ -431,17 +411,6 @@
     year    = {2009},
 }
 
-@article{fletcherwatson2022,
-    author  = {Fletcher-Watson, S.},
-    title   = {Evidence-based practice and neurodiversity: Implications for research and clinical work},
-    journal = {Autism},
-    volume  = {26},
-    number  = {1},
-    pages   = {3--5},
-    year    = {2022},
-    doi     = {10.1177/13623613211066555},
-}
-
 @article{fox1994,
     author  = {Fox, N. A.},
     title   = {Dynamic cerebral processes underlying emotion regulation},
@@ -463,7 +432,7 @@
     doi     = {10.1146/annurev.psych.55.090902.141532},
 }
 
-% Nel Word questa voce e' in formato Frontiers, non APA come tutte le altre (vedi bib.md).
+% Nel Word questa voce era in formato Frontiers, non APA: normalizzata.
 @article{gandolfi2014,
     author  = {Gandolfi, E. and Viterbori, P. and Traverso, L. and Usai, M. C.},
     title   = {Inhibitory processes in toddlers: a latent-variable approach},
@@ -568,14 +537,14 @@
     doi     = {10.2307/1130695},
 }
 
-% Nel Word l'intervallo di pagine e' "561 579", senza trattino (vedi bib.md).
+% Nel Word l'intervallo di pagine era "561 579", senza trattino: corretto.
 @article{karreman2006,
     author  = {Karreman, A. and Van Tuijl, C. and Van Aken, M. A. and Dekovi{\'c}, M.},
     title   = {Parenting and self-regulation in preschoolers: A meta-analysis},
     journal = {Infant and Child Development},
     volume  = {15},
     number  = {6},
-    pages   = {561 579},
+    pages   = {561--579},
     year    = {2006},
     doi     = {10.1002/icd.478},
 }
@@ -668,15 +637,18 @@
     doi     = {10.1111/j.1750-8606.2011.00191.x},
 }
 
-% Nel Word gli autori sono indicati come "Meins, E., et al." (vedi bib.md).
+% Nel Word: autori troncati in "Meins, E., et al.", anno 2001 e volume 72.
+% L'articolo e' del 2002, vol. 73: corretti anno, volume, autori e titolo.
+% La chiave resta "meins2001" per non toccare le citazioni nei capitoli.
 @article{meins2001,
-    author  = {Meins, E. and others},
-    title   = {Mind-mindedness and attachment security as predictors of theory of mind understanding},
+    author  = {Meins, E. and Fernyhough, C. and Wainwright, R. and Das Gupta, M. and Fradley, E. and Tuckey, M.},
+    title   = {Maternal mind-mindedness and attachment security as predictors of theory of mind understanding},
     journal = {Child Development},
-    volume  = {72},
+    volume  = {73},
     number  = {6},
     pages   = {1715--1726},
-    year    = {2001},
+    year    = {2002},
+    doi     = {10.1111/1467-8624.00501},
 }
 
 @article{mischel1989,
@@ -970,10 +942,14 @@
 }
 
 @article{ursache2012,
-    author  = {Ursache, A. and Blair, C. and Raver, C.},
-    title   = {The promotion of self-regulation as a means of enhancing school readiness},
+    author  = {Ursache, A. and Blair, C. and Raver, C. C.},
+    title   = {The promotion of self-regulation as a means of enhancing school readiness and early achievement in children at risk for school failure},
     journal = {Child Development Perspectives},
+    volume  = {6},
+    number  = {2},
+    pages   = {122--128},
     year    = {2012},
+    doi     = {10.1111/j.1750-8606.2011.00209.x},
 }
 
 @article{vallotton2011,
@@ -988,7 +964,7 @@
 }
 
 @book{vygotsky1962,
-    author    = {Vygotsky, L. S.},
+    author    = {Vygotskij, L. S.},
     title     = {Thought and language},
     publisher = {MIT Press},
     year      = {1962},
@@ -1031,13 +1007,6 @@
     doi     = {10.1146/annurev-clinpsy-072319-024242},
 }
 
-@techreport{zelazo2020blair,
-    author      = {Zelazo, P. D. and Blair, C. B. and Willoughby, M. T.},
-    title       = {Executive function: Implications for education (NCER 2017-2000)},
-    institution = {National Center for Education Research},
-    year        = {2020},
-}
-
 @article{zelazo2012,
     author  = {Zelazo, P. D. and Carlson, S. M.},
     title   = {Hot and cool executive function in childhood and adolescence: Development and plasticity},
@@ -1050,52 +1019,81 @@
 }
 
 % =============================================================================
-% SEGNAPOSTO -- DA VERIFICARE
+% VOCI AGGIUNTE NELLA REVISIONE DELLE CITAZIONI
 %
-% Citazioni presenti nel testo ma senza voce corrispondente nella bibliografia
-% del Word. Contengono solo autore e anno cosi' come compaiono nel testo:
-% nessun titolo, rivista o pagina e' stato inventato.
-% Elenco completo con posizione delle citazioni in bib.md.
+% Erano citate nel testo ma non comparivano nella bibliografia del Word.
+% L'opera e' stata identificata dal contesto della citazione e i dati sono stati
+% verificati su fonte (PubMed, Wiley, Springer). Dettaglio in tasks.md, punto 2.
 % =============================================================================
 
-@misc{astle2022,
-    author = {Astle, D. E. and others},
-    title  = {[VOCE MANCANTE -- citata nel testo come ``Astle et al., 2022'']},
-    year   = {2022},
+@article{astle2022,
+    author  = {Astle, D. E. and Holmes, J. and Kievit, R. and Gathercole, S. E.},
+    title   = {Annual research review: The transdiagnostic revolution in neurodevelopmental disorders},
+    journal = {Journal of Child Psychology and Psychiatry},
+    volume  = {63},
+    number  = {4},
+    pages   = {397--417},
+    year    = {2022},
+    doi     = {10.1111/jcpp.13481},
 }
 
-@misc{zelazo2003,
-    author = {Zelazo, P. D. and others},
-    title  = {[VOCE MANCANTE -- citata nel testo come ``Zelazo et al., 2003'']},
-    year   = {2003},
+@article{zelazo2003,
+    author  = {Zelazo, P. D. and M{\"u}ller, U. and Frye, D. and Marcovitch, S.},
+    title   = {The development of executive function in early childhood},
+    journal = {Monographs of the Society for Research in Child Development},
+    volume  = {68},
+    number  = {3},
+    pages   = {vii--137},
+    year    = {2003},
 }
 
-@misc{friedman2017,
-    author = {Friedman, N. P. and Miyake, A.},
-    title  = {[VOCE MANCANTE -- citata nel testo come ``Friedman \& Miyake, 2017'']},
-    year   = {2017},
+@article{friedman2017,
+    author  = {Friedman, N. P. and Miyake, A.},
+    title   = {Unity and diversity of executive functions: Individual differences as a window on cognitive structure},
+    journal = {Cortex},
+    volume  = {86},
+    pages   = {186--204},
+    year    = {2017},
+    doi     = {10.1016/j.cortex.2016.04.023},
 }
 
-@misc{calkins2002fox,
-    author = {Calkins, S. D. and Fox, N. A.},
-    title  = {[VOCE MANCANTE -- citata nel testo come ``Calkins \& Fox, 2002'']},
-    year   = {2002},
+@article{calkins2002fox,
+    author  = {Calkins, S. D. and Fox, N. A.},
+    title   = {Self-regulatory processes in early personality development: A multilevel approach to the study of childhood social withdrawal and aggression},
+    journal = {Development and Psychopathology},
+    volume  = {14},
+    number  = {3},
+    pages   = {477--498},
+    year    = {2002},
+    doi     = {10.1017/S095457940200305X},
 }
 
-@misc{blair2011ursache,
-    author = {Blair, C. and Ursache, A.},
-    title  = {[VOCE MANCANTE -- citata nel testo come ``Blair \& Ursache, 2011'']},
-    year   = {2011},
+@incollection{blair2011ursache,
+    author    = {Blair, C. and Ursache, A.},
+    title     = {A bidirectional model of executive functions and self-regulation},
+    editor    = {Vohs, K. D. and Baumeister, R. F.},
+    booktitle = {Handbook of self-regulation: Research, theory, and applications},
+    edition   = {2},
+    pages     = {300--320},
+    publisher = {Guilford Press},
+    year      = {2011},
 }
 
-@misc{beauchaine2013mcnulty,
-    author = {Beauchaine, T. P. and McNulty, T.},
-    title  = {[VOCE MANCANTE -- citata nel testo come ``Beauchaine \& McNulty, 2013'']},
-    year   = {2013},
+@article{beauchaine2013mcnulty,
+    author  = {Beauchaine, T. P. and McNulty, T.},
+    title   = {Comorbidities and continuities as ontogenic processes: Toward a developmental spectrum model of externalizing psychopathology},
+    journal = {Development and Psychopathology},
+    volume  = {25},
+    number  = {4pt2},
+    pages   = {1505--1528},
+    year    = {2013},
+    doi     = {10.1017/S0954579413000746},
 }
 
-@misc{bayley2006,
-    author = {Bayley, N.},
-    title  = {[VOCE MANCANTE -- citata nel testo come ``Bayley, 2006'']},
-    year   = {2006},
+@book{bayley2006,
+    author    = {Bayley, N.},
+    title     = {Bayley Scales of Infant and Toddler Development},
+    edition   = {3},
+    publisher = {Harcourt Assessment},
+    year      = {2006},
 }

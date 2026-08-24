@@ -49,11 +49,11 @@ che corrispondono 1:1 ai 4 capitoli del Word.
   - l'aggiustamento è **solo tipografico**: nessuna parola spostata, riscritta o riordinata.
 - **Citazioni**: numeriche IEEE (`\cite{...}`), come nella cartella `template/`.
   È l'**unica** eccezione concessa alla regola "non modificare il testo".
-- **8 citazioni orfane** (senza voce in bibliografia): voce segnaposto in `References.bib`
-  con i soli autore e anno ricavabili dal testo, marcata `% DA VERIFICARE`.
-  Nessun titolo inventato.
-- **Astle 2022**: segnaposto separato, non agganciato a nessuna delle due voci
-  "Astle 2021" esistenti.
+- **8 citazioni orfane** (senza voce in bibliografia): in fase di migrazione, voce
+  segnaposto con i soli autore e anno ricavabili dal testo, senza inventare titoli.
+  *Superato dalla fase 10:* i riferimenti reali sono stati identificati e inseriti.
+- **Astle 2022**: in fase di migrazione, segnaposto separato dalle due voci "Astle 2021".
+  *Superato dalla fase 10:* le voci sono state unificate in una sola, datata 2022.
 - **Sezione "BRUTTA BOZZA"** in fondo a `bibliografia.docx`: scartata (materiale di lavoro,
   voci duplicate di quelle già presenti nella lista pulita).
 - **Titolo capitolo 4**: *Analisi dei casi critici nei processi di regolazione tra i 18 e i
@@ -86,12 +86,10 @@ che corrispondono 1:1 ai 4 capitoli del Word.
 9. Corsivi, grassetti e sottolineature del Word riprodotti 1:1.
 10. Dati del frontespizio (titolo tesi, relatore, candidato, A.A.): restano i placeholder,
     nel `.doc` non c'è nessun dato.
-11. **`\nocite{*}`**: con le citazioni numeriche biblatex stamperebbe solo le voci
-    effettivamente citate (~90 su 99). Con `\nocite{*}` vengono stampate **tutte e 99**,
-    nell'ordine alfabetico del Word, così la bibliografia resta identica al `.docx`.
-12. **Astle 2021**: le 12 citazioni vengono agganciate alla prima delle due voci
-    ("Transdiagnostic approaches to mental health problems…"); la seconda resta in
-    bibliografia come voce non citata ed è segnalata in `bib.md`.
+11. ~~**`\nocite{*}`**: serve a stampare tutte le voci, comprese quelle mai citate.~~
+    *Superata dalla fase 10:* eliminato, non essendoci più voci orfane da stampare.
+12. ~~**Astle 2021**: le 12 citazioni agganciate alla prima delle due voci.~~
+    *Superata dalla fase 10:* voci unificate, tutte e 27 le citazioni puntano lì.
 
 ---
 
@@ -99,15 +97,17 @@ che corrispondono 1:1 ai 4 capitoli del Word.
 
 | File | Contenuto |
 |---|---|
-| `bib.md` | Le 8 citazioni orfane (con capitolo e posizione), il doppio Astle 2021, `Vygotskij`/`Vygotsky`, la voce Gandolfi in formato non-APA, e le voci mai citate nel testo. Tutto da controllare, **nulla già corretto**. |
+| `bib.md` | Registro delle anomalie del materiale di partenza: citazioni orfane, doppio Astle 2021, `Vygotskij`/`Vygotsky`, voci fuori formato, voci mai citate. **Tutti i punti sono stati poi risolti** nella fase 10. |
+| `tasks.md` | Registro dei sette interventi sulla bibliografia decisi punto per punto, con le fonti della verifica e l'esito. |
 | `cap_1.md` … `cap_4.md` | Diff paragrafo per paragrafo fra il testo del Word e il testo del LaTeX, normalizzato su spazi e virgolette. Se il capitolo è migrato correttamente il diff mostra **solo** le sostituzioni di citazione `(Kopp, 1982)` → `[12]`. Qualunque altra riga nel diff è un errore da correggere. |
 
 ---
 
 ## Problemi noti nel materiale di partenza
 
-Rilevati durante l'analisi, **non corretti** (sono contenuto, si sistemano nel controllo
-successivo). Tutti elencati in `bib.md`.
+Rilevati durante l'analisi e lasciati inizialmente intatti perché sono contenuto.
+**Risolti tutti nella fase 10**, uno per uno e con verifica su fonte: il dettaglio è in
+`tasks.md`, il registro dei problemi in `bib.md`.
 
 | Citazione nel testo | Occorrenze | Situazione |
 |---|---|---|
@@ -125,7 +125,8 @@ Altri punti segnalati:
 
 - La voce **Gandolfi et al. (2014)** in bibliografia è in formato Frontiers, non APA come
   tutte le altre.
-- **Fletcher-Watson (2022)** è in bibliografia ma non risulta mai citata nel testo.
+- **Fletcher-Watson (2022)** e **Zelazo, Blair & Willoughby (2020)** sono in bibliografia
+  ma non risultano mai citate nel testo (entrambe poi rimosse nella fase 10).
 - Nel capitolo 4 manca l'intestazione di sezione **4.4**, pur essendoci 4.4.1 e 4.4.2.
 - Il **Caso 2** ha 2 tabelle invece di 3: l'osservazione comportamentale non è disponibile.
 
@@ -136,7 +137,7 @@ Altri punti segnalati:
 | # | Fase | Stato | Esito |
 |---|---|---|---|
 | 1 | Preparazione (pacchetti, immagini) | ✅ | 5 pacchetti aggiunti, 8 immagini in `tesi/images/` |
-| 2 | Bibliografia | ✅ | 106 voci (99 reali + 7 segnaposto), ordine del Word |
+| 2 | Bibliografia | ✅ | 106 voci (99 reali + 7 segnaposto); riviste poi nella fase 10 |
 | 3 | Capitolo 1 | ✅ | 10 titoli, 67 citazioni, **0 differenze** |
 | 4 | Capitolo 2 | ✅ | 15 titoli, 142 citazioni, **0 differenze** |
 | 5 | Capitolo 3 (Appendice esclusa) | ✅ | 30 titoli, 144 citazioni, **0 differenze** |
@@ -144,6 +145,7 @@ Altri punti segnalati:
 | 7 | **Appendice 1** | ⏸ **in sospeso** | da decidere dove collocarla |
 | 8 | Front matter e chiusura | ✅ | compila pulito, 161 pagine |
 | 9 | Impaginazione delle tabelle | ✅ | 26 tabelle da `longtable` a flottante intero |
+| 10 | Revisione delle citazioni | ✅ | 7 interventi sulla bibliografia, vedi `tasks.md` |
 
 ### Dettagli della fase 7 (da fare)
 
@@ -163,6 +165,18 @@ spezza mai. Nessuna delle 26 supera l'altezza di una pagina, quindi non è stato
 dividerne nessuna. Verifica sul PDF: nessun avviso «Float too large», riempimento medio
 delle pagine del capitolo 82,9% (era 82,5% con le `longtable`), 161 pagine invece di 163.
 
+### Dettagli della fase 10 (fatta)
+
+Revisione completa della bibliografia, condotta punto per punto con l'utente e registrata in
+`tasks.md`: unificazione delle due voci Astle in una sola datata 2022, inserimento delle sei
+voci citate ma assenti dal Word (identificate dal contesto e verificate su fonte), grafia
+italiana per Vygotskij, rimozione della voce mai citata Fletcher-Watson, correzione di
+Karreman, Meins, Ursache e Berni, numerazione in ordine di comparsa nel testo, DOI e URL
+nascosti. La bibliografia passa da 106 voci (99 dal Word + 7 segnaposto) a **102 voci reali,
+verificate e tutte citate**: voci del `.bib` e citazioni del testo coincidono esattamente.
+Il testo dei capitoli non è cambiato: le verifiche in `strumenti/` danno 0 differenze su
+tutti e quattro.
+
 ### Modifiche al template rispetto alla versione di partenza
 
 - `settings/custom.tex`: aggiunti `longtable`, `tabularx`, `makecell`, `ragged2e`,
@@ -170,9 +184,7 @@ delle pagine del capitolo 82,9% (era 82,5% con le `longtable`), 161 pagine invec
   a blocco; parametri di posizionamento dei flottanti allargati (`\topfraction` 0.9,
   `\bottomfraction` 0.8, `\textfraction` 0.07, `\floatpagefraction` 0.75, fino a 5 tabelle
   per pagina) perché una tabella spostata non lasci vuoti.
-- `main.tex`: aggiunto `\input{tail/ordine_bibliografia}`; `\listoffigures` commentato
-  (nessuna figura nei capitoli).
+- `main.tex`: `\listoffigures` commentato (nessuna figura nei capitoli).
 - `tail/biblio.tex`: aggiunto `\emergencystretch` per i DOI lunghi.
-- `tail/ordine_bibliografia.tex`: nuovo, generato da `References.bib`.
 - `head/`: tolto il `\cite` di esempio dal Sommario, accorciati i testi in latino,
   commentati i segnaposto.

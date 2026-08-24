@@ -65,9 +65,9 @@
 
 \usepackage{xurl} % consente di spezzare i DOI lunghi in bibliografia
 \usepackage{csquotes}
-% doi e url sono attivi (a differenza del template di riferimento) per non perdere
-% i DOI presenti nella bibliografia del Word.
-\usepackage[style=ieee,doi=true,isbn=false,url=true,eprint=false]{biblatex}
+% doi e url restano nel .bib ma non vengono stampati, come nel template di riferimento:
+% la bibliografia risulta piu' compatta. Per rimostrarli basta rimettere true.
+\usepackage[style=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 \addbibresource{tail/References.bib}
 
 % Stop biblatex from changing the case of titles/booktitles

@@ -1,17 +1,18 @@
-# Bibliografia — punti da controllare
+# Bibliografia — anomalie del materiale di partenza
 
 Elenco delle anomalie trovate confrontando le citazioni nel testo dei 4 capitoli con
 l'elenco di `source/bibliografia.docx`.
 
-**Niente di quanto segue è stato corretto.** La migrazione riproduce il Word così com'è;
-questa è la lista di cose da sistemare nel controllo di contenuto.
+> **Stato: tutti i punti sono stati risolti.** Le decisioni prese, con le fonti della
+> verifica e il dettaglio degli interventi, sono in [tasks.md](tasks.md). Questo file
+> resta come registro di che cosa non tornava nel materiale di partenza.
 
-La bibliografia in LaTeX è `tesi/tail/References.bib`: 99 voci reali (dall'elenco
-alfabetico del Word) + 7 segnaposto, per un totale di 106.
+La bibliografia in LaTeX è `tesi/tail/References.bib`: era di 99 voci reali + 7 segnaposto
+(106 in tutto), ora è di **102 voci reali, verificate e tutte citate**.
 
 ---
 
-## 1. Citazioni nel testo senza voce in bibliografia
+## 1. Citazioni nel testo senza voce in bibliografia — RISOLTO
 
 Otto citazioni compaiono nel testo ma non hanno una voce corrispondente nell'elenco del
 Word. Con lo stile numerico IEEE ogni citazione deve agganciarsi a una voce, quindi ho
@@ -30,12 +31,13 @@ Nessun titolo, rivista o pagina è stato inventato: nel PDF quelle voci appaiono
 | 7 | `Bayley, 2006` | cap. 4 | 1 | `bayley2006` |
 | 8 | `Vygotskij, 1962` | cap. 2 | 1 | *nessuno* — vedi punto 3 |
 
-**Da fare:** completare le 7 voci segnaposto in `References.bib` con i dati bibliografici
-reali, oppure rimuovere le citazioni dal testo.
+**Risolto** (tasks.md, punti 1 e 2): i riferimenti reali sono stati identificati dal
+contesto di ciascuna citazione e verificati su PubMed, Wiley e Springer. Tutti e sette i
+segnaposto sono spariti. `Vygotskij, 1962` è confluito nel punto 3.
 
 ---
 
-## 2. Il caso Astle: due voci con lo stesso anno
+## 2. Il caso Astle: due voci con lo stesso anno — RISOLTO
 
 Nell'elenco del Word ci sono **due voci Astle et al. datate 2021**:
 
@@ -53,25 +55,27 @@ Come deciso, ho tenuto le tre cose separate senza fare ipotesi:
   ma **non è citata da nessun punto del testo**
 - `Astle et al., 2022` nel testo → voce segnaposto separata (chiave `astle2022`)
 
-**Da controllare:** con ogni probabilità la voce B è in realtà del **2022** (JCPP, 63(4)) ed
-è quella a cui si riferiscono le 15 citazioni `Astle et al., 2022`. Se è così, basta
-correggere l'anno della voce B, ripuntare le citazioni su `astle2021b` ed eliminare il
-segnaposto `astle2022`. **Non l'ho fatto io perché è una modifica di contenuto.**
+**Risolto** (tasks.md, punto 1). La verifica online ha mostrato che di articoli Astle ne
+esiste **uno solo**: *The transdiagnostic revolution in neurodevelopmental disorders*,
+JCPP 63(4), 397–417, **2022**, DOI `10.1111/jcpp.13481`, pubblicato online nel luglio 2021
+e a stampa nel 2022 — da qui la doppia datazione nel testo. La voce A non corrisponde a
+nessuna pubblicazione e il suo DOI appartiene a un altro articolo. Le due voci sono state
+unificate in una sola, datata 2022, su cui puntano tutte e 27 le citazioni.
 
 ---
 
-## 3. Vygotskij / Vygotsky — stessa opera, due grafie
+## 3. Vygotskij / Vygotsky — stessa opera, due grafie — RISOLTO
 
 - In bibliografia: `Vygotsky, L. S. (1962). Thought and language. MIT Press.`
 - Nel testo (cap. 2, 1 occorrenza): `(Vygotskij, 1962; Zelazo, 2015; Vallotton & Ayoub, 2011)`
 
-È la stessa opera con la traslitterazione italiana del cognome. Ho agganciato la citazione
-alla voce esistente `vygotsky1962` invece di creare un doppione. **Da controllare** se si
-vuole uniformare la grafia.
+È la stessa opera con la traslitterazione italiana del cognome. La citazione era già
+agganciata alla voce esistente, senza doppioni. **Risolto** (tasks.md, punto 3): la voce è
+ora stampata con la grafia italiana `Vygotskij`, coerente con quella usata nel testo.
 
 ---
 
-## 3-bis. `Rothbart et al., 2003` — aggancio dedotto dal contesto
+## 3-bis. `Rothbart et al., 2003` — aggancio dedotto dal contesto — CONFERMATO
 
 Nel capitolo 3 compare una volta la citazione `(Rothbart et al., 2003)`, che non
 corrisponde a nessuna voce con quella forma. Nel contesto — un elenco di questionari
@@ -80,21 +84,28 @@ stesso capitolo cita `(IBQ-R; Gartstein & Rothbart, 2003)`, si tratta quasi cert
 della stessa opera.
 
 L'ho quindi agganciata alla voce esistente **Gartstein & Rothbart (2003)** invece di
-creare un segnaposto. È l'unico aggancio dedotto dal contesto in tutta la migrazione:
-**da confermare**, ed eventualmente da uniformare anche nel testo.
+creare un segnaposto. **Confermato** (tasks.md, punto 3). Resta facoltativo uniformare
+anche il testo, che però con lo stile numerico non produce differenze visibili.
 
 ---
 
-## 4. Voci in bibliografia mai citate nel testo
+## 4. Voci in bibliografia mai citate nel testo — RISOLTO
 
-Restano stampate nel PDF (vedi nota sotto), ma nessun punto del testo le richiama:
+Nessun punto del testo le richiama:
 
-- **Fletcher-Watson, S. (2022)** — *Evidence-based practice and neurodiversity*, Autism, 26(1), 3–5
-- **Astle et al. (2021)**, voce B — vedi punto 2
+- **Fletcher-Watson, S. (2022)** — *Evidence-based practice and neurodiversity*, Autism,
+  26(1), 3–5. **Rimossa** (tasks.md, punto 4).
+- **Astle et al. (2021)**, voce B — **risolta** con l'unificazione del punto 2.
+- **Zelazo, Blair & Willoughby (2020)** — *Executive function: Implications for education*
+  (NCER 2017-2000). **Emersa dopo**: nell'analisi iniziale non era stata rilevata perché il
+  `\nocite` forzato la faceva comunque comparire nel PDF. **Rimossa** anch'essa.
+
+Dopo questi interventi le voci del `.bib` e le citazioni del testo coincidono esattamente:
+102 voci, 102 citate.
 
 ---
 
-## 5. Refusi nelle voci, riprodotti così come sono
+## 5. Refusi nelle voci — RISOLTO
 
 | Voce | Problema |
 |---|---|
@@ -106,9 +117,15 @@ Restano stampate nel PDF (vedi nota sotto), ma nessun punto del testo le richiam
 | `Ursache et al. (2012)` | manca volume, numero e pagine |
 | `McClelland & Cameron (2012)` | nel Word la voce è spezzata su due righe da un a-capo manuale |
 
+**Risolto** (tasks.md, punto 5). Tre voci si erano già normalizzate durante la migrazione
+(`Gandolfi`, `Miyake`, `McClelland`). Le altre quattro sono state corrette e verificate su
+fonte: `Karreman` (pagine), `Meins` (anno 2002 e volume 73, autori completi, titolo),
+`Ursache` (titolo completo, volume, numero, pagine), `Berni` (ordine autori e forma
+*online first*).
+
 ---
 
-## 6. Ordine della bibliografia
+## 6. Ordine della bibliografia — RISOLTO
 
 L'elenco del Word **non è perfettamente alfabetico**: ci sono alcune inversioni, per esempio
 
@@ -118,29 +135,29 @@ L'elenco del Word **non è perfettamente alfabetico**: ci sono alcune inversioni
 - `Samson` prima di `Sameroff`
 
 Ho mantenuto **l'ordine esatto del Word**, inversioni comprese, invece di riordinare
-alfabeticamente. Se preferisci l'ordinamento automatico si cambia con una riga.
+alfabeticamente. **Risolto** (tasks.md, punto 6): la bibliografia è ora numerata
+nell'ordine in cui le opere compaiono nel testo, comportamento predefinito dello stile
+IEEE. Le inversioni non si pongono più e il file di ordinamento forzato è stato eliminato.
 
 ---
 
-## 7. Scelte tecniche adottate (segnalate, non decise di nascosto)
+## 7. Scelte tecniche adottate (segnalate, non decise di nascosto) — RISOLTE
 
-- **`\nocite{*}` in `main.tex`** — con lo stile IEEE verrebbero stampate solo le voci
-  effettivamente citate, e la bibliografia scenderebbe da 99 a ~97 voci. Con `\nocite{*}`
-  vengono stampate tutte, nell'ordine del Word.
+- **`\nocite{*}` in `main.tex`** — serviva a stampare anche le voci mai citate. Dopo
+  l'unificazione di Astle e la rimozione di Fletcher-Watson non serve più: **eliminato**
+  insieme al file di ordinamento forzato (tasks.md, punto 6).
 - **DOI e URL attivi** — il template di riferimento in `template/` li nasconde
-  (`doi=false, url=false`). Li ho attivati perché nel Word i DOI ci sono e nasconderli
-  significherebbe perdere contenuto. Si disattivano cambiando due parole in
-  `tesi/settings/custom.tex`.
+  (`doi=false, url=false`). **Ora nascosti anche qui** (tasks.md, punto 7): i DOI restano
+  in `References.bib`, semplicemente non vengono stampati.
 - **Sezione "BRUTTA BOZZA"** — le 30 righe in fondo a `bibliografia.docx` (con il blocco
   "PER CAPITOLO 2") non sono state riportate. Verificato: sono duplicati di voci già
   presenti nell'elenco pulito, nessun riferimento citato nel testo va perso.
 - **Ordine dei numeri dentro una citazione multipla** — lo stile IEEE ordina i numeri in
-  modo crescente, quindi `(Kopp, 1982; Calkins, 2007)` diventa `[15], [57]` e non
-  `[57], [15]`. È il comportamento normale dello stile: cambia l'ordine dei numeri, non
-  quali riferimenti sono citati.
-- **`tail/ordine_bibliografia.tex`** — file generato automaticamente da `References.bib`.
-  Serve solo a fissare l'ordine di stampa. Se aggiungi o sposti voci nel `.bib`, va
-  rigenerato.
+  modo crescente. Con la numerazione per ordine di comparsa, `(Kopp, 1982; Calkins, 2007)`
+  — la prima citazione della tesi — è diventata `[1], [2]`.
+- **`tail/ordine_bibliografia.tex`** — **eliminato**. Serviva a forzare l'ordine del Word e
+  andava rigenerato a ogni modifica del `.bib`. Con la numerazione in ordine di citazione
+  non serve piu' alcuna manutenzione.
 
 ---
 
