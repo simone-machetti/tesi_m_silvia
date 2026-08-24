@@ -129,10 +129,16 @@ def text_tex(tex):
     s = re.sub(r'\\setcounter\{[^}]*\}\{[^}]*\}', '', s)
     s = re.sub(r'\\setlength\{[^}]*\}\{[^}]*\}', '', s)
     s = re.sub(r'\\(chapter|section|subsection|subsubsection|paragraph)\*?\{[^{}]*\}', '', s)
-    s = re.sub(r'\\begin\{longtable\}\{[^{}]*(\{[^{}]*\}[^{}]*)*\}', '', s)
-    for t in [r'\\end\{longtable\}', r'\\begin\{center\}', r'\\end\{center\}',
-              r'\\toprule', r'\\midrule', r'\\bottomrule', r'\\endhead', r'\\small']:
+    s = re.sub(r'\\begin\{(longtable|tabular)\}\{[^{}]*(\{[^{}]*\}[^{}]*)*\}', '', s)
+    s = re.sub(r'\\begin\{table\}(\[[^\]]*\])?', '', s)
+    s = re.sub(r'\\begin\{minipage\}\{[^{}]*\}', '', s)
+    for t in [r'\\end\{longtable\}', r'\\end\{tabular\}', r'\\end\{table\}',
+              r'\\end\{minipage\}', r'\\begin\{center\}', r'\\end\{center\}',
+              r'\\toprule', r'\\midrule', r'\\bottomrule', r'\\endhead',
+              r'\\small', r'\\footnotesize', r'\\centering', r'\\justifying',
+              r'\\FloatBarrier', r'\\par', r'\\medskip']:
         s = re.sub(t, '', s)
+    s = re.sub(r'(?m)^\s*[{}]\s*$', '', s)      # graffe di raggruppamento dello stile tabella
     s = s.replace('\\\\', ' ').replace('&', ' ')
     for cmd in ['textbf', 'textit', 'emph', 'underline', 'texttt', 'textsc']:
         for _ in range(5):
@@ -157,7 +163,7 @@ def main():
              for t, i1, i2, j1, j2 in sm.get_opcodes() if t != 'equal']
 
     ntab_md = len(re.findall(r'^\s*-{2,}\s+-{2,}', md, flags=re.M))
-    ntab_tex = tex.count('\\begin{longtable}')
+    ntab_tex = tex.count('\\begin{tabular}') + tex.count('\\begin{longtable}')
     ncit_a, ncit_b = a.count(CIT), b.count(CIT)
 
     L = ['# Capitolo 4 — verifica di fedelta\u0300\n']

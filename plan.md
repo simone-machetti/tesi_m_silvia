@@ -36,6 +36,17 @@ che corrispondono 1:1 ai 4 capitoli del Word.
 - **Tabelle**: stile di quelle di esempio in `tesi/main/2_capitolo_2.tex`, cioè
   `\begin{tabular}{|l|c|c|c|}` **con le barre laterali**, più `\toprule` / `\midrule` /
   `\bottomrule` e intestazioni in `\bf{}`.
+- **Impaginazione delle tabelle**:
+  - **mai spezzate fra due pagine**. Unica eccezione: una tabella più alta di una pagina
+    intera, e solo allora, viene divisa;
+  - **flottanti**: se non entrano nel punto esatto in cui sono citate scivolano alla pagina
+    vicina, e il testo scorre a riempire lo spazio. Meglio una tabella una pagina più avanti
+    che mezza pagina bianca;
+  - **vicine al testo che le commenta**: un `\FloatBarrier` prima di ogni sottosezione e di
+    ogni «Caso» impedisce che escano dal punto che le descrive;
+  - **le didascalie viaggiano dentro il flottante**, sopra o sotto la tabella a seconda di
+    dov'erano nel Word, così non restano mai orfane;
+  - l'aggiustamento è **solo tipografico**: nessuna parola spostata, riscritta o riordinata.
 - **Citazioni**: numeriche IEEE (`\cite{...}`), come nella cartella `template/`.
   È l'**unica** eccezione concessa alla regola "non modificare il testo".
 - **8 citazioni orfane** (senza voce in bibliografia): voce segnaposto in `References.bib`
@@ -131,21 +142,34 @@ Altri punti segnalati:
 | 5 | Capitolo 3 (Appendice esclusa) | ✅ | 30 titoli, 144 citazioni, **0 differenze** |
 | 6 | Capitolo 4 | ✅ | 49 titoli, 26 tabelle, 10 citazioni, **0 differenze** |
 | 7 | **Appendice 1** | ⏸ **in sospeso** | da decidere dove collocarla |
-| 8 | Front matter e chiusura | ✅ | compila pulito, 163 pagine |
+| 8 | Front matter e chiusura | ✅ | compila pulito, 161 pagine |
+| 9 | Impaginazione delle tabelle | ✅ | 26 tabelle da `longtable` a flottante intero |
 
 ### Dettagli della fase 7 (da fare)
 
-15 tabelle a 5 colonne con celle lunghe e icone inline, da rendere in `longtable`
-orizzontale. Le 8 immagini sono già estratte in `tesi/images/`:
+15 tabelle a 5 colonne con celle lunghe e icone inline. Sono le uniche tabelle della tesi
+più alte di una pagina: per queste vale l'eccezione alla regola, cioè verranno divise
+(`longtable` orizzontale). Le 8 immagini sono già estratte in `tesi/images/`:
 `app_stella.png`, `app_item_opzionale.png`, `app_cronometro_1..4`, `app_stop_1..2`.
 
 **Decisione aperta:** l'Appendice resta in fondo al capitolo 3 come nel Word, oppure
 diventa un `\appendix` a fine tesi?
 
+### Dettagli della fase 9 (fatta)
+
+Le 26 tabelle del capitolo 4 erano `longtable`, che per costruzione si spezza fra le
+pagine. Sono state riscritte come flottanti `table` + `tabular`: un flottante non si
+spezza mai. Nessuna delle 26 supera l'altezza di una pagina, quindi non è stato necessario
+dividerne nessuna. Verifica sul PDF: nessun avviso «Float too large», riempimento medio
+delle pagine del capitolo 82,9% (era 82,5% con le `longtable`), 161 pagine invece di 163.
+
 ### Modifiche al template rispetto alla versione di partenza
 
 - `settings/custom.tex`: aggiunti `longtable`, `tabularx`, `makecell`, `ragged2e`,
-  `pdflscape`, `xurl`; DOI e URL attivati in biblatex; `\paragraph` reso titolo a blocco.
+  `pdflscape`, `xurl`, `placeins`; DOI e URL attivati in biblatex; `\paragraph` reso titolo
+  a blocco; parametri di posizionamento dei flottanti allargati (`\topfraction` 0.9,
+  `\bottomfraction` 0.8, `\textfraction` 0.07, `\floatpagefraction` 0.75, fino a 5 tabelle
+  per pagina) perché una tabella spostata non lasci vuoti.
 - `main.tex`: aggiunto `\input{tail/ordine_bibliografia}`; `\listoffigures` commentato
   (nessuna figura nei capitoli).
 - `tail/biblio.tex`: aggiunto `\emergencystretch` per i DOI lunghi.

@@ -25,6 +25,22 @@
 \newcommand{\cmark}{\ding{51}} % ✓
 \newcommand{\xmark}{\ding{55}} % ✗
 
+% =============================================================================
+% Posizionamento delle tabelle.
+% Le tabelle sono flottanti: non si spezzano mai fra due pagine e, se non entrano
+% nel punto esatto in cui sono citate, scivolano alla pagina vicina mentre il testo
+% scorre a riempire lo spazio. \FloatBarrier (inserito nei capitoli) impedisce che
+% si allontanino dalla sezione o dal caso che le descrive.
+% =============================================================================
+\usepackage{placeins}
+\renewcommand{\topfraction}{0.9}        % quanto di una pagina puo' essere occupato
+\renewcommand{\bottomfraction}{0.8}     % da flottanti in alto e in basso
+\renewcommand{\textfraction}{0.07}      % testo minimo richiesto in una pagina mista
+\renewcommand{\floatpagefraction}{0.75} % riempimento minimo di una pagina di sole tabelle
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{5}
+
 % \paragraph come titolo a se' stante e non a capoverso: serve per le intestazioni
 % non numerate del capitolo 4 ("Scheda di sintesi", "Prestazione al Baby-FE", ...)
 \titleformat{\paragraph}[hang]{\normalfont\bfseries}{}{0pt}{#1}

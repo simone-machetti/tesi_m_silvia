@@ -27,6 +27,7 @@ cartella.
 | `convert4.py` | capitolo 4: come sopra, più la ricostruzione della struttura (nel Word gli stili di titolo sono incoerenti) e la riscrittura delle 26 tabelle nello stile del template. |
 | `verify.py` | capitoli 1-3: riduce Word e LaTeX a parole e li confronta. Scrive `cap_N.md`. |
 | `verify4.py` | capitolo 4: come sopra, includendo le celle delle tabelle e i titoli non numerati. Scrive `cap_4.md`. |
+| `tabelle_intere.py` | riscrive le tabelle di un capitolo da `longtable` (che si spezza fra le pagine) a flottante `table` + `tabular` (che non si spezza), portando le didascalie dentro il flottante e inserendo le barriere `\FloatBarrier`. Uso: `python3 strumenti/tabelle_intere.py tesi/main/4_capitolo_4.tex`. Non tocca il testo. |
 
 ```bash
 python3 convert.py cfg1.json     # scrive tesi/main/1_capitolo_1.tex
