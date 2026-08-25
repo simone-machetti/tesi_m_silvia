@@ -126,14 +126,27 @@ Fonte: [PubMed 24342853](https://pubmed.ncbi.nlm.nih.gov/24342853/)
 
 ### 2.6 Bayley (2006) — cap. 4, 1 citazione · chiave `bayley2006`
 
-> Bayley, N. (2006). *Bayley Scales of Infant and Toddler Development* (3rd ed.).
-> Harcourt Assessment.
+> Bayley, N. (2006). *Bayley Scales of Infant and Toddler Development, Third Edition:
+> Administration manual*. Harcourt Assessment.
 
-È il manuale dello strumento usato nello studio, non un articolo. Resta un dettaglio minore
-non deciso: se citare il manuale di somministrazione o quello tecnico (esistono entrambi,
-stesso anno) e se indicare *Harcourt Assessment*, il nome dell'epoca, oppure *Pearson*, che
-oggi lo distribuisce. È stata adottata la forma generica qui sopra, la più diffusa in
-letteratura.
+È il manuale dello strumento usato nello studio, non un articolo, e la Bayley-III del 2006
+non è una pubblicazione singola ma un kit: Administration Manual, Technical Manual e moduli
+di registrazione, tutti stesso autore, stesso anno, stesso editore.
+
+**Scelto l'Administration Manual**, coerente con il modo in cui la tesi lo richiama: il testo
+parla di procedure di somministrazione e codifica, e precisa che il *Behavior Observation
+Inventory* «non prevede l'attribuzione di punteggi standardizzati», cioè non attinge al
+Technical Manual. Editore *Harcourt Assessment*, il nome all'epoca della pubblicazione
+(acquisita da Pearson nel 2008, che oggi distribuisce lo strumento).
+
+Nel `.bib` la voce non ha il campo `edition`: l'edizione è già dentro il titolo, e lo stile
+la stamperebbe due volte.
+
+**Resta da verificare, se rilevante:** esiste un adattamento italiano della Bayley-III
+(Ferri, Orsini e Stoppa, Giunti). Se le somministrazioni sono state condotte con l'edizione
+italiana anziché con l'originale americana, la voce corretta sarebbe quella dell'adattamento
+e converrebbe esplicitarlo anche nel testo — modifica di contenuto, quindi da valutare a
+parte. Nel testo attuale non c'è alcun accenno alla versione usata.
 
 ### Effetti
 
