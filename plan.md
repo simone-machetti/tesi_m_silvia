@@ -44,8 +44,8 @@ che corrispondono 1:1 ai 4 capitoli del Word.
     che mezza pagina bianca;
   - **vicine al testo che le commenta**: un `\FloatBarrier` prima di ogni sottosezione e di
     ogni «Caso» impedisce che escano dal punto che le descrive;
-  - **le didascalie viaggiano dentro il flottante**, sopra o sotto la tabella a seconda di
-    dov'erano nel Word, così non restano mai orfane;
+  - **le didascalie stanno dentro il flottante**, così non restano mai orfane; dalla fase 11
+    sono **sempre sopra** la tabella, in formattazione predefinita;
   - l'aggiustamento è **solo tipografico**: nessuna parola spostata, riscritta o riordinata.
 - **Citazioni**: numeriche IEEE (`\cite{...}`), come nella cartella `template/`.
   È l'**unica** eccezione concessa alla regola "non modificare il testo".
@@ -74,11 +74,10 @@ che corrispondono 1:1 ai 4 capitoli del Word.
    contatore così escono esattamente `4.4.1` e `4.4.2`.
 4. **"Caso 1…8"**, "Scheda di sintesi", "Prestazione al Baby-FE", "Osservazione…" restano
    **non numerati**, come nel Word (titoli con `*`).
-5. **Le 23 tabelle-caso non hanno didascalia** nel Word: restano senza `\caption` e quindi
-   fuori dall'Elenco delle tabelle. Solo Tabella 4.1, 4.2, 4.3 hanno una didascalia, che
-   viene riprodotta come `\caption`.
+5. ~~**Le 23 tabelle-caso non hanno didascalia** nel Word: restano senza `\caption`.~~
+   *Superata dalla fase 11:* tutte e 26 hanno ora didascalia, numero e rimando nel testo.
 6. **`\listoffigures`** risulterebbe vuoto (le uniche immagini sono icone dentro le celle
-   dell'Appendice): proposta di rimuoverlo. `\listoftables` mostrerà 3 voci.
+   dell'Appendice): commentato in `main.tex`. `\listoftables` mostra 26 voci.
 7. In `4.2.3` diversi **paragrafi di testo corrente hanno per errore stile "Titolo 3"** nel
    Word: resi come testo normale.
 8. Titoli con spazio mancante (`1.1I processi`, `1.3Principali`): il numero lo genera LaTeX,
@@ -98,7 +97,8 @@ che corrispondono 1:1 ai 4 capitoli del Word.
 | File | Contenuto |
 |---|---|
 | `bib.md` | Registro delle anomalie del materiale di partenza: citazioni orfane, doppio Astle 2021, `Vygotskij`/`Vygotsky`, voci fuori formato, voci mai citate. **Tutti i punti sono stati poi risolti** nella fase 10. |
-| `tasks.md` | Registro dei sette interventi sulla bibliografia decisi punto per punto, con le fonti della verifica e l'esito. |
+| `tasks.md` | Registro degli interventi decisi punto per punto — bibliografia e tabelle — con le fonti della verifica e l'esito. |
+| `tabelle.md` | Tutto il testo aggiunto per le tabelle: 26 didascalie e 23 frasi di raccordo, una per una. Le parti provenienti dal Word sono marcate in corsivo. |
 | `cap_1.md` … `cap_4.md` | Diff paragrafo per paragrafo fra il testo del Word e il testo del LaTeX, normalizzato su spazi e virgolette. Se il capitolo è migrato correttamente il diff mostra **solo** le sostituzioni di citazione `(Kopp, 1982)` → `[12]`. Qualunque altra riga nel diff è un errore da correggere. |
 
 ---
@@ -146,6 +146,7 @@ Altri punti segnalati:
 | 8 | Front matter e chiusura | ✅ | compila pulito, 161 pagine |
 | 9 | Impaginazione delle tabelle | ✅ | 26 tabelle da `longtable` a flottante intero |
 | 10 | Revisione delle citazioni | ✅ | 7 interventi sulla bibliografia, vedi `tasks.md` |
+| 11 | Didascalie e rimandi delle tabelle | ✅ | 26 didascalie, 27 rimandi, vedi `tabelle.md` |
 
 ### Dettagli della fase 7 (da fare)
 
@@ -176,6 +177,22 @@ nascosti. La bibliografia passa da 106 voci (99 dal Word + 7 segnaposto) a **102
 verificate e tutte citate**: voci del `.bib` e citazioni del testo coincidono esattamente.
 Il testo dei capitoli non è cambiato: le verifiche in `strumenti/` danno 0 differenze su
 tutti e quattro.
+
+### Dettagli della fase 11 (fatta)
+
+Titolo e breve descrizione per tutte e 26 le tabelle del capitolo 4, sempre sopra la tabella
+e in formattazione predefinita; numerazione 4.1–4.26 in ordine di comparsa con `\caption` e
+`\label`; un rimando nel testo per ogni tabella. Le legende di codifica che stavano sopra le
+tabelle sono confluite nella descrizione, con il testo del Word conservato parola per parola;
+le righe «Nota.» restano sotto le tabelle aggregate.
+
+**È il primo intervento che aggiunge testo assente dal Word:** 23 titoli, 23 descrizioni e
+23 frasi di raccordo. Tutto il testo aggiunto è elencato in `tabelle.md` per la revisione.
+`verify4.py` è stato aggiornato per escludere didascalie e raccordi dal confronto: la
+verifica continua a coprire la prosa del capitolo e dà **0 differenze**.
+
+Conseguenza da tenere presente: le due tabelle aggregate finali, che nel Word erano 4.2 e
+4.3, diventano **4.25 e 4.26**, perché le 23 tabelle-caso si inseriscono in mezzo.
 
 ### Modifiche al template rispetto alla versione di partenza
 

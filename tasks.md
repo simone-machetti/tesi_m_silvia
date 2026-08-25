@@ -424,3 +424,108 @@ Nessuno dei sette interventi ha toccato una parola del testo dei capitoli: agisc
   Si torna indietro in una riga se preferibile.
 - **Meins** mantiene la chiave `meins2001` benché l'articolo sia del 2002, per non toccare
   le citazioni nei capitoli. La chiave non è visibile nel PDF.
+
+---
+
+# Interventi sulle tabelle
+
+## 8. Didascalie e riferimenti per tutte le 26 tabelle
+
+**Stato:** applicato.
+
+Oggi solo 3 tabelle su 26 hanno una didascalia e sono richiamate dal testo. Le altre 23 —
+8 schede di sintesi, 8 prestazioni al Baby-FE, 7 osservazioni del comportamento — non hanno
+titolo e non sono mai nominate. Inoltre nel file non esiste un solo `\caption`, `\label` o
+`\ref`: il numero «4.2» è battuto a mano in tre punti indipendenti (didascalia, testo,
+Elenco delle tabelle), senza nulla che ne garantisca l'allineamento.
+
+### Decisioni prese
+
+| Aspetto | Decisione |
+|---|---|
+| Didascalia | Titolo + breve descrizione su tutte e 26 |
+| Posizione | **Sempre sopra** la tabella, mai sotto |
+| Formattazione | Predefinita: niente corsivo, niente grassetto |
+| Numerazione | Per capitolo, **4.1 … 4.26**, nell'ordine di comparsa |
+| Legende di codifica | **Assorbite** nella descrizione, perdendo il corsivo |
+| Righe «Nota.» | **Restano sotto** la tabella, sono note di corredo |
+| Rimandi nel testo | Tutte e 26 richiamate; forma scelta da me, vedi sotto |
+
+### Forma dei rimandi
+
+Scelta: **una frase di raccordo nuova prima di ogni tabella**, senza toccare le frasi già
+presenti nel Word.
+
+Il motivo è che le legende di codifica, assorbite nella didascalia, lasciano vuoto lo spazio
+fra l'intestazione del caso e la tabella: la frase di raccordo lo riempie e assolve al
+rimando. In più resta valido il principio seguito finora — si aggiunge, non si riscrive.
+
+Modelli:
+
+- «La Tabella 4.X riassume il profilo del Caso N.»
+- «Le risposte del Caso N alle singole prove sono riportate nella Tabella 4.X.»
+- «Il comportamento osservato durante la valutazione del Caso N è riportato nella Tabella 4.X.»
+
+### Modelli di didascalia
+
+Struttura: `\caption[Titolo breve]{Titolo. Descrizione.}` — l'argomento opzionale tiene
+leggibile l'Elenco delle tabelle, che passa da 3 a 26 voci.
+
+- **Scheda di sintesi:** «Caso N: scheda di sintesi. Genere, età alla somministrazione, dati
+  anamnestici dal questionario compilato dai genitori ed eventuale diagnosi.»
+- **Prestazione al Baby-FE:** «Caso N: prestazione al Baby-FE. Punteggio ed esito nelle 15
+  prove.» seguita dalla legenda di codifica esistente, riportata parola per parola.
+- **Osservazione:** «Caso N: osservazione del comportamento durante la valutazione.» seguita
+  dalla legenda esistente sul Behavior Observation Inventory.
+
+Le tre didascalie già presenti vengono convertite in `\caption`, private del numero letterale
+(che genera LaTeX) e completate con una descrizione dove manca.
+
+### Conseguenza da tenere presente
+
+Numerando in ordine di comparsa, le 23 tabelle-caso si inseriscono in mezzo: le due tabelle
+aggregate finali, oggi **4.2 e 4.3, diventano 4.25 e 4.26**. I tre rimandi già presenti nel
+Word cambiano quindi numero visibile («cfr. Tabella 4.2» → «cfr. Tabella 4.25»). Con `\ref`
+l'aggiornamento è automatico e resta coerente per sempre, ma il numero letto dal lettore non
+è più quello del Word.
+
+### Rottura della regola di fedeltà
+
+È il primo intervento che **aggiunge testo assente dal Word**: 23 titoli, 23 descrizioni e
+23 frasi di raccordo. Da qui in avanti il capitolo 4 non è più identico all'originale e le
+verifiche in `strumenti/` segnaleranno le aggiunte.
+
+Contromisure adottate:
+
+- **`tabelle.md`**: elenca tutte e 26 le didascalie e tutte e 23 le frasi di raccordo, una
+  per una, con il testo integrale. Le parti provenienti dal Word (le legende di codifica)
+  sono marcate in corsivo, così si distingue a colpo d'occhio ciò che è stato scritto ex novo.
+- **`verify4.py` aggiornato**: didascalie e frasi di raccordo vengono escluse dal confronto
+  su entrambi i lati, così la verifica continua a coprire la **prosa** del capitolo. Esito
+  dopo l'intervento: **0 differenze**, cioè nessuna parola del Word è stata toccata.
+
+### Esito
+
+- 26 didascalie con titolo e descrizione, tutte sopra la tabella, in formattazione predefinita.
+- 26 `\caption` e 26 `\label`; **27 rimandi** nel testo (la tabella 4.25 è richiamata due volte).
+- Elenco delle tabelle: da 3 a **26 voci**, numerate 4.1 → 4.26.
+- Nessun numero di tabella più battuto a mano: erano tre punti indipendenti per ciascuna.
+- Compilazione pulita, nessun riferimento irrisolto, 162 pagine (erano 160).
+- Nessuna tabella spezzata fra due pagine, nessun avviso «Float too large».
+
+### Modifiche alle tre didascalie preesistenti
+
+Erano disomogenee e due su tre avevano solo il titolo. Sono state uniformate al modello
+titolo + descrizione, il che ha comportato un lieve riadattamento del testo del Word:
+
+| | Word | Ora |
+|---|---|---|
+| 4.1 | «Profilo dei fattori di rischio dei bambini selezionati (dati dal questionario compilato dai genitori).» | «Profilo dei fattori di rischio dei bambini selezionati. Dati tratti dal questionario compilato dai genitori.» |
+| 4.25 | «Prestazioni complessive al Baby-FE nei casi selezionati» | stesso titolo, con descrizione aggiunta su età, punteggio totale, prove non valide e percentile |
+| 4.26 | «Punteggi alle sottoscale EEFQ nei casi selezionati e valori di riferimento del campione totale dello studio» | stesso testo come titolo, con descrizione aggiunta sulle quattro sottoscale |
+
+### Scelta di dettaglio
+
+Il prefisso del caso usa il trattino lungo e non i due punti — «Caso 1 --- scheda di
+sintesi» invece di «Caso 1: scheda di sintesi» — perché LaTeX antepone già «Tabella 4.2:»
+e ne sarebbero risultati due due-punti di fila nella stessa riga.

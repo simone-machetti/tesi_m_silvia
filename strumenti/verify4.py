@@ -92,6 +92,20 @@ def headings_tex(tex):
 
 
 # ------------------------------------------------------------------ testo
+# Nel Word le legende di codifica e le tre didascalie stavano nel corpo del testo;
+# ora sono dentro \caption, quindi vanno tolte anche dal lato Word per confrontare
+# la sola prosa. Il testo integrale delle didascalie e' rivedibile in tabelle.md.
+FUORI_CORPO = [
+    r'Codifica: 0 = esecuzione non corretta.*?risposte alle singole prove\.',
+    r'Compilato dalla somministratrice al termine della valutazione\. Tre livelli di '
+    r'frequenza:.*?per la maggior parte del tempo\.',
+    r'Tabella 4\.1 --- Profilo dei fattori di rischio.*?compilato dai genitori\)\.',
+    r'Tabella 4\.2\. Prestazioni complessive al Baby-FE nei casi selezionati',
+    r'Tabella 4\.3\. Punteggi alle sottoscale EEFQ nei casi selezionati e valori di '
+    r'riferimento del campione totale dello studio',
+]
+
+
 def text_md(md):
     lines = md.split('\n')
     keep = []
@@ -117,12 +131,30 @@ def text_md(md):
     s = mask_cites(s)
     s = strip_md(s)
     s = s.replace('|', ' ')
+    for r in FUORI_CORPO:
+        s = re.sub(r, '', s, flags=re.S)
     return s
+
+
+# Frasi di raccordo aggiunte per introdurre le tabelle (vedi tabelle.md): non sono
+# testo del Word e vengono tolte dal confronto.
+RACCORDI = [
+    r'Il profilo del Caso \d+ .{1,2} riassunto nella Tabella~\\ref\{[^}]*\}\.',
+    r'Le risposte del Caso \d+ alle singole prove sono riportate nella Tabella~\\ref\{[^}]*\}\.',
+    r'Il comportamento osservato durante la valutazione del Caso \d+ .{1,2} riportato '
+    r'nella Tabella~\\ref\{[^}]*\}\.',
+]
+# I rimandi gia' presenti nel Word: il numero letterale e' ora generato da \ref.
+REF_NUM = {'tab:rischio': '4.1', 'tab:babyfe_totali': '4.2', 'tab:eefq': '4.3'}
 
 
 def text_tex(tex):
     s = tex
     s = re.sub(r'^\s*%.*$', '', s, flags=re.M)
+    for r in RACCORDI:
+        s = re.sub(r, '', s)
+    s = re.sub(r'\\caption(\[[^\]]*\])?\{(?:[^{}]|\{[^{}]*\})*\}', '', s)
+    s = re.sub(r'\\ref\{(tab:[^}]*)\}', lambda m: REF_NUM.get(m.group(1), ''), s)
     s = re.sub(r'\\cite\{[^}]*\}', CIT, s)
     s = re.sub(r'\\label\{[^}]*\}', '', s)
     s = re.sub(r'\\addcontentsline\{[^}]*\}\{[^}]*\}\{[^}]*\}', '', s)
