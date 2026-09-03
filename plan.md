@@ -142,21 +142,32 @@ Altri punti segnalati:
 | 4 | Capitolo 2 | ✅ | 15 titoli, 142 citazioni, **0 differenze** |
 | 5 | Capitolo 3 (Appendice esclusa) | ✅ | 30 titoli, 144 citazioni, **0 differenze** |
 | 6 | Capitolo 4 | ✅ | 49 titoli, 26 tabelle, 10 citazioni, **0 differenze** |
-| 7 | **Appendice 1** | ⏸ **in sospeso** | da decidere dove collocarla |
+| 7 | Appendice 1 | ✅ | 15 tabelle + legenda, in `\appendix` prima della bibliografia |
 | 8 | Front matter e chiusura | ✅ | compila pulito, 161 pagine |
 | 9 | Impaginazione delle tabelle | ✅ | 26 tabelle da `longtable` a flottante intero |
 | 10 | Revisione delle citazioni | ✅ | 7 interventi sulla bibliografia, vedi `tasks.md` |
 | 11 | Didascalie e rimandi delle tabelle | ✅ | 26 didascalie, 27 rimandi, vedi `tabelle.md` |
 
-### Dettagli della fase 7 (da fare)
+### Dettagli della fase 7 (fatta)
 
-15 tabelle a 5 colonne con celle lunghe e icone inline. Sono le uniche tabelle della tesi
-più alte di una pagina: per queste vale l'eccezione alla regola, cioè verranno divise
-(`longtable` orizzontale). Le 8 immagini sono già estratte in `tesi/images/`:
-`app_stella.png`, `app_item_opzionale.png`, `app_cronometro_1..4`, `app_stop_1..2`.
+15 tabelle a 5 colonne con celle lunghe e icone dentro le celle, più la legenda finale.
 
-**Decisione aperta:** l'Appendice resta in fondo al capitolo 3 come nel Word, oppure
-diventa un `\appendix` a fine tesi?
+- Collocata in un **`\appendix`** fra gli elenchi e la bibliografia, non in fondo al
+  capitolo 3: il rimando «riportato in Appendice 1» resta valido.
+- **Blocco unico non numerato:** nessuna didascalia e nessun rimando per le singole
+  tabelle, è un modulo da compilare e non materiale da consultare.
+- **Composte in orizzontale e ruotate di 90 gradi su pagine che restano verticali**
+  (`\rotatebox`, non `landscape`): in stampa il lettore gira il libro, il numero di pagina
+  non ruota con la tabella e il PDF non porta il flag `/Rotate`. Una tabella per pagina.
+- Contrariamente a quanto stimato in un primo momento, **nessuna tabella supera l'altezza
+  di una pagina**: l'eccezione alla regola «mai spezzate» non è servita.
+- Le immagini sono 9: alle 8 già estratte si è aggiunta `app_stop_3.png`, usata nella
+  tabella 10 e mancante dalla prima estrazione.
+
+Due insidie del formato Word risolte lungo la strada, entrambe silenziose: nella tabella 10
+un blocco `mc:AlternateContent` (Word tiene una copia di riserva dello stesso contenuto) e
+nella legenda una casella di testo annidata dentro un disegno. In entrambi i casi il testo
+sarebbe finito **due volte** nel PDF.
 
 ### Dettagli della fase 9 (fatta)
 
