@@ -1,9 +1,20 @@
 \pagestyle{fancy}
 \renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
-\fancyhead[RE]{\textbf{\leftmark}}
-\fancyhead[LE]{\textbf{\chaptername\ \thechapter\ }}
-\fancyhead[LO]{\textbf{\leftmark}}
-\fancyhead[RO]{\textbf{\chaptername\ \thechapter\ }}
+% Testate dei capitoli. Sono raccolte in un comando perche' lo stile "plain",
+% ridefinito in template.tex con \fancyhf{}, con questa versione di fancyhdr
+% cancella i campi in modo globale: dopo un \pagestyle{plain} (abstract,
+% introduzione) le testate vanno ridefinite, cosa che fa main/1_capitolo_1.tex.
+\newcommand{\testatecapitoli}{%
+  \fancyhf{}%
+  \renewcommand{\headrulewidth}{0.4pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+  \fancyhead[RE]{\textbf{\leftmark}}%
+  \fancyhead[LE]{\textbf{\chaptername\ \thechapter\ }}%
+  \fancyhead[LO]{\textbf{\leftmark}}%
+  \fancyhead[RO]{\textbf{\chaptername\ \thechapter\ }}%
+  \fancyfoot[R]{\thepage}%
+}
+\testatecapitoli
 
 \usepackage{acronym}
 \usepackage{stfloats}

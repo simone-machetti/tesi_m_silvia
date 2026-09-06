@@ -646,3 +646,31 @@ resta caricato in `custom.tex`, innocuo.
 
 Effetto: sparisce la pagina «Elenco degli acronimi» (con i tre acronimi di esempio del
 template) e la sua voce nell'indice. Dagli abstract si passa direttamente all'indice.
+
+## F6. Testata del capitolo 3
+
+**Stato:** applicato, in attesa di conferma.
+
+**File:** `tesi/main/3_capitolo_3.tex`
+
+Aggiunto, subito dopo il `\chapter{...}`, un `\chaptermark` con il titolo breve «La
+valutazione dell'autoregolazione nella prima infanzia». Agisce solo sulle testate: la
+pagina di apertura del capitolo e l'indice conservano il titolo intero con «(18–36 mesi e
+3–6 anni)». Verificato nel PDF: la testata delle pagine del capitolo 3 non si sovrappone
+più a «Capitolo 3».
+
+### Regressione trovata e corretta lungo la strada
+
+Controllando la testata è emerso che **le testate erano sparite in tutti i capitoli**, non
+solo nel terzo. Causa: il template ridefinisce lo stile «plain» con `\fancyhf{}`, che con
+la versione di fancyhdr installata azzera i campi delle testate **in modo globale**; i
+`\pagestyle{plain}` introdotti oggi per abstract e introduzione, venendo prima del corpo,
+le cancellavano per sempre. Prima di oggi nessun `\pagestyle{plain}` precedeva i capitoli
+e il difetto non si vedeva.
+
+Correzione, in `settings/custom.tex`: la definizione delle testate è ora raccolta nel
+comando `\testatecapitoli`, richiamato al caricamento (nessun cambiamento rispetto a
+prima) e in `main/1_capitolo_1.tex` subito dopo il `\pagestyle{fancy}`, dove il corpo
+della tesi riprende lo stile con le testate. Verificato: testate presenti nei capitoli 1,
+2, 3 e 4; numeri romani su abstract e indice; introduzione alle pagine 1-2, capitolo 1 da
+pagina 3.
