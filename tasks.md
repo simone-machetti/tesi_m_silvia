@@ -674,3 +674,25 @@ prima) e in `main/1_capitolo_1.tex` subito dopo il `\pagestyle{fancy}`, dove il 
 della tesi riprende lo stile con le testate. Verificato: testate presenti nei capitoli 1,
 2, 3 e 4; numeri romani su abstract e indice; introduzione alle pagine 1-2, capitolo 1 da
 pagina 3.
+
+## F7. Appendice: «ETÀ IN MESI»
+
+**Stato:** applicato, in attesa di conferma.
+
+**File:** `strumenti/appendice.py` (generatore) e `tesi/tail/appendice.tex` (rigenerato).
+
+Il testo spurio «ule2.4cm0.4pt» veniva dal generatore: `\rule` stava in una stringa
+Python non *raw* e `\r` era diventato un ritorno a capo; lo stesso errore aveva mangiato
+l'apostrofo di «ETA'». Corretta la stringa e rigenerata l'appendice: nel `.tex` cambia
+una sola riga, il resto è identico.
+
+Deciso: accento corretto in italiano, «ETÀ IN MESI».
+
+Sistemata anche l'impaginazione della riga, che con le tre linee da compilare ripristinate
+non entrava più nella pagina e spezzava «VALUTAZIO-NE»: i tre campi sono ora blocchi
+indivisibili distribuiti su una riga sola, con le linee leggermente più corte
+(2,0 / 1,6 / 2,0 cm).
+
+Nota per il punto 11: il titolo dell'appendice, «Protocollo di somministrazione e scoring
+del Baby-FE», nella pagina di apertura va a capo spezzando «sco-ring». Se il titolo
+cambierà con il nome scelto, si sistemerà lì.

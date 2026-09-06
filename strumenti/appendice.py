@@ -162,9 +162,13 @@ def documento():
     out = [r'\chapter{Protocollo di somministrazione e scoring del Baby-FE}',
            r'\label{app:babyfe}', '',
            r'\thispagestyle{plain}', '',
-           r'\noindent\textbf{CODICE:}~\rule{3.2cm}{0.4pt}\quad'
-           r'\textbf{ETA'' IN MESI:}~\rule{2.4cm}{0.4pt}\quad'
-           r'\textbf{DATA DI VALUTAZIONE:}~\rule{2.8cm}{0.4pt}', '']
+           # I tre campi da compilare su una riga sola: ogni campo e' un \mbox, cosi'
+           # non viene mai spezzato a meta' parola, e \hfill li distribuisce.
+           # (Una versione precedente aveva un "\r" in una stringa non raw, che
+           # diventava un ritorno a capo e stampava "ule2.4cm0.4pt".)
+           r'\noindent\mbox{\textbf{CODICE:}~\rule{2.0cm}{0.4pt}}\hfill'
+           r'\mbox{\textbf{ETÀ IN MESI:}~\rule{1.6cm}{0.4pt}}\hfill'
+           r'\mbox{\textbf{DATA DI VALUTAZIONE:}~\rule{2.0cm}{0.4pt}}', '']
     for i in range(15):
         out.append(tabella(i)); out.append('')
     out += [r'\clearpage', '', r'\section*{Legenda}', '']
