@@ -592,7 +592,43 @@ data del template («Genova, *data*») è stata tolta su richiesta dell'utente.
 
 Corretto un difetto del template emerso ora che la sezione occupa quattro pagine: lo stile
 «fancy» stampava sulle pagine successive alla prima la testata «Capitolo 0» (un
-`\chapter*` non ha numero). Per tutta la sezione si usa ora lo stile «plain», con la prima
-pagina senza numero come prima. Lo stesso accorgimento servirà per gli abstract.
+`\chapter*` non ha numero). Le pagine dei ringraziamenti sono ora tutte senza numero né
+testata, come frontespizio e dedica: la numerazione romana parte dagli abstract, dove il
+template azzera il contatore.
 
 La tesi passa da 180 a 183 pagine.
+
+## F4. Abstract e Introduzione
+
+**Stato:** applicato, in attesa di conferma.
+
+**File:** `tesi/head/4_abstract.tex` (riscritto), `tesi/main/0_introduzione.tex` (nuovo),
+`tesi/main.tex` (una riga).
+
+**Abstract**, come nel template di riferimento: nel front matter, due pagine separate
+(`\cleardoublepage` fra le due), ciascuna con `\chapter*{Abstract}`; italiano a pagina i,
+inglese a pagina iii, quest'ultimo dentro `otherlanguage{english}` per la sillabazione.
+Una sola voce nell'indice: «Abstract (Italiano/English)». Sostituisce il «Sommario»
+segnaposto.
+
+**Introduzione**: capitolo non numerato in apertura del corpo della tesi, prima del
+capitolo 1, con voce nell'indice; parte a pagina 1. Stile di pagina «plain» per evitare la
+testata «Capitolo 0». Le tre coppie di citazioni, scritte nel Word come numeri della
+bibliografia, sono diventate `\cite`:
+
+| Nel Word | `\cite` |
+|---|---|
+| [2], [4] | `calkins2007,blair2015` |
+| [38], [41] | `beauchaine2019,astle2022` |
+| [85], [78] | `mcclelland2012,snyder2021` |
+
+**Effetto sulla bibliografia:** queste sei opere sono ora i riferimenti [1]–[6]
+dell'intera tesi, nell'ordine in cui compaiono nell'introduzione; tutti gli altri numeri
+sono slittati di conseguenza. Verificato nel PDF: [1] Calkins 2007, [2] Blair & Raver
+2015, [3] Beauchaine & Cicchetti 2019, [4] Astle et al. 2022, [5] McClelland & Cameron
+2012, [6] Snyder et al. 2021.
+
+Verifica parola per parola contro il Word: introduzione 429 parole, abstract italiano 152,
+abstract inglese 155 — **0 differenze** in tutti e tre.
+
+La tesi passa da 183 a 187 pagine.

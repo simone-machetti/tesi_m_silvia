@@ -1,8 +1,10 @@
 \chapter*{Ringraziamenti}
 ~\newline~\newline~
-% Su piu' pagine lo stile "fancy" stamperebbe la testata "Capitolo 0" (chapter* non
-% ha numero): per tutta la sezione si usa "plain" e la prima pagina resta vuota.
-\pagestyle{plain}
+% Pagine senza numero ne' testata, come frontespizio e dedica: la numerazione romana
+% parte dagli abstract (main.tex azzera il contatore subito prima). Con lo stile
+% "fancy" del template, un chapter* stamperebbe inoltre la testata "Capitolo 0".
+% \chapter* impone da solo lo stile "plain" alla propria prima pagina: va annullato.
+\pagestyle{empty}
 \thispagestyle{empty}
 
 \setlength{\parskip}{1em}
