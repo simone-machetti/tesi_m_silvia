@@ -133,8 +133,19 @@ def text_md(md):
     s = s.replace('|', ' ')
     for r in FUORI_CORPO:
         s = re.sub(r, '', s, flags=re.S)
+    # Revisioni di contenuto volute (guideline/4.3.3_4.4.1_rev.docx, vedi tasks.md F8):
+    # si applicano anche al lato Word, cosi' il confronto segnala solo il non previsto.
+    for r in REVISIONI:
+        n = s.count(r['word'])
+        if n != 1:
+            print('ATTENZIONE: revisione «%s» trovata %d volte nel Word' % (r['dove'], n))
+        s = s.replace(r['word'], r['tesi'])
     return s
 
+
+import json as _json, os as _os
+REVISIONI = _json.load(open(_os.path.join(_os.path.dirname(__file__), 'revisioni_cap4.json'),
+                            encoding='utf-8'))
 
 # Frasi di raccordo aggiunte per introdurre le tabelle (vedi tabelle.md): non sono
 # testo del Word e vengono tolte dal confronto.

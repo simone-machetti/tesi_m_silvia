@@ -696,3 +696,45 @@ indivisibili distribuiti su una riga sola, con le linee leggermente più corte
 Nota per il punto 11: il titolo dell'appendice, «Protocollo di somministrazione e scoring
 del Baby-FE», nella pagina di apertura va a capo spezzando «sco-ring». Se il titolo
 cambierà con il nome scelto, si sistemerà lì.
+
+## F8. Capitolo 4: tre sostituzioni da `4.3.3_4.4.1_rev.docx`
+
+**Stato:** applicato, in attesa di conferma.
+
+**File:** `tesi/main/4_capitolo_4.tex`; `strumenti/verify4.py` e il nuovo
+`strumenti/revisioni_cap4.json` per la verifica.
+
+Come deciso, sono state modificate solo le parti marcate in grassetto nel file di
+revisione, e il grassetto non è stato riportato nella tesi. Per la nota della tabella, che
+nel file non ha grassetto, la parte nuova è stata individuata per confronto con la nota
+attuale.
+
+| # | Dove | Intervento | Parole aggiunte |
+|---|---|---|---|
+| a | Nota sotto la Tabella 4.26 | Aggiunte in coda due frasi: i punteggi del 10° e 20° percentile per IC, FX, WM, RG e la precisazione che sono riferimenti descrittivi interni al campione | +57 |
+| b | Sez. 4.3.3, paragrafo «Anche i punteggi dell'EEFQ…» | Inserite tre frasi fra «…per i Casi 1, 5 e 6.» e «Il Caso 3 presenta…», sulla collocazione dei casi rispetto al 10° e 20° percentile | +120 |
+| c | Sez. 4.4.1, paragrafo «Un elemento di convergenza circoscritto…» | «inferiore alla media del campione totale» → «collocato tra il 10° e il 20° percentile della distribuzione osservata nel campione totale» | +8 |
+
+Ogni stringa da sostituire è stata cercata nel file e trovata esattamente una volta; il
+testo nuovo proviene dalla conversione pandoc del file di revisione, senza ribattitura.
+Il corpo della Tabella 4.26 e il paragrafo successivo a (b) sono rimasti invariati, come
+richiesto dal file.
+
+**Verifica:** le tre sostituzioni sono registrate in `strumenti/revisioni_cap4.json` e
+`verify4.py` le applica anche al lato Word prima del confronto, così segnala solo ciò che
+non è previsto. Esito dopo l'intervento: 49 titoli, 26 tabelle, **0 differenze**. Le tre
+frasi nuove sono state ritrovate nel PDF.
+
+La tesi passa da 185 a 187 pagine.
+
+### F8-bis. Grassetto nella prosa della 4.3.3
+
+Su segnalazione dell'utente. Due frasi intere del paragrafo sulle singole prove erano in
+grassetto — «L'Asta con anelli presenta invece un andamento differente…» e «Nel complesso,
+pertanto, l'analisi delle singole attività…». Così anche nel Word originale, ma senza
+ragione tipografica: con ogni probabilità sono marcature di rilettura mai rimosse, come
+quelle del file di revisione. Riportate al tondo; il testo non cambia.
+
+Il grassetto nelle tabelle della stessa sezione è invece **voluto** e resta: nella
+Tabella 4.26 evidenzia i punteggi almeno una deviazione standard sotto la media, come
+spiega la nota; le intestazioni di colonna sono in grassetto come in tutte le tabelle.
