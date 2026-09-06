@@ -2,12 +2,12 @@
 % Campi del frontespizio: compilare qui, il layout sotto non va toccato.
 % =============================================================================
 \newcommand{\Dipartimento}{DIPARTIMENTO DI SCIENZE DELLA FORMAZIONE}
-\newcommand{\CorsoDiLaurea}{CORSO DI LAUREA IN}
-\newcommand{\TitoloTesi}{-TITOLO DELLA TESI-}
-\newcommand{\Relatore}{Nome Cognome}
-\newcommand{\Correlatore}{Nome Cognome}
-\newcommand{\Candidato}{Nome Cognome}
-\newcommand{\AnnoAccademico}{ANNO ACCADEMICO}
+\newcommand{\CorsoDiLaurea}{CORSO DI LAUREA IN\\[0.3em]Psicologia dello sviluppo tipico e atipico}
+\newcommand{\TitoloTesi}{Profili di Disregolazione nella Prima Infanzia: Una Prospettiva Transdiagnostica per la Valutazione Precoce}
+\newcommand{\Relatore}{Prof.ssa Paola Viterbori}
+\newcommand{\Correlatore}{Prof.ssa Maria Carmen Usai}
+\newcommand{\Candidato}{Silvia Occhionero}
+\newcommand{\AnnoAccademico}{ANNO ACCADEMICO 2025 / 2026}
 % =============================================================================
 
 \begin{titlepage}
@@ -31,23 +31,30 @@
 
 \vfill
 
-\begin{flushright}
-    \begin{minipage}{0.42\textwidth}
-        {\fontsize{14}{25}\selectfont
-            \textit{Relatore:}\\
-            \Relatore\\[0.6em]
-            \textit{Correlatore:}\\
-            \Correlatore\\[0.6em]
-            \textit{Candidato:}\\
-            \Candidato \par
-        }
-    \end{minipage}
-\end{flushright}
+% Relatore e correlatore a sinistra, candidato a destra: due colonne allineate in alto.
+\noindent
+\begin{minipage}[t]{0.52\textwidth}
+    {\fontsize{14}{25}\selectfont
+        \textit{Relatore:}\\
+        \Relatore\\[0.6em]
+        \textit{Correlatore:}\\
+        \Correlatore \par
+    }
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.42\textwidth}
+    \begin{flushright}
+    {\fontsize{14}{25}\selectfont
+        \textit{Candidato:}\\
+        \Candidato \par
+    }
+    \end{flushright}
+\end{minipage}
 
 \vfill
 
 \begin{center}
-    {\fontsize{18}{22}\selectfont\bfseries \AnnoAccademico \par}
+    {\fontsize{18}{22}\selectfont \AnnoAccademico \par}
 \end{center}
 
 \end{titlepage}

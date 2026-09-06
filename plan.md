@@ -1,218 +1,247 @@
-# Piano di migrazione: da Word (`source/`) a LaTeX (`tesi/`)
+# Piano delle modifiche — seconda fase
 
-## Obiettivo
+Modifiche richieste in `guideline/modifiche.docx`, con il materiale nei tre file a fianco
+(`dediche.docx`, `Intro&Abstract.docx`, `4.3.3_4.4.1_rev.docx`). La cartella `guideline/`
+si legge soltanto; ogni intervento va in `tesi/`.
 
-Trasferire i 4 capitoli e la bibliografia dai file Word in `source/` dentro il template
-LaTeX in `tesi/`, **senza modificare nulla di testo, numeri, contenuto, sintassi o
-grammatica**. Cambia solo la veste: font, impaginazione, tabelle rifatte in LaTeX.
-Il controllo linguistico e di contenuto verrà fatto in un secondo momento.
+**Metodo:** un punto alla volta, nell'ordine qui sotto. Dopo ciascuno: compilazione,
+controllo del risultato, conferma dell'utente prima di passare al successivo.
+Ogni testo aggiunto o modificato viene registrato in `tasks.md`, così le verifiche di
+fedeltà in `strumenti/` sanno distinguere le modifiche volute dagli errori.
 
-La cartella `template/` è solo un riferimento di stile: il suo contenuto non viene usato.
+Stato di partenza: tesi di 180 pagine, compila pulita, quattro capitoli verificati parola
+per parola contro il Word, bibliografia di 102 voci tutte citate, Appendice 1 completa.
 
----
-
-## Materiale di partenza
-
-| File | Contenuto | Parole | Tabelle | Immagini |
-|---|---|---|---|---|
-| `source/capitolo_1.docx` | 7 sezioni (1.1–1.7) + 3 sottosezioni (1.6.1–1.6.3) | 6.854 | 0 | 0 |
-| `source/capitolo_2.docx` | 4 sezioni (2.1–2.4) + 11 sottosezioni | 11.619 | 0 | 0 |
-| `source/capitolo_3.docx` | 8 sezioni (3.1–3.8) + 22 sottosezioni **+ APPENDICE 1** | 18.311 | 15 | 12 |
-| `source/capitolo_4.docx` | 4.1–4.3 + 4.4.1/4.4.2, con 4.2.3.1–4.2.3.4 e 8 "Caso" | 14.688 | 26 | 0 |
-| `source/bibliografia.docx` | 99 voci APA in lista pulita + 30 righe di "BRUTTA BOZZA" | 3.200 | – | – |
-| `source/tabella.docx` | **duplicato esatto** dell'Appendice 1 già dentro `capitolo_3.docx` | – | 15 | 12 |
-| `source/frontespizio.doc` | template UniGe **vuoto**, già replicato in `tesi/head/1_frontespizio.tex` | – | – | – |
-
-Nessuna nota a piè di pagina, nessun elenco puntato o numerato in tutto il materiale:
-solo paragrafi, titoli e tabelle.
-
-Il template `tesi/` compila pulito (pdflatex + biber, 24 pagine) e ha già 4 file capitolo
-che corrispondono 1:1 ai 4 capitoli del Word.
+**Decisioni già prese** (le domande aperte sono state risolte): vedi in ciascun punto.
+Il nome dell'appendice è l'unico punto ancora in attesa di un'informazione, ed è stato
+messo per ultimo. Undici punti in tutto.
 
 ---
 
-## Regole di lavoro fissate
+## 1. Frontespizio
 
-- **Tabelle**: stile di quelle di esempio in `tesi/main/2_capitolo_2.tex`, cioè
-  `\begin{tabular}{|l|c|c|c|}` **con le barre laterali**, più `\toprule` / `\midrule` /
-  `\bottomrule` e intestazioni in `\bf{}`.
-- **Impaginazione delle tabelle**:
-  - **mai spezzate fra due pagine**. Unica eccezione: una tabella più alta di una pagina
-    intera, e solo allora, viene divisa;
-  - **flottanti**: se non entrano nel punto esatto in cui sono citate scivolano alla pagina
-    vicina, e il testo scorre a riempire lo spazio. Meglio una tabella una pagina più avanti
-    che mezza pagina bianca;
-  - **vicine al testo che le commenta**: un `\FloatBarrier` prima di ogni sottosezione e di
-    ogni «Caso» impedisce che escano dal punto che le descrive;
-  - **le didascalie stanno dentro il flottante**, così non restano mai orfane; dalla fase 11
-    sono **sempre sopra** la tabella, in formattazione predefinita;
-  - l'aggiustamento è **solo tipografico**: nessuna parola spostata, riscritta o riordinata.
-- **Citazioni**: numeriche IEEE (`\cite{...}`), come nella cartella `template/`.
-  È l'**unica** eccezione concessa alla regola "non modificare il testo".
-- **8 citazioni orfane** (senza voce in bibliografia): in fase di migrazione, voce
-  segnaposto con i soli autore e anno ricavabili dal testo, senza inventare titoli.
-  *Superato dalla fase 10:* i riferimenti reali sono stati identificati e inseriti.
-- **Astle 2022**: in fase di migrazione, segnaposto separato dalle due voci "Astle 2021".
-  *Superato dalla fase 10:* le voci sono state unificate in una sola, datata 2022.
-- **Sezione "BRUTTA BOZZA"** in fondo a `bibliografia.docx`: scartata (materiale di lavoro,
-  voci duplicate di quelle già presenti nella lista pulita).
-- **Titolo capitolo 4**: *Analisi dei casi critici nei processi di regolazione tra i 18 e i
-  36 mesi* (parentesi rimosse, iniziale maiuscola).
-- **Front matter** (dedica, ringraziamenti, Sommario, Elenco acronimi): resta un breve
-  testo in latino nelle sezioni vuote.
-- **`tabella.docx`**: non usato, è il duplicato dell'Appendice.
+**File:** `tesi/head/1_frontespizio.tex`
 
----
-
-## Assunzioni adottate
-
-1. **Titoli capitolo**: rimosso il prefisso `CAPITOLO N –` perché il numero lo genera il
-   template; il resto verbatim.
-2. **Gerarchia**: `x.y` → `\section`, `x.y.z` → `\subsection`, `x.y.z.w` → `\subsubsection`.
-   La numerazione automatica riproduce esattamente quella del Word.
-3. **4.4.1 e 4.4.2 non hanno un "4.4" padre** nel Word: nessun titolo inventato, si forza il
-   contatore così escono esattamente `4.4.1` e `4.4.2`.
-4. **"Caso 1…8"**, "Scheda di sintesi", "Prestazione al Baby-FE", "Osservazione…" restano
-   **non numerati**, come nel Word (titoli con `*`).
-5. ~~**Le 23 tabelle-caso non hanno didascalia** nel Word: restano senza `\caption`.~~
-   *Superata dalla fase 11:* tutte e 26 hanno ora didascalia, numero e rimando nel testo.
-6. **`\listoffigures`** risulterebbe vuoto (le uniche immagini sono icone dentro le celle
-   dell'Appendice): commentato in `main.tex`. `\listoftables` mostra 26 voci.
-7. In `4.2.3` diversi **paragrafi di testo corrente hanno per errore stile "Titolo 3"** nel
-   Word: resi come testo normale.
-8. Titoli con spazio mancante (`1.1I processi`, `1.3Principali`): il numero lo genera LaTeX,
-   quindi lo spazio torna corretto senza toccare il testo.
-9. Corsivi, grassetti e sottolineature del Word riprodotti 1:1.
-10. Dati del frontespizio (titolo tesi, relatore, candidato, A.A.): restano i placeholder,
-    nel `.doc` non c'è nessun dato.
-11. ~~**`\nocite{*}`**: serve a stampare tutte le voci, comprese quelle mai citate.~~
-    *Superata dalla fase 10:* eliminato, non essendoci più voci orfane da stampare.
-12. ~~**Astle 2021**: le 12 citazioni agganciate alla prima delle due voci.~~
-    *Superata dalla fase 10:* voci unificate, tutte e 27 le citazioni puntano lì.
-
----
-
-## File di controllo consegnati
-
-| File | Contenuto |
+| Campo | Valore |
 |---|---|
-| `bib.md` | Registro delle anomalie del materiale di partenza: citazioni orfane, doppio Astle 2021, `Vygotskij`/`Vygotsky`, voci fuori formato, voci mai citate. **Tutti i punti sono stati poi risolti** nella fase 10. |
-| `tasks.md` | Registro degli interventi decisi punto per punto — bibliografia e tabelle — con le fonti della verifica e l'esito. |
-| `tabelle.md` | Tutto il testo aggiunto per le tabelle: 26 didascalie e 23 frasi di raccordo, una per una. Le parti provenienti dal Word sono marcate in corsivo. |
-| `cap_1.md` … `cap_4.md` | Diff paragrafo per paragrafo fra il testo del Word e il testo del LaTeX, normalizzato su spazi e virgolette. Se il capitolo è migrato correttamente il diff mostra **solo** le sostituzioni di citazione `(Kopp, 1982)` → `[12]`. Qualunque altra riga nel diff è un errore da correggere. |
+| Corso di laurea | CORSO DI LAUREA IN Psicologia dello sviluppo tipico e atipico |
+| Titolo | Profili di disregolazione nella prima infanzia: una prospettiva transdiagnostica per la valutazione precoce |
+| Relatore | Prof.ssa Paola Viterbori |
+| Correlatore | Prof.ssa Maria Carmen Usai |
+| Candidato | Silvia Occhionero |
+| Anno accademico | ANNO ACCADEMICO 2025 / 2026 |
+
+**Deciso:** nome del corso in minuscolo (solo l'iniziale maiuscola), «Prof.ssa» per
+entrambe le docenti.
+
+**Layout:** oggi relatore, correlatore e candidato stanno in un unico blocco a destra.
+Richiesto: relatore e correlatore **a sinistra**, candidato **a destra**. Due `minipage`
+affiancate, allineate in alto.
 
 ---
 
-## Problemi noti nel materiale di partenza
+## 2. Dedica
 
-Rilevati durante l'analisi e lasciati inizialmente intatti perché sono contenuto.
-**Risolti tutti nella fase 10**, uno per uno e con verifica su fonte: il dettaglio è in
-`tasks.md`, il registro dei problemi in `bib.md`.
+**File:** `tesi/head/2_dedica.tex`
 
-| Citazione nel testo | Occorrenze | Situazione |
-|---|---|---|
-| `Astle et al., 2022` | 15 | In bibliografia ci sono **due voci Astle 2021**; la seconda ("The transdiagnostic revolution…") è in realtà del 2022. |
-| `Zelazo, 2003` | 2 | Voce assente in bibliografia |
-| `Friedman & Miyake, 2017` | 2 | Voce assente in bibliografia |
-| `Rothbart, 2003` | 1 | Voce assente in bibliografia |
-| `Calkins & Fox, 2002` | 1 | Voce assente in bibliografia |
-| `Blair & Ursache, 2011` | 1 | Voce assente in bibliografia |
-| `Beauchaine & McNulty, 2013` | 1 | Voce assente in bibliografia |
-| `Bayley, 2006` | 1 | Voce assente in bibliografia |
-| `Vygotskij, 1962` | 1 | In bibliografia è `Vygotsky, 1962` (grafia diversa) |
+Sostituire il segnaposto («Verba volant, scripta manent — Caius Titus») con la frase di
+apertura da `dediche.docx`, in corsivo, su tre righe come nel Word:
 
-Altri punti segnalati:
-
-- La voce **Gandolfi et al. (2014)** in bibliografia è in formato Frontiers, non APA come
-  tutte le altre.
-- **Fletcher-Watson (2022)** e **Zelazo, Blair & Willoughby (2020)** sono in bibliografia
-  ma non risultano mai citate nel testo (entrambe poi rimosse nella fase 10).
-- Nel capitolo 4 manca l'intestazione di sezione **4.4**, pur essendoci 4.4.1 e 4.4.2.
-- Il **Caso 2** ha 2 tabelle invece di 3: l'osservazione comportamentale non è disponibile.
+> *Alla ricerca,*
+> *che nasce dalla curiosità di osservare*
+> *e dal desiderio di comprendere.*
 
 ---
 
-## Stato di avanzamento
+## 3. Ringraziamenti
 
-| # | Fase | Stato | Esito |
+**File:** `tesi/head/3_ringraziamenti.tex`
+
+Sostituire il testo latino segnaposto con i ringraziamenti di `dediche.docx`: 21
+paragrafi, circa 1.450 parole. Testo riportato parola per parola; l'unico intervento è
+la codifica LaTeX di virgolette e apostrofi.
+
+**Deciso:** resta la riga di chiusura del template, «Genova, *data*» a sinistra e nome
+della candidata a destra.
+
+---
+
+## 4. Abstract e Introduzione — come nel template di riferimento
+
+**File:** `tesi/head/4_abstract.tex` (oggi «Sommario» con testo segnaposto), più un
+nuovo file `tesi/main/0_introduzione.tex`.
+
+Da `Intro&Abstract.docx`. Collocazione **verificata su `template/main.tex`**.
+
+**Abstract — come nel template:** nel front matter, prima dell'indice, **due pagine
+separate** (`\cleardoublepage` fra le due), ciascuna con il proprio `\chapter*`:
+«Abstract» in italiano, poi «Abstract» in inglese. Il template usa **una sola voce
+nell'indice** per entrambe le lingue («Abstract (English/Français)»): qui diventa
+«Abstract (Italiano/English)».
+
+**Introduzione — deciso:** nel corpo della tesi, prima del capitolo 1, come **capitolo
+non numerato** (`\chapter*{Introduzione}` con voce nell'indice). Nel template
+*Introduction* è invece il capitolo 1 numerato; qui si è scelto di non rinumerare i
+quattro capitoli esistenti, così nessun numero di capitolo, sezione o tabella cambia.
+
+In compenso i rimandi scritti a parole nel testo vengono resi automatici: è il **punto 9**.
+
+Le sei citazioni dell'introduzione sono scritte nel Word come numeri della bibliografia
+attuale. Corrispondenza già ricostruita, diventano `\cite` veri:
+
+| Nel Word | Voce |
+|---|---|
+| `[2]` | Calkins (2007) |
+| `[4]` | Blair & Raver (2015) |
+| `[38]` | Beauchaine & Cicchetti (2019) |
+| `[41]` | Astle et al. (2022) |
+| `[85]` | McClelland & Cameron (2012) |
+| `[78]` | Snyder et al. (2021) |
+
+In entrambe le collocazioni queste sei opere diventano i riferimenti `[1]`–`[6]`
+dell'intera tesi e la numerazione successiva slitta: automatico e corretto, la
+bibliografia è in ordine di comparsa.
+
+---
+
+## 5. Togliere l'elenco degli acronimi
+
+**File:** `tesi/main.tex`
+
+Rimuovere la riga `\input{head/5_acronimi}`. Verificato: nessun capitolo usa il comando
+`\ac{}`, la rimozione non rompe nulla. Il file `head/5_acronimi.tex` resta sul disco ma
+non viene più incluso.
+
+---
+
+## 6. Testata del capitolo 3
+
+**File:** `tesi/main/3_capitolo_3.tex`
+
+Il titolo «La valutazione dell'autoregolazione nella prima infanzia (18–36 mesi e 3–6
+anni)» è troppo lungo per la testata delle pagine e si sovrappone a «Capitolo 3».
+Richiesto: togliere «(18–36 mesi e 3–6 anni)» **solo dalla testata**, lasciando intatti
+titolo nella pagina di apertura e indice.
+
+Tecnica: un `\chaptermark{...}` con il titolo breve subito dopo `\chapter{...}`. Agisce
+solo sulle testate; indice e pagina di apertura non cambiano.
+
+---
+
+## 7. Appendice: «ETÀ IN MESI»
+
+**File:** `strumenti/appendice.py` e `tesi/tail/appendice.tex`
+
+Nel campo da compilare compare il testo spurio «ule2.4cm0.4pt» al posto della riga
+orizzontale. Causa trovata: nel generatore, `\rule` era dentro una stringa Python non
+*raw*, e `\r` è diventato un ritorno a capo. Lo stesso errore ha fatto sparire
+l'apostrofo di «ETA'».
+
+Correggere la stringa nel generatore e rigenerare l'appendice: la riga orizzontale torna a
+disegnarsi, il testo spurio sparisce.
+
+**Deciso:** l'accento corretto in italiano, quindi «**ETÀ** IN MESI».
+
+---
+
+## 8. Capitolo 4: integrare le sezioni revisionate
+
+**File:** `tesi/main/4_capitolo_4.tex` — da `4.3.3_4.4.1_rev.docx`
+
+Tre sostituzioni chirurgiche; il resto del capitolo non si tocca.
+
+**Deciso:** il grassetto nel file di revisione marca le parti nuove. Si modificano solo
+quelle, e nella tesi il grassetto **non** viene riportato.
+
+| # | Dove | Cosa cambia | Come è marcato nel file |
 |---|---|---|---|
-| 1 | Preparazione (pacchetti, immagini) | ✅ | 5 pacchetti aggiunti, 8 immagini in `tesi/images/` |
-| 2 | Bibliografia | ✅ | 106 voci (99 reali + 7 segnaposto); riviste poi nella fase 10 |
-| 3 | Capitolo 1 | ✅ | 10 titoli, 67 citazioni, **0 differenze** |
-| 4 | Capitolo 2 | ✅ | 15 titoli, 142 citazioni, **0 differenze** |
-| 5 | Capitolo 3 (Appendice esclusa) | ✅ | 30 titoli, 144 citazioni, **0 differenze** |
-| 6 | Capitolo 4 | ✅ | 49 titoli, 26 tabelle, 10 citazioni, **0 differenze** |
-| 7 | Appendice 1 | ✅ | 15 tabelle + legenda, in `\appendix` prima della bibliografia |
-| 8 | Front matter e chiusura | ✅ | compila pulito, 161 pagine |
-| 9 | Impaginazione delle tabelle | ✅ | 26 tabelle da `longtable` a flottante intero |
-| 10 | Revisione delle citazioni | ✅ | 7 interventi sulla bibliografia, vedi `tasks.md` |
-| 11 | Didascalie e rimandi delle tabelle | ✅ | 26 didascalie, 27 rimandi, vedi `tabelle.md` |
+| a | Nota sotto la Tabella 4.26 | Si aggiungono i punteggi del 10° e 20° percentile per IC, FX, WM, RG e la precisazione che sono riferimenti descrittivi interni al campione | **Nessun grassetto**: il file dà la nota completa come «definitiva». La parte nuova sono le ultime due frasi, individuate per confronto con la nota attuale |
+| b | Sez. 4.3.3, paragrafo «Anche i punteggi dell'EEFQ…» | Tre frasi inserite nel mezzo, sulla collocazione dei casi rispetto al 10° e 20° percentile; prima e ultima frase invariate | In grassetto |
+| c | Sez. 4.4.1, paragrafo «Un elemento di convergenza circoscritto…» | Una sola espressione: «inferiore alla media del campione totale» → «collocato tra il 10° e il 20° percentile della distribuzione osservata nel campione totale» | In grassetto |
 
-### Dettagli della fase 7 (fatta)
+Il file precisa che il corpo della Tabella 4.26 e il paragrafo successivo a (b) restano
+invariati.
 
-15 tabelle a 5 colonne con celle lunghe e icone dentro le celle, più la legenda finale.
+Dopo l'intervento: aggiornare `verify4.py` perché riconosca le tre sostituzioni come
+volute, e ricontrollare che il resto del capitolo dia ancora 0 differenze.
 
-- Collocata in un **`\appendix`** fra gli elenchi e la bibliografia, non in fondo al
-  capitolo 3: il rimando «riportato in Appendice 1» resta valido.
-- **Blocco unico non numerato:** nessuna didascalia e nessun rimando per le singole
-  tabelle, è un modulo da compilare e non materiale da consultare.
-- **Composte in orizzontale e ruotate di 90 gradi su pagine che restano verticali**
-  (`\rotatebox`, non `landscape`): in stampa il lettore gira il libro, il numero di pagina
-  non ruota con la tabella e il PDF non porta il flag `/Rotate`. Una tabella per pagina.
-- Contrariamente a quanto stimato in un primo momento, **nessuna tabella supera l'altezza
-  di una pagina**: l'eccezione alla regola «mai spezzate» non è servita.
-- Le immagini sono 9: alle 8 già estratte si è aggiunta `app_stop_3.png`, usata nella
-  tabella 10 e mancante dalla prima estrazione.
+---
 
-Due insidie del formato Word risolte lungo la strada, entrambe silenziose: nella tabella 10
-un blocco `mc:AlternateContent` (Word tiene una copia di riserva dello stesso contenuto) e
-nella legenda una casella di testo annidata dentro un disegno. In entrambi i casi il testo
-sarebbe finito **due volte** nel PDF.
+## 9. Rimandi interni con `\ref`, così si aggiornano da soli
 
-### Dettagli della fase 9 (fatta)
+**File:** `tesi/main/1_capitolo_1.tex` … `4_capitolo_4.tex`
 
-Le 26 tabelle del capitolo 4 erano `longtable`, che per costruzione si spezza fra le
-pagine. Sono state riscritte come flottanti `table` + `tabular`: un flottante non si
-spezza mai. Nessuna delle 26 supera l'altezza di una pagina, quindi non è stato necessario
-dividerne nessuna. Verifica sul PDF: nessun avviso «Float too large», riempimento medio
-delle pagine del capitolo 82,9% (era 82,5% con le `longtable`), 161 pagine invece di 163.
+Nel testo del Word i rimandi a capitoli e sezioni sono scritti come parole
+(«Capitolo 1», «sezione 2.4») e non si aggiornano se la numerazione cambia. Vanno
+convertiti in `\ref` verso le etichette già presenti. Etichette **verificate, esistono
+tutte**: `cap:uno`…`cap:quattro` per i capitoli, `sec:1_6`, `sec:2_4`, `sec:2_3_1`,
+`sec:4_3_2`, `sec:4_3_3`, `sec:4_4_1` per le sezioni richiamate.
 
-### Dettagli della fase 10 (fatta)
+| Nel testo | Occorrenze | Diventa |
+|---|---|---|
+| «Capitolo 1» | 13 | `Capitolo~\ref{cap:uno}` |
+| «Capitolo 2» | 3 | `Capitolo~\ref{cap:due}` |
+| «Capitolo 3» | 3 | `Capitolo~\ref{cap:tre}` |
+| «Capitoli 1, 2 e 3» | 1 | `Capitoli~\ref{cap:uno}, \ref{cap:due} e~\ref{cap:tre}` |
+| «§1.6» | 1 | `§\ref{sec:1_6}` |
+| «sezione 2.4», «sezione 2.3.1» | 2 | `sezione~\ref{sec:2_4}`, `sezione~\ref{sec:2_3_1}` |
+| «Sezione 4.3.2», «sezione 4.3.3» | 2 | `Sezione~\ref{sec:4_3_2}`, `sezione~\ref{sec:4_3_3}` |
+| «nella 4.4.1» | 3 | `nella~\ref{sec:4_4_1}` |
 
-Revisione completa della bibliografia, condotta punto per punto con l'utente e registrata in
-`tasks.md`: unificazione delle due voci Astle in una sola datata 2022, inserimento delle sei
-voci citate ma assenti dal Word (identificate dal contesto e verificate su fonte), grafia
-italiana per Vygotskij, rimozione della voce mai citata Fletcher-Watson, correzione di
-Karreman, Meins, Ursache e Berni, numerazione in ordine di comparsa nel testo, DOI e URL
-nascosti. La bibliografia passa da 106 voci (99 dal Word + 7 segnaposto) a **102 voci reali,
-verificate e tutte citate**: voci del `.bib` e citazioni del testo coincidono esattamente.
-Il testo dei capitoli non è cambiato: le verifiche in `strumenti/` danno 0 differenze su
-tutti e quattro.
+Circa 28 sostituzioni. I 27 rimandi alle tabelle sono già `\ref` dalla fase precedente.
 
-### Dettagli della fase 11 (fatta)
+**Nel PDF non cambia nulla:** i numeri stampati restano identici a oggi. Cambia solo che
+da qui in avanti sopravvivono a qualunque rinumerazione. I due rimandi «Appendice 1»
+restano fuori: dipendono dal nome che verrà scelto al punto 11.
 
-Titolo e breve descrizione per tutte e 26 le tabelle del capitolo 4, sempre sopra la tabella
-e in formattazione predefinita; numerazione 4.1–4.26 in ordine di comparsa con `\caption` e
-`\label`; un rimando nel testo per ogni tabella. Le legende di codifica che stavano sopra le
-tabelle sono confluite nella descrizione, con il testo del Word conservato parola per parola;
-le righe «Nota.» restano sotto le tabelle aggregate.
+Dopo l'intervento: le verifiche di fedeltà in `strumenti/` vanno istruite a leggere
+`\ref{cap:uno}` come «1», altrimenti segnalerebbero 28 differenze fittizie.
 
-**È il primo intervento che aggiunge testo assente dal Word:** 23 titoli, 23 descrizioni e
-23 frasi di raccordo. Tutto il testo aggiunto è elencato in `tabelle.md` per la revisione.
-`verify4.py` è stato aggiornato per escludere didascalie e raccordi dal confronto: la
-verifica continua a coprire la prosa del capitolo e dà **0 differenze**.
+---
 
-Conseguenza da tenere presente: le due tabelle aggregate finali, che nel Word erano 4.2 e
-4.3, diventano **4.25 e 4.26**, perché le 23 tabelle-caso si inseriscono in mezzo.
+## 10. Controllo finale di grammatica, sintassi e titoli
 
-### Modifiche al template rispetto alla versione di partenza
+È il punto più lungo: circa 51.000 parole nei quattro capitoli, più introduzione,
+abstract, ringraziamenti e appendice. Finora il testo è stato **volutamente** lasciato
+identico al Word, refusi compresi; questo è il momento in cui si interviene.
 
-- `settings/custom.tex`: aggiunti `longtable`, `tabularx`, `makecell`, `ragged2e`,
-  `pdflscape`, `xurl`, `placeins`; DOI e URL attivati in biblatex; `\paragraph` reso titolo
-  a blocco; parametri di posizionamento dei flottanti allargati (`\topfraction` 0.9,
-  `\bottomfraction` 0.8, `\textfraction` 0.07, `\floatpagefraction` 0.75, fino a 5 tabelle
-  per pagina) perché una tabella spostata non lasci vuoti.
-- `main.tex`: `\listoffigures` commentato (nessuna figura nei capitoli).
-- `tail/biblio.tex`: aggiunto `\emergencystretch` per i DOI lunghi.
-- `head/`: tolto il `\cite` di esempio dal Sommario, accorciati i testi in latino,
-  commentati i segnaposto.
+**Metodo:** un capitolo alla volta. Per ciascuno produco un elenco in `revisione.md`
+con, per ogni punto: posizione, testo attuale, correzione proposta, motivo.
+**Non applico nulla finché non approvi l'elenco.** Poi applico solo le voci approvate,
+ricompilo e riverifico.
+
+Cosa cerco:
+- refusi e parole storpiate (già visti: «delyed gratification», «assesment», «in maniera
+  causale» dove si intende *casuale*);
+- apostrofi usati come accenti («E'» per «È»), doppi spazi, parentesi e virgolette non
+  chiuse;
+- accordi, concordanze, punteggiatura;
+- coerenza dei titoli: maiuscole, punteggiatura finale, forma («Caso 1» vs «CASO 1»);
+- rimandi interni: numeri di tabella, sezione e capitolo citati nel testo, dopo tutte le
+  rinumerazioni fatte;
+- coerenza terminologica (Baby-FE / Baby FE, EEFQ, BOI).
+
+Cosa **non** faccio: riscrivere frasi per stile, cambiare il registro, toccare i
+contenuti scientifici. Se una frase è corretta ma migliorabile, la segnalo a parte senza
+proporre una modifica.
+
+Conferme previste: una per capitolo (quattro), più una per front matter e appendice.
+
+---
+
+## 11. Nome dell'appendice, uniforme in indice, testo e appendice
+
+**Per ultimo**, in attesa del messaggio WhatsApp con il nome da usare.
+
+Oggi il nome compare in tre forme diverse:
+
+| Dove | Oggi |
+|---|---|
+| Indice | «A Protocollo di somministrazione e scoring del Baby-FE» |
+| Capitolo 3, due rimandi (sez. 3.7.3 e 3.8) | «Appendice 1» |
+| Titolo dell'appendice | «Protocollo di somministrazione e scoring del Baby-FE», lettera A |
+
+A seconda del nome scelto cambia la tecnica: se resta la lettera («Appendice A»), basta
+allineare i due rimandi nel testo; se serve il numero («Appendice 1»), va cambiata la
+numerazione delle appendici da lettere a cifre. In entrambi i casi i due rimandi nel
+capitolo 3 diventano `\ref{app:babyfe}`, come al punto 9.

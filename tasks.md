@@ -529,3 +529,32 @@ titolo + descrizione, il che ha comportato un lieve riadattamento del testo del 
 Il prefisso del caso usa il trattino lungo e non i due punti — «Caso 1 --- scheda di
 sintesi» invece di «Caso 1: scheda di sintesi» — perché LaTeX antepone già «Tabella 4.2:»
 e ne sarebbero risultati due due-punti di fila nella stessa riga.
+
+---
+
+# Seconda fase — modifiche da `guideline/modifiche.docx`
+
+Riferimento: il piano in `plan.md`. Un punto alla volta, con conferma dell'utente.
+
+## F1. Frontespizio
+
+**Stato:** applicato, in attesa di conferma.
+
+**File:** `tesi/head/1_frontespizio.tex`
+
+| Campo | Valore inserito |
+|---|---|
+| Corso di laurea | CORSO DI LAUREA IN — a capo — Psicologia dello sviluppo tipico e atipico |
+| Titolo | Profili di disregolazione nella prima infanzia: una prospettiva transdiagnostica per la valutazione precoce |
+| Relatore | Prof.ssa Paola Viterbori |
+| Correlatore | Prof.ssa Maria Carmen Usai |
+| Candidato | Silvia Occhionero |
+| Anno accademico | ANNO ACCADEMICO 2025 / 2026 |
+
+Layout: il blocco unico a destra è diventato due colonne allineate in alto — relatore e
+correlatore a sinistra, candidato a destra. Il resto della pagina (logo, dipartimento,
+spaziature, anno in grassetto centrato) è quello del template.
+
+Le etichette restano quelle del template e delle modifiche: «Relatore», «Correlatore»,
+«Candidato». Se si preferiscono le forme femminili (Relatrice, Correlatrice, Candidata)
+si cambiano tre parole.
