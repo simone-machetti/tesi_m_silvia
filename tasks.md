@@ -538,18 +538,18 @@ Riferimento: il piano in `plan.md`. Un punto alla volta, con conferma dell'utent
 
 ## F1. Frontespizio
 
-**Stato:** applicato, in attesa di conferma.
-
 **File:** `tesi/head/1_frontespizio.tex`
 
 | Campo | Valore inserito |
 |---|---|
 | Corso di laurea | CORSO DI LAUREA IN — a capo — Psicologia dello sviluppo tipico e atipico |
-| Titolo | Profili di disregolazione nella prima infanzia: una prospettiva transdiagnostica per la valutazione precoce |
+| Titolo | Profili di Disregolazione nella Prima Infanzia: Una Prospettiva Transdiagnostica per la Valutazione Precoce (*title case* scelta dall'utente) |
 | Relatore | Prof.ssa Paola Viterbori |
 | Correlatore | Prof.ssa Maria Carmen Usai |
 | Candidato | Silvia Occhionero |
-| Anno accademico | ANNO ACCADEMICO 2025 / 2026 |
+| Anno accademico | ANNO ACCADEMICO 2025 / 2026, senza grassetto |
+
+**Stato:** confermato.
 
 Layout: il blocco unico a destra è diventato due colonne allineate in alto — relatore e
 correlatore a sinistra, candidato a destra. Il resto della pagina (logo, dipartimento,
@@ -558,3 +558,20 @@ spaziature, anno in grassetto centrato) è quello del template.
 Le etichette restano quelle del template e delle modifiche: «Relatore», «Correlatore»,
 «Candidato». Se si preferiscono le forme femminili (Relatrice, Correlatrice, Candidata)
 si cambiano tre parole.
+
+## F2. Dedica
+
+**Stato:** applicato, in attesa di conferma.
+
+**File:** `tesi/head/2_dedica.tex`
+
+Sostituito il segnaposto del template («Verba volant, scripta manent — Caius Titus») con
+la frase di apertura di `guideline/dediche.docx`, riportata parola per parola, in corsivo,
+su tre righe come nel Word, allineata a destra come nel template:
+
+> *Alla ricerca,*
+> *che nasce dalla curiosità di osservare*
+> *e dal desiderio di comprendere.*
+
+Pagina senza numero né testata, a 3 cm dal margine superiore, come prevedeva il template.
+Tolto anche il blocco `center` vuoto che il template lasciava in fondo alla pagina.
