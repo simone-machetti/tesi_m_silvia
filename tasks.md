@@ -575,3 +575,24 @@ su tre righe come nel Word, allineata a destra come nel template:
 
 Pagina senza numero né testata, a 3 cm dal margine superiore, come prevedeva il template.
 Tolto anche il blocco `center` vuoto che il template lasciava in fondo alla pagina.
+
+## F3. Ringraziamenti
+
+**Stato:** applicato, in attesa di conferma.
+
+**File:** `tesi/head/3_ringraziamenti.tex`
+
+Sostituito il testo latino segnaposto con i ringraziamenti di `guideline/dediche.docx`:
+24 paragrafi, 1.465 parole, riportati parola per parola (conversione con pandoc, nessun
+comando LaTeX nel corpo, solo virgolette tipografiche). Verifica parola per parola contro
+il Word: 0 differenze.
+
+In chiusura, dopo 2,5 cm di spazio, il solo nome della candidata allineato a destra: la
+data del template («Genova, *data*») è stata tolta su richiesta dell'utente.
+
+Corretto un difetto del template emerso ora che la sezione occupa quattro pagine: lo stile
+«fancy» stampava sulle pagine successive alla prima la testata «Capitolo 0» (un
+`\chapter*` non ha numero). Per tutta la sezione si usa ora lo stile «plain», con la prima
+pagina senza numero come prima. Lo stesso accorgimento servirà per gli abstract.
+
+La tesi passa da 180 a 183 pagine.
