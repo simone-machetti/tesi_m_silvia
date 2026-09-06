@@ -815,3 +815,44 @@ del capitolo 3 occupa tre righe e lo spazio fisso che il template lascia sotto i
 titolo è portata a 60pt e poi ripristinata; gli altri capitoli non cambiano.
 
 `verify.py` istruito a ignorare il comando di spaziatura. Tutti i capitoli a 0 differenze.
+
+## F12. Quattro richieste di impaginazione (fra l'11 e il 10)
+
+**Stato:** applicato, in attesa di conferma.
+
+### a. Pagina 113 quasi bianca
+
+Causa: la barriera `\FloatBarrier` che precedeva ogni «Caso N». Quando il paragrafo di
+chiusura di un caso traboccava di poche righe sulla pagina seguente, la barriera spingeva
+il caso successivo alla pagina ancora dopo, lasciando la pagina con due righe sole. Le
+barriere fra un caso e l'altro sono state tolte (8); restano le 11 prima delle
+sottosezioni. Verificato: nessuna tabella scivola nel caso successivo, la pagina 113 è
+piena e il Caso 5 inizia lì. Le uniche pagine poco piene rimaste sono le ultime pagine di
+introduzione, capitolo 3 e capitolo 4, e il retro bianco prima del capitolo 2: normali.
+La tesi passa da 187 a 185 pagine.
+
+### b. Citazioni legate alla parola precedente
+
+362 `\cite` erano preceduti da uno spazio normale, spezzabile: la citazione poteva finire
+a inizio riga da sola. Lo spazio è ora `~` in tutti e quattro i capitoli (l'introduzione
+lo aveva già). Nessuna citazione resta preceduta da spazio spezzabile.
+
+### c. Citazioni multiple
+
+Erano già tutte in un solo comando (`\cite{a,b,c}`) fin dalla migrazione: non esistono
+`\cite` affiancati da unire. Lo stile IEEE le stampava come «[2], [9], [10]».
+
+**Deciso:** forma compatta in una sola parentesi, senza spazi: «[2,9,10]». In
+`settings/custom.tex` biblatex usa ora `citestyle=numeric-comp` con `\multicitedelim`
+ridotto alla sola virgola; la bibliografia resta in stile IEEE. Le sequenze di numeri
+consecutivi vengono compresse in intervalli, «[54–56]», come nell'uso IEEE. Verificato nel
+PDF: nessuna citazione nel vecchio formato.
+
+### d. Titoli senza sillabazione
+
+Oltre ai titoli di capitolo (F11-bis), ora anche sezioni, sottosezioni, sotto-sottosezioni
+e paragrafi sono a bandiera e senza sillabazione: vanno a capo solo fra le parole
+(`\titleformat` in `settings/custom.tex`). Verificato: nessun titolo di sezione nel PDF
+termina una riga con un trattino.
+
+Tutti i capitoli a 0 differenze; compilazione senza errori né Overfull.

@@ -57,7 +57,11 @@
 
 % \paragraph come titolo a se' stante e non a capoverso: serve per le intestazioni
 % non numerate del capitolo 4 ("Scheda di sintesi", "Prestazione al Baby-FE", ...)
-\titleformat{\paragraph}[hang]{\normalfont\bfseries}{}{0pt}{#1}
+% Titoli di sezione a bandiera e senza sillabazione: a capo solo fra le parole.
+\titleformat{\section}{\normalfont\Large\bfseries\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000}{\thesection}{1em}{#1}
+\titleformat{\subsection}{\normalfont\large\bfseries\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000}{\thesubsection}{1em}{#1}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000}{\thesubsubsection}{1em}{#1}
+\titleformat{\paragraph}[hang]{\normalfont\bfseries\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000}{}{0pt}{#1}
 \titlespacing*{\paragraph}{0pt}{13.2pt}{*0}
 
 \definecolor{mygreen}{HTML}{007480}
@@ -81,7 +85,10 @@
 \usepackage{csquotes}
 % doi e url restano nel .bib ma non vengono stampati, come nel template di riferimento:
 % la bibliografia risulta piu' compatta. Per rimostrarli basta rimettere true.
-\usepackage[style=ieee,doi=false,isbn=false,url=false,eprint=false]{biblatex}
+% Citazioni multiple compatte in una sola parentesi, [2,4,6], con le sequenze
+% compresse in intervalli, [1--3]; la bibliografia resta in stile IEEE.
+\usepackage[style=ieee,citestyle=numeric-comp,doi=false,isbn=false,url=false,eprint=false]{biblatex}
+\renewcommand*{\multicitedelim}{\addcomma}   % nessuno spazio dopo la virgola
 \addbibresource{tail/References.bib}
 
 % Stop biblatex from changing the case of titles/booktitles
