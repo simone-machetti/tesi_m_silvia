@@ -28,9 +28,9 @@ Il testo dei due lati viene ridotto a parole, togliendo i titoli (confrontati a 
 
 ## Citazioni
 
-- gruppi di citazione nel Word: **142**
-- comandi `\cite{}` nel LaTeX: **142**
-- riferimenti totali richiamati: **223**
+- gruppi di citazione nel Word: **143**
+- comandi `\cite{}` nel LaTeX: **143**
+- riferimenti totali richiamati: **225**
 
 I due numeri coincidono: ogni citazione del Word ha il suo `\cite`.
 

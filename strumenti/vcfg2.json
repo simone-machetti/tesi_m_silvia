@@ -6,5 +6,32 @@
  "narrative": {
   "Barkley (1997)": "barkley1997",
   "Sonuga-Barke (2005)": "sonugabarke2005"
- }
+ },
+ "revisioni": [
+  {
+   "word": "nei bambini ritardo globale",
+   "tesi": "nei bambini con ritardo globale",
+   "occorrenze": 1
+  },
+  {
+   "word": "una alterazione",
+   "tesi": "un'alterazione",
+   "occorrenze": 2
+  },
+  {
+   "word": "(Tronick, 2007; Kochanska et al., 2001)",
+   "tesi": "⟦CIT⟧",
+   "occorrenze": 1
+  },
+  {
+   "word": "sistemi di controllo ⟦CIT⟧ .",
+   "tesi": "sistemi di controllo ⟦CIT⟧.",
+   "occorrenze": 1
+  },
+  {
+   "word": "comorbilità",
+   "tesi": "comorbidità",
+   "occorrenze": 1
+  }
+ ]
 }

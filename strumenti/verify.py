@@ -42,7 +42,7 @@ def strip_tex(s):
                lambda m: (' ' if m.group(1) else '') + REF_NUM_SEZ.get(m.group(2), ''), s)
     s = re.sub(r'\\cite\{[^}]*\}', CIT, s)
     s = re.sub(r'\\label\{[^}]*\}', '', s)
-    for cmd in ['textbf', 'textit', 'emph', 'underline', 'texttt', 'textsc']:
+    for cmd in ['textbf', 'textit', 'emph', 'underline', 'texttt', 'textsc', 'mbox']:
         for _ in range(4):
             s = re.sub(r'\\%s\{([^{}]*)\}' % cmd, r'\1', s)
     s = re.sub(r'\\(chapter|section|subsection|subsubsection|paragraph)\*?\{([^{}]*)\}',

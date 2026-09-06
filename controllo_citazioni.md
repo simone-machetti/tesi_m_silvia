@@ -23,6 +23,14 @@ Casi particolari, tutti verificati a mano:
 - «Vygotskij, 1962» sulla voce `vygotsky1962` e «Rothbart et al., 2003» su Gartstein &
   Rothbart (2003), agganci confermati dall'utente (tasks.md, punto 3).
 
+**Integrazione (controllo del capitolo 2, `cap_2.md`):** questo controllo partiva dai
+`\cite` esistenti, quindi non poteva vedere una citazione mai convertita. Nel capitolo 2
+(§2.1.1) ne è rimasta una in chiaro, «(Tronick, 2007; Kochanska et al., 2001).», sfuggita
+alla migrazione perché nel Word la parentesi di chiusura era in grassetto. Ora è
+`\cite{tronick2007,kochanska2001}`; i `\cite` dei quattro capitoli diventano **364**. Il testo
+del PDF è stato setacciato per altri residui «(Autore, anno)» o «et al., anno» in tutta
+la tesi: nessuno.
+
 ## b. Rimandi interni
 
 - **104 etichette** definite, **36 rimandi distinti**, nessun rimando senza bersaglio.
