@@ -262,7 +262,10 @@ contenuti scientifici. Una frase corretta ma migliorabile viene segnalata senza 
 **E. Coerenza terminologica**
 - Baby-FE / Baby FE, EEFQ, BOI, Bayley-III scritti sempre allo stesso modo;
 - termini stranieri in corsivo in modo uniforme (*task impurity*, *school readiness*,
-  *effortful control*, *hot/cool*…), o mai;
+  *effortful control*, *hot/cool*…), o mai — **deciso al capitolo 3 (regola B):** corsivo
+  solo per i nomi propri degli strumenti e delle loro sottoscale (*Early Childhood Behavior
+  Questionnaire*, *Behavior Observation Inventory*…), tondo per tutti i termini stranieri
+  comuni; titoli e didascalie sempre in tondo. Applicata a tutta la tesi (`cap_3.md`);
 - **acronimi**: tolto l'elenco, ogni sigla dev'essere sciolta alla prima occorrenza
   (EEFQ, BOI, IC, FX, WM, RG, ADHD, FE, DS…).
 

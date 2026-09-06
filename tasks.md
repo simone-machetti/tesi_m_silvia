@@ -874,7 +874,7 @@ verbale delle correzioni.
 |---|---|---|---|
 | 1 | fatto e confermato (6/9/2026) | 9 grassetti su punteggiatura tolti, 2 spazi unificatori (`~`) resi normali, «seconda infanzia» → «prima infanzia», «una elevata» → «un'elevata», «Clancy Blair e Cybele Raver» → «Blair e Raver», vedove e orfane vietate in tutta la tesi | nessuno |
 | 2 | fatto e confermato (6/9/2026) | citazione autore-anno rimasta in chiaro convertita in `\cite` (unica in tutta la tesi), 7 grassetti su punteggiatura tolti, 6 spazi unificatori resi normali, spazio prima del punto, «nei bambini ritardo globale» → «nei bambini con ritardo globale», «una alterazione» → «un'alterazione» (2), «Sonuga-Barke» non più spezzato, «p factor» in tondo, «comorbilità» → «comorbidità» | nessuno (DSM-5 e le quattro forme estese di ADHD restano come sono, su decisione dell'utente) |
-| 3 | da fare | | |
+| 3 | fatto e confermato (6/9/2026) | «assesment» → «assessment»; regola dei corsivi (B: corsivo solo per i nomi degli strumenti e delle sottoscale, tondo per i termini stranieri comuni) applicata a tutta la tesi, capitolo 4 compreso; due ripetizioni riscritte (§3.6, §3.1.1) | nessuno |
 | 4 | da fare (aggiungere «4.4 Discussione», numeri degli 8 casi, 26 didascalie e 23 raccordi) | | |
 | Front matter | da fare | | |
 | Appendice | da fare | | |
