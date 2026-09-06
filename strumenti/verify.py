@@ -7,6 +7,7 @@ le citazioni sostituite dallo stesso segnaposto, la formattazione rimossa.
 Se la migrazione e' fedele il diff finale e' vuoto.
 """
 import re, sys, json, difflib
+REF_NUM_SEZ = {'cap:uno': '1', 'cap:due': '2', 'cap:tre': '3', 'cap:quattro': '4', 'sec:1_6': '1.6', 'sec:2_4': '2.4', 'sec:2_3_1': '2.3.1', 'sec:4_3_2': '4.3.2', 'sec:4_3_3': '4.3.3', 'sec:4_4_1': '4.4.1'}
 
 CIT = '\u27e6CIT\u27e7'
 
@@ -31,6 +32,13 @@ def strip_md(s):
 
 def strip_tex(s):
     """LaTeX generato -> testo semplice"""
+    # Rimandi a capitoli e sezioni: nel Word sono numeri scritti a parole, nel LaTeX
+    # sono \\ref (tasks.md F9). Si riportano al numero per confrontare.
+    s = re.sub(r'(?<!\\)%.*$', '', s, flags=re.M)               # commenti, anche a fine riga
+    s = re.sub(r'\\testatecapitoli\b', '', s)                    # comando delle testate (F6)
+    s = re.sub(r'\\chaptermark\{[^}]*\}', '', s)                 # titolo breve per le testate (F6)
+    s = re.sub(r'(~?)\\ref\{((?:cap|sec):[^}]*)\}',
+               lambda m: (' ' if m.group(1) else '') + REF_NUM_SEZ.get(m.group(2), ''), s)
     s = re.sub(r'\\cite\{[^}]*\}', CIT, s)
     s = re.sub(r'\\label\{[^}]*\}', '', s)
     for cmd in ['textbf', 'textit', 'emph', 'underline', 'texttt', 'textsc']:

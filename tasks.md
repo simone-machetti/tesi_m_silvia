@@ -738,3 +738,38 @@ quelle del file di revisione. Riportate al tondo; il testo non cambia.
 Il grassetto nelle tabelle della stessa sezione è invece **voluto** e resta: nella
 Tabella 4.26 evidenzia i punteggi almeno una deviazione standard sotto la media, come
 spiega la nota; le intestazioni di colonna sono in grassetto come in tutte le tabelle.
+
+## F9. Rimandi interni con `\ref`
+
+**Stato:** applicato, in attesa di conferma.
+
+**File:** `tesi/main/2_capitolo_2.tex`, `3_capitolo_3.tex`, `4_capitolo_4.tex`;
+`strumenti/verify.py` e `verify4.py` per la verifica.
+
+I rimandi a capitoli e sezioni scritti a parole nel Word sono ora `\ref` verso etichette
+già esistenti: **33 sostituzioni** (12 nel capitolo 2, 9 nel 3, 12 nel 4; nessuna nel
+capitolo 1, che non rimanda ad altri capitoli).
+
+| Nel Word | Occorrenze | Ora |
+|---|---|---|
+| Capitolo 1 | 19 | `Capitolo~\ref{cap:uno}` |
+| Capitolo 2 | 4 | `Capitolo~\ref{cap:due}` |
+| Capitolo 3 | 4 | `Capitolo~\ref{cap:tre}` (compreso «nel Capitolo 3.» a fine frase) |
+| Capitoli 1, 2 e 3 | 1 | `Capitoli~\ref{cap:uno}, \ref{cap:due} e~\ref{cap:tre}` |
+| §1.6 | 1 | `§\ref{sec:1_6}` |
+| sezione 2.4 · sezione 2.3.1 | 2 | `sezione~\ref{sec:…}` |
+| Sezione 4.3.2 · sezione 4.3.3 | 2 | `Sezione~\ref{sec:…}` |
+| nella 4.4.1 | 3 | `nella~\ref{sec:4_4_1}` |
+
+I 27 rimandi alle tabelle erano già `\ref`. I due rimandi «Appendice 1» del capitolo 3
+restano da fare al punto 11, quando ci sarà il nome. Le righe di commento nei file sono
+state escluse dalla sostituzione.
+
+**Nel PDF non cambia nulla**: i numeri stampati sono identici a prima (controllati a
+campione: «cfr. Capitolo 1, §1.6», «nei Capitoli 1, 2 e 3», «nella Sezione 4.3.2»,
+«discusso nella 4.4.1», «descritto nel Capitolo 3.»). Compilazione senza riferimenti
+irrisolti.
+
+**Verifica:** `verify.py` e `verify4.py` riportano ora `\ref{cap:…}` e `\ref{sec:…}` al
+numero corrispondente prima del confronto. Esito: capitoli 1, 2, 3 e 4 tutti a
+**0 differenze**.

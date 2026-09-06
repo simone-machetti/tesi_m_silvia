@@ -156,7 +156,9 @@ RACCORDI = [
     r'nella Tabella~\\ref\{[^}]*\}\.',
 ]
 # I rimandi gia' presenti nel Word: il numero letterale e' ora generato da \ref.
-REF_NUM = {'tab:rischio': '4.1', 'tab:babyfe_totali': '4.2', 'tab:eefq': '4.3'}
+REF_NUM = {'tab:rischio': '4.1', 'tab:babyfe_totali': '4.2', 'tab:eefq': '4.3',
+           # rimandi a capitoli e sezioni, resi con \ref dalla fase F9
+           'cap:uno': '1', 'cap:due': '2', 'cap:tre': '3', 'cap:quattro': '4', 'sec:1_6': '1.6', 'sec:2_4': '2.4', 'sec:2_3_1': '2.3.1', 'sec:4_3_2': '4.3.2', 'sec:4_3_3': '4.3.3', 'sec:4_4_1': '4.4.1'}
 
 
 def text_tex(tex):
@@ -165,7 +167,7 @@ def text_tex(tex):
     for r in RACCORDI:
         s = re.sub(r, '', s)
     s = re.sub(r'\\caption(\[[^\]]*\])?\{(?:[^{}]|\{[^{}]*\})*\}', '', s)
-    s = re.sub(r'\\ref\{(tab:[^}]*)\}', lambda m: REF_NUM.get(m.group(1), ''), s)
+    s = re.sub(r'~?\\ref\{((?:tab|cap|sec):[^}]*)\}', lambda m: ' ' + REF_NUM.get(m.group(1), ''), s)
     s = re.sub(r'\\cite\{[^}]*\}', CIT, s)
     s = re.sub(r'\\label\{[^}]*\}', '', s)
     s = re.sub(r'\\addcontentsline\{[^}]*\}\{[^}]*\}\{[^}]*\}', '', s)
