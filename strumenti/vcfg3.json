@@ -7,5 +7,12 @@
   "Berni e colleghi (2025)": "berni2025",
   "Hughes e Graham (2002)": "hughes2002"
  },
- "note": "Il confronto riguarda il testo del capitolo fino alla sezione 3.8 compresa. L'**Appendice 1** (protocollo Baby-FE, 15 tabelle) non è ancora stata migrata: è in sospeso in attesa di decidere se lasciarla in fondo al capitolo 3, come nel Word, o spostarla in appendice a fine tesi."
+ "note": "Il confronto riguarda il testo del capitolo fino alla sezione 3.8 compresa. L'Appendice (protocollo Baby-FE, 15 tabelle) è migrata a parte, in tesi/tail/appendice.tex, come appendice A a fine tesi. I due rimandi che nel Word dicevano «Appendice 1» ora dicono «Appendice A» tramite \\ref (tasks.md F11).",
+ "revisioni": [
+  {
+   "word": "Appendice 1",
+   "tesi": "Appendice A",
+   "occorrenze": 2
+  }
+ ]
 }

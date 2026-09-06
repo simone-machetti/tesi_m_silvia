@@ -4,7 +4,7 @@ Confronto fra `source/capitolo_3.docx` e `tesi/main/3_capitolo_3.tex`.
 
 Il testo dei due lati viene ridotto a parole, togliendo i titoli (confrontati a parte qui sotto) e sostituendo ogni citazione con lo stesso segnaposto. **Se la migrazione è fedele, la sezione "Differenze" è vuota.**
 
-> **Nota.** Il confronto riguarda il testo del capitolo fino alla sezione 3.8 compresa. L'**Appendice 1** (protocollo Baby-FE, 15 tabelle) non è ancora stata migrata: è in sospeso in attesa di decidere se lasciarla in fondo al capitolo 3, come nel Word, o spostarla in appendice a fine tesi.
+> **Nota.** Il confronto riguarda il testo del capitolo fino alla sezione 3.8 compresa. L'Appendice (protocollo Baby-FE, 15 tabelle) è migrata a parte, in tesi/tail/appendice.tex, come appendice A a fine tesi. I due rimandi che nel Word dicevano «Appendice 1» ora dicono «Appendice A» tramite \ref (tasks.md F11).
 
 ## Titoli
 

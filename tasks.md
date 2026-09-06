@@ -773,3 +773,27 @@ irrisolti.
 **Verifica:** `verify.py` e `verify4.py` riportano ora `\ref{cap:…}` e `\ref{sec:…}` al
 numero corrispondente prima del confronto. Esito: capitoli 1, 2, 3 e 4 tutti a
 **0 differenze**.
+
+## F11. Nome dell'appendice
+
+**Stato:** applicato, in attesa di conferma. (Fatto prima del punto 10 su richiesta.)
+
+**Deciso:** titolo «Protocollo di somministrazione e scoring del Baby-FE», invariato;
+contrassegno con la **lettera**, come LaTeX fa da sé.
+
+Indice e pagina di apertura coincidevano già («A Protocollo di somministrazione e scoring
+del Baby-FE»). L'unico disallineamento era nel testo del capitolo 3, dove i due rimandi
+dicevano «Appendice 1».
+
+**File:** `tesi/main/3_capitolo_3.tex` — i due rimandi sono ora `Appendice~\ref{app:babyfe}`
+e nel PDF escono come «Appendice A» (sez. 3.7.3 e 3.8). Come al punto 9, restano allineati
+a qualunque cambiamento futuro.
+
+**Titolo dell'appendice:** nella pagina di apertura andava a capo spezzando «sco-ring».
+Aggiunto `\hyphenation{scoring}` in `settings/custom.tex`: la parola non viene più
+sillabata, in nessun punto della tesi, e il titolo va a capo su «…somministrazione e /
+scoring del Baby-FE».
+
+**Verifica:** `verify.py` riconosce ora anche `\ref{app:…}` e, tramite una voce
+`revisioni` in `strumenti/vcfg3.json`, sa che «Appendice 1» → «Appendice A» è voluto
+(due occorrenze). Tutti e quattro i capitoli a 0 differenze.

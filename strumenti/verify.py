@@ -7,7 +7,7 @@ le citazioni sostituite dallo stesso segnaposto, la formattazione rimossa.
 Se la migrazione e' fedele il diff finale e' vuoto.
 """
 import re, sys, json, difflib
-REF_NUM_SEZ = {'cap:uno': '1', 'cap:due': '2', 'cap:tre': '3', 'cap:quattro': '4', 'sec:1_6': '1.6', 'sec:2_4': '2.4', 'sec:2_3_1': '2.3.1', 'sec:4_3_2': '4.3.2', 'sec:4_3_3': '4.3.3', 'sec:4_4_1': '4.4.1'}
+REF_NUM_SEZ = {'cap:uno': '1', 'cap:due': '2', 'cap:tre': '3', 'cap:quattro': '4', 'sec:1_6': '1.6', 'sec:2_4': '2.4', 'sec:2_3_1': '2.3.1', 'sec:4_3_2': '4.3.2', 'sec:4_3_3': '4.3.3', 'sec:4_4_1': '4.4.1', 'app:babyfe': 'A'}
 
 CIT = '\u27e6CIT\u27e7'
 
@@ -37,7 +37,7 @@ def strip_tex(s):
     s = re.sub(r'(?<!\\)%.*$', '', s, flags=re.M)               # commenti, anche a fine riga
     s = re.sub(r'\\testatecapitoli\b', '', s)                    # comando delle testate (F6)
     s = re.sub(r'\\chaptermark\{[^}]*\}', '', s)                 # titolo breve per le testate (F6)
-    s = re.sub(r'(~?)\\ref\{((?:cap|sec):[^}]*)\}',
+    s = re.sub(r'(~?)\\ref\{((?:cap|sec|app):[^}]*)\}',
                lambda m: (' ' if m.group(1) else '') + REF_NUM_SEZ.get(m.group(2), ''), s)
     s = re.sub(r'\\cite\{[^}]*\}', CIT, s)
     s = re.sub(r'\\label\{[^}]*\}', '', s)
@@ -126,6 +126,12 @@ def main():
     a = mask_narrative_md(a, narrative)
     a = mask_cites_md(a)
     a = strip_md(a)
+    # Revisioni di contenuto volute (registrate in tasks.md): applicate anche al lato
+    # Word, cosi' il confronto segnala solo cio' che non e' previsto.
+    for r in cfg.get('revisioni', []):
+        if a.count(r['word']) != r.get('occorrenze', 1):
+            print('ATTENZIONE: revisione %r trovata %d volte nel Word' % (r['word'], a.count(r['word'])))
+        a = a.replace(r['word'], r['tesi'])
 
     b = tex
     b = re.sub(r'\\chapter\{[^{}]*\}', '', b)
