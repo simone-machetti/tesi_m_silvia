@@ -856,3 +856,33 @@ e paragrafi sono a bandiera e senza sillabazione: vanno a capo solo fra le parol
 termina una riga con un trattino.
 
 Tutti i capitoli a 0 differenze; compilazione senza errori né Overfull.
+
+## F10. Controllo finale (punto 10), capitolo per capitolo
+
+**Stato:** in corso. Metodo in `plan.md` (punto 10): per ogni capitolo, correzioni sicure
+applicate direttamente e registrate in `cap_N.md`, dubbi nella sezione «Da decidere»,
+conferma dell'utente a fine capitolo. Ordine: controllo C citazioni (fatto,
+`controllo_citazioni.md`) → cap. 1 → 2 → 3 → 4 → front matter (`cap_0.md`) →
+appendice (`cap_A.md`).
+
+Preparazione: i vecchi `cap_1..4.md` (verbali di fedeltà della migrazione) sono stati
+tolti; i verificatori scrivono ora in `strumenti/verifica_cap_N.md` (`out` in
+`strumenti/vcfg1..3.json`, `OUT` in `strumenti/verify4.py`), così `cap_N.md` resta il
+verbale delle correzioni.
+
+| Capitolo | Stato | Correzioni | Da decidere |
+|---|---|---|---|
+| 1 | fatto e confermato (6/9/2026) | 9 grassetti su punteggiatura tolti, 2 spazi unificatori (`~`) resi normali, «seconda infanzia» → «prima infanzia», «una elevata» → «un'elevata», «Clancy Blair e Cybele Raver» → «Blair e Raver», vedove e orfane vietate in tutta la tesi | nessuno |
+| 2 | da fare | | |
+| 3 | da fare | | |
+| 4 | da fare (aggiungere «4.4 Discussione», numeri degli 8 casi, 26 didascalie e 23 raccordi) | | |
+| Front matter | da fare | | |
+| Appendice | da fare | | |
+
+Vedove e orfane: **deciso e fatto** al capitolo 1 (l'utente ha preferito non aspettare la
+fine). `\widowpenalty` e `\clubpenalty` a 10000 in `settings/custom.tex`, agganciati a
+`\extrasitalian` perché babel-italian li riporta a 3000 a ogni selezione dell'italiano
+(inizio documento e dopo l'abstract inglese): con l'assegnazione semplice non cambiava
+nulla. Verificato: nessuna vedova o orfana in tutta la tesi, 185 pagine, le 26 tabelle del
+capitolo 4 nello stesso posto di prima, 0 differenze in tutti i capitoli. Dettagli in
+`cap_1.md`, correzione 13.

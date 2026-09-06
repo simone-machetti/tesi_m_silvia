@@ -273,7 +273,9 @@ contenuti scientifici. Una frase corretta ma migliorabile viene segnalata senza 
   trattino giusto (18–36).
 
 **G. Impaginazione residua** (solo segnalazioni, si sistemano insieme)
-- righe isolate a inizio o fine pagina (vedove e orfane);
+- righe isolate a inizio o fine pagina (vedove e orfane) — **fatto al capitolo 1**, su
+  decisione dell'utente: vietate in tutta la tesi da `settings/custom.tex` (vedi `cap_1.md`,
+  correzione 13);
 - un titolo come ultima riga di una pagina;
 - parole spezzate male a fine riga: nomi propri, sigle, termini inglesi («Baby-/FE»);
 - pagine quasi vuote non giustificate.

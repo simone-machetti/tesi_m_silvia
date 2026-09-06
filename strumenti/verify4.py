@@ -9,7 +9,7 @@ import re, difflib
 
 MD = '/tmp/claude-1000/-home-simone-Downloads-tesi-m-silvia/4d74be00-3d12-4c77-9974-5780b0160f34/scratchpad/conv/capitolo_4.md'
 TEX = '/home/simone/Downloads/tesi_m_silvia/tesi/main/4_capitolo_4.tex'
-OUT = '/home/simone/Downloads/tesi_m_silvia/cap_4.md'
+OUT = '/home/simone/Downloads/tesi_m_silvia/strumenti/verifica_cap_4.md'
 CIT = '\u27e6CIT\u27e7'
 
 CITE_OK = {"Astle et al., 2021", "Astle et al., 2022", "Bayley, 2006",

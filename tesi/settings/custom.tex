@@ -55,6 +55,16 @@
 \setcounter{bottomnumber}{2}
 \setcounter{totalnumber}{5}
 
+% Niente righe isolate (controllo finale, cap_1.md): vietata la prima riga di un
+% capoverso sola in fondo alla pagina (orfana) e l'ultima riga sola in cima alla
+% pagina seguente (vedova). LaTeX sposta la riga, e la pagina finisce una riga prima.
+% babel-italian riporta i due valori a 3000 (=solo scoraggiate) ogni volta che
+% seleziona l'italiano, cioe' a inizio documento e dopo l'abstract inglese: per
+% questo i valori vanno agganciati a \extrasitalian, che viene eseguito in quei momenti.
+\makeatletter
+\addto\extrasitalian{\widowpenalty=10000 \clubpenalty=10000 \@clubpenalty=10000 }
+\makeatother
+
 % \paragraph come titolo a se' stante e non a capoverso: serve per le intestazioni
 % non numerate del capitolo 4 ("Scheda di sintesi", "Prestazione al Baby-FE", ...)
 % Titoli di sezione a bandiera e senza sillabazione: a capo solo fra le parole.

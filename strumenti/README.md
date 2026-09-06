@@ -25,16 +25,16 @@ cartella.
 |---|---|
 | `convert.py` | capitoli 1-3: titoli LaTeX + citazioni `\cite{}`. Contiene la mappa citazione → chiave bib. **Si ferma con errore se incontra una citazione che non sa agganciare**, così nessuna passa inosservata. |
 | `convert4.py` | capitolo 4: come sopra, più la ricostruzione della struttura (nel Word gli stili di titolo sono incoerenti) e la riscrittura delle 26 tabelle nello stile del template. |
-| `verify.py` | capitoli 1-3: riduce Word e LaTeX a parole e li confronta. Scrive `cap_N.md`. |
-| `verify4.py` | capitolo 4: come sopra, includendo le celle delle tabelle e i titoli non numerati. Scrive `cap_4.md`. |
+| `verify.py` | capitoli 1-3: riduce Word e LaTeX a parole e li confronta. Scrive `strumenti/verifica_cap_N.md` (i `cap_N.md` nella radice sono ora i verbali delle correzioni del controllo finale). |
+| `verify4.py` | capitolo 4: come sopra, includendo le celle delle tabelle e i titoli non numerati. Scrive `strumenti/verifica_cap_4.md`. |
 | `appendice.py` | Appendice 1: converte le 15 tabelle del protocollo Baby-FE e la legenda. Genera `tesi/tail/appendice.tex`. Uso: `python3 -c "import sys; sys.path.insert(0,'strumenti'); import appendice; open('tesi/tail/appendice.tex','w').write(appendice.documento())"`. |
 | `tabelle_intere.py` | riscrive le tabelle di un capitolo da `longtable` (che si spezza fra le pagine) a flottante `table` + `tabular` (che non si spezza), portando le didascalie dentro il flottante e inserendo le barriere `\FloatBarrier`. Uso: `python3 strumenti/tabelle_intere.py tesi/main/4_capitolo_4.tex`. Non tocca il testo. |
 
 ```bash
 python3 convert.py cfg1.json     # scrive tesi/main/1_capitolo_1.tex
-python3 verify.py  vcfg1.json    # scrive cap_1.md
+python3 verify.py  vcfg1.json    # scrive strumenti/verifica_cap_1.md (lanciare dalla radice del repo)
 python3 convert4.py              # capitolo 4 (percorsi dentro lo script)
-python3 verify4.py               # scrive cap_4.md
+python3 verify4.py               # scrive strumenti/verifica_cap_4.md
 ```
 
 ## Se aggiungi voci a References.bib
