@@ -632,3 +632,17 @@ Verifica parola per parola contro il Word: introduzione 429 parole, abstract ita
 abstract inglese 155 — **0 differenze** in tutti e tre.
 
 La tesi passa da 183 a 187 pagine.
+
+## F5. Elenco degli acronimi
+
+**Stato:** applicato, in attesa di conferma.
+
+**File:** `tesi/main.tex`
+
+Tolta la riga `\input{head/5_acronimi}`. Verificato prima dell'intervento: nessun capitolo
+usa il comando `\ac{}`, e nessun altro file richiama l'elenco. Il file
+`head/5_acronimi.tex` resta sul disco ma non viene più incluso; il pacchetto `acronym`
+resta caricato in `custom.tex`, innocuo.
+
+Effetto: sparisce la pagina «Elenco degli acronimi» (con i tre acronimi di esempio del
+template) e la sua voce nell'indice. Dagli abstract si passa direttamente all'indice.
