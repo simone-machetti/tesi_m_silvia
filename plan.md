@@ -199,33 +199,98 @@ Dopo l'intervento: le verifiche di fedeltà in `strumenti/` vanno istruite a leg
 
 ---
 
-## 10. Controllo finale di grammatica, sintassi e titoli
+## 10. Controllo finale
 
-È il punto più lungo: circa 51.000 parole nei quattro capitoli, più introduzione,
-abstract, ringraziamenti e appendice. Finora il testo è stato **volutamente** lasciato
-identico al Word, refusi compresi; questo è il momento in cui si interviene.
+È il punto più lungo: circa 51.000 parole nei quattro capitoli, più introduzione, abstract,
+ringraziamenti e appendice. Finora il testo è stato **volutamente** lasciato identico al
+Word, refusi compresi; questo è il momento in cui si interviene.
 
-**Metodo:** un capitolo alla volta. Per ciascuno produco un elenco in `revisione.md`
-con, per ogni punto: posizione, testo attuale, correzione proposta, motivo.
-**Non applico nulla finché non approvi l'elenco.** Poi applico solo le voci approvate,
-ricompilo e riverifico.
+### Metodo (rivisto con l'utente)
 
-Cosa cerco:
-- refusi e parole storpiate (già visti: «delyed gratification», «assesment», «in maniera
-  causale» dove si intende *casuale*);
-- apostrofi usati come accenti («E'» per «È»), doppi spazi, parentesi e virgolette non
-  chiuse;
-- accordi, concordanze, punteggiatura;
-- coerenza dei titoli: maiuscole, punteggiatura finale, forma («Caso 1» vs «CASO 1»);
-- rimandi interni: numeri di tabella, sezione e capitolo citati nel testo, dopo tutte le
-  rinumerazioni fatte;
-- coerenza terminologica (Baby-FE / Baby FE, EEFQ, BOI).
+Un blocco alla volta, nell'ordine: controllo C sulle citazioni (meccanico, esito unico),
+poi capitolo 1, 2, 3, 4, front matter (introduzione, abstract, ringraziamenti), appendice.
 
-Cosa **non** faccio: riscrivere frasi per stile, cambiare il registro, toccare i
-contenuti scientifici. Se una frase è corretta ma migliorabile, la segnalo a parte senza
-proporre una modifica.
+Per ogni capitolo:
+- le correzioni **si applicano direttamente** nel `.tex`, senza attendere approvazione
+  voce per voce — l'utente le segue con Git;
+- ogni correzione viene **registrata in `cap_N.md`** (posizione, testo prima, testo dopo,
+  categoria, motivo). I vecchi `cap_N.md`, che contenevano i rapporti di fedeltà della
+  migrazione, vengono cancellati e i nomi riutilizzati per questo registro; i rapporti di
+  fedeltà, che gli script rigenerano a ogni esecuzione, passano in `strumenti/`;
+- i **dubbi** — correzioni non sicure, scelte di contenuto — non si applicano: si
+  segnalano nel `cap_N.md` in una sezione «Da decidere» e si chiedono man mano;
+- ogni correzione applicata entra anche fra le «revisioni volute» degli script di verifica,
+  così il confronto con il Word continua a dare 0 differenze non previste;
+- **a fine capitolo l'utente controlla e conferma**, poi si passa al successivo.
 
-Conferme previste: una per capitolo (quattro), più una per front matter e appendice.
+Quello che **non** si fa: riscrivere frasi per stile, cambiare registro o tono, toccare i
+contenuti scientifici. Una frase corretta ma migliorabile viene segnalata senza modifica.
+
+### Che cosa viene controllato
+
+**A. Ortografia e refusi**
+- parole storpiate (già viste: «delyed gratification», «assesment», «in maniera causale»
+  per *casuale*), lettere doppie o mancanti, parole ripetute («il il»);
+- accenti e apostrofi: «E'» per «È», «perchè» per «perché», apostrofi mancanti;
+- spazi doppi, spazi prima della punteggiatura, parentesi e virgolette non chiuse.
+
+**B. Grammatica e sintassi**
+- accordi di genere e numero, concordanza soggetto-verbo, tempi verbali incoerenti;
+- frasi sospese o senza verbo, ripetizioni ravvicinate della stessa parola;
+- punteggiatura: virgola fra soggetto e verbo, punto mancante a fine paragrafo, uso dei
+  due punti e del punto e virgola.
+
+**C. Citazioni e riferimenti**
+- **Aggancio di ogni citazione**: nuovo controllo indipendente, meccanico, che rilegge
+  ogni «(Autore, anno)» del Word originale — circa 570 — e verifica che il `\cite`
+  corrispondente punti a una voce con quell'autore e quell'anno. Fu fatto in migrazione;
+  rifarlo da zero è un secondo paio d'occhi.
+- **Rimandi interni**: ogni `\ref` a tabella, sezione, capitolo e appendice punta
+  all'oggetto giusto (per esempio: nel testo del Caso 4 si rimanda alle tabelle del Caso 4).
+- **Bibliografia**: uniformità delle voci (iniziali, punteggiatura, maiuscole nei titoli),
+  nessuna voce doppia, nessun DOI o campo mancante dove gli altri ce l'hanno.
+
+**D. Titoli**
+- maiuscole e punteggiatura finale uniformi fra titoli dello stesso livello;
+- **la sezione 4.4 manca**: esistono 4.4.1 e 4.4.2 senza un titolo padre, così anche nel
+  Word. **Deciso:** si aggiunge il titolo «4.4 Discussione» prima di 4.4.1, allo stesso
+  livello di «4.3 Risultati». Il contatore di sezione, oggi forzato per far uscire 4.4.1
+  senza padre, torna a scorrere da solo;
+- le 26 didascalie delle tabelle e le 23 frasi di raccordo, scritte da me nella fase
+  precedente e mai rilette dall'utente (`tabelle.md`).
+
+**E. Coerenza terminologica**
+- Baby-FE / Baby FE, EEFQ, BOI, Bayley-III scritti sempre allo stesso modo;
+- termini stranieri in corsivo in modo uniforme (*task impurity*, *school readiness*,
+  *effortful control*, *hot/cool*…), o mai;
+- **acronimi**: tolto l'elenco, ogni sigla dev'essere sciolta alla prima occorrenza
+  (EEFQ, BOI, IC, FX, WM, RG, ADHD, FE, DS…).
+
+**F. Numeri e dati** — su **tutti gli otto casi**, non a campione.
+- coerenza fra prosa e tabelle: i valori citati nel testo (punteggi, percentili, numero
+  di prove non valide, età, N del campione) devono coincidere con quelli in tabella;
+- formato dei numeri: virgola decimale, spazi nelle percentuali, intervalli con il
+  trattino giusto (18–36).
+
+**G. Impaginazione residua** (solo segnalazioni, si sistemano insieme)
+- righe isolate a inizio o fine pagina (vedove e orfane);
+- un titolo come ultima riga di una pagina;
+- parole spezzate male a fine riga: nomi propri, sigle, termini inglesi («Baby-/FE»);
+- pagine quasi vuote non giustificate.
+
+**H. Front matter, introduzione, abstract, appendice**
+- stessi controlli A-F su introduzione, abstract italiano e inglese, ringraziamenti;
+- appendice: refusi nelle 15 tabelle e nella legenda, nomi delle prove coerenti con le
+  tabelle del capitolo 4 («Oggetto nascosto (A-non-B)», «Torta nel forno»…);
+- indice ed elenco delle tabelle completi e coerenti con il testo.
+
+### Conferme previste
+
+Una a fine blocco: quattro per i capitoli, una per il front matter, una per l'appendice,
+più l'esito del controllo C sulle citazioni consegnato per primo.
+
+**Controllo C: fatto**, esito in `controllo_citazioni.md` — 363 citazioni su 363
+corrette, 36 rimandi tutti a bersaglio, bibliografia senza anomalie.
 
 ---
 
