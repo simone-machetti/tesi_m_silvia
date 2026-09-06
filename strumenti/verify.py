@@ -37,6 +37,7 @@ def strip_tex(s):
     s = re.sub(r'(?<!\\)%.*$', '', s, flags=re.M)               # commenti, anche a fine riga
     s = re.sub(r'\\testatecapitoli\b', '', s)                    # comando delle testate (F6)
     s = re.sub(r'\\chaptermark\{[^}]*\}', '', s)                 # titolo breve per le testate (F6)
+    s = re.sub(r'\\titlespacing\*?\{[^}]*\}\{[^}]*\}\{[^}]*\}\{[^}]*\}', '', s)   # spaziatura del titolo (cap. 3)
     s = re.sub(r'(~?)\\ref\{((?:cap|sec|app):[^}]*)\}',
                lambda m: (' ' if m.group(1) else '') + REF_NUM_SEZ.get(m.group(2), ''), s)
     s = re.sub(r'\\cite\{[^}]*\}', CIT, s)

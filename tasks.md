@@ -797,3 +797,21 @@ scoring del Baby-FE».
 **Verifica:** `verify.py` riconosce ora anche `\ref{app:…}` e, tramite una voce
 `revisioni` in `strumenti/vcfg3.json`, sa che «Appendice 1» → «Appendice A» è voluto
 (due occorrenze). Tutti e quattro i capitoli a 0 differenze.
+
+## F11-bis. Titoli dei capitoli nella pagina di apertura
+
+Su segnalazione dell'utente: il titolo del capitolo 1 andava a capo con una sillaba sola
+(«…sviluppo tipi- / co»).
+
+**File:** `tesi/settings/template.tex` — il riquadro del titolo di capitolo è ora
+a bandiera e senza sillabazione (`\raggedright`, `\hyphenpenalty=10000`): i titoli vanno
+a capo solo fra le parole. Capitolo 1: «L'autoregolazione nello sviluppo / tipico».
+Vale per tutti i capitoli e per l'appendice.
+
+Dal confronto delle cinque aperture è emerso un secondo difetto, preesistente: il titolo
+del capitolo 3 occupa tre righe e lo spazio fisso che il template lascia sotto il titolo
+(30pt) è pensato per due, così la sezione 3.1 finiva attaccata all'ultima riga.
+**File:** `tesi/main/3_capitolo_3.tex` — solo per questo capitolo la spaziatura dopo il
+titolo è portata a 60pt e poi ripristinata; gli altri capitoli non cambiano.
+
+`verify.py` istruito a ignorare il comando di spaziatura. Tutti i capitoli a 0 differenze.

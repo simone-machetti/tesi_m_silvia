@@ -86,7 +86,9 @@
         \node[anchor=north east,yshift=-7.2cm,xshift=34mm,minimum height=30mm,inner sep=0mm] at (current page.north west)
         {\parbox[top][30mm][t]{15mm}{\raggedleft $\phantom{\textrm{l}}$\color{white}\chapterlabel}};
         \node[anchor=north west,yshift=-7.2cm,xshift=37mm,text width=\textwidth,minimum height=30mm,inner sep=0mm] at (current page.north west)
-              {\parbox[top][30mm][t]{\textwidth}{\color{black}#1}};
+              % Titolo a bandiera e senza sillabazione: a capo solo fra le parole,
+              % mai a meta' parola (nel capitolo 1 usciva "...sviluppo tipi-/co").
+              {\parbox[top][30mm][t]{\textwidth}{\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000\color{black}#1}};
        \end{tikzpicture}
       };
    \end{tikzpicture}
