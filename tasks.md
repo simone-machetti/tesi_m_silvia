@@ -880,6 +880,13 @@ verbale delle correzioni.
 | Front matter | fatto e confermato (7/9/2026) | «Candidato:» → «Candidata:» sul frontespizio; ringraziamenti, introduzione e abstract identici ai Word, indice ed elenco delle tabelle completi, numerazione delle pagine corretta (`cap_0.md`) | nessuno (EEFQ resta sigla negli abstract, su decisione dell'utente) |
 | Appendice | fatto e confermato (7/9/2026) | 24 correzioni di forma nelle 15 tabelle e nella legenda: refusi («PUNTEGGI0», «delyed», «causale»), virgolette non chiuse, spazi, accordi grammaticali, «procedere con la richiesta 2», punteggi tutti in grassetto, legenda ricomposta con le icone accanto alle voci giuste (`cap_A.md`) | nessuno («di costituire» resta, su decisione dell'utente) |
 
+**Finalizzazione (7/9/2026).** Ricompilazione pulita da zero (`latexmk -C` e poi build
+completo): 185 pagine, 0 errori, 0 Overfull, 0 Underfull, 0 avvisi LaTeX, 0 avvisi biber;
+nessun riferimento irrisolto («??») né segnaposto nel PDF; 102 voci in bibliografia = 102
+voci nel `.bib` = 102 chiavi citate; tutti i font incorporati; link senza bordi né colori
+(stampa pulita). Aggiunti i metadati del file PDF in `settings/custom.tex` (`\hypersetup`:
+titolo, autrice, oggetto, lingua), prima vuoti. Il PDF finale è `tesi/main.pdf`.
+
 Vedove e orfane: **deciso e fatto** al capitolo 1 (l'utente ha preferito non aspettare la
 fine). `\widowpenalty` e `\clubpenalty` a 10000 in `settings/custom.tex`, agganciati a
 `\extrasitalian` perché babel-italian li riporta a 3000 a ogni selezione dell'italiano
