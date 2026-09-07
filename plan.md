@@ -295,7 +295,38 @@ Una a fine blocco: quattro per i capitoli, una per il front matter, una per l'ap
 più l'esito del controllo C sulle citazioni consegnato per primo.
 
 **Controllo C: fatto**, esito in `controllo_citazioni.md` — 363 citazioni su 363
-corrette, 36 rimandi tutti a bersaglio, bibliografia senza anomalie.
+corrette, 36 rimandi tutti a bersaglio, bibliografia senza anomalie (più una citazione
+rimasta in chiaro, trovata e convertita al capitolo 2: 364).
+
+### Stato finale (7/9/2026): punto 10 completato
+
+Tutti i blocchi controllati e confermati dall'utente, nell'ordine previsto. Verbali:
+`cap_1.md`, `cap_2.md`, `cap_3.md`, `cap_4.md`, `cap_0.md` (front matter), `cap_A.md`
+(appendice); ogni verbale elenca le correzioni applicate (posizione, prima, dopo,
+categoria, motivo), i dubbi sottoposti e le decisioni prese, i controlli senza rilievi.
+
+In sintesi:
+- capitoli 1–3: residui di Word (grassetti su punteggiatura, spazi unificatori), tre refusi
+  («assesment», «nei bambini ritardo globale», «seconda infanzia»), una citazione
+  autore-anno rimasta in chiaro, uniformità («un'elevata», «comorbidità», «Blair e
+  Raver», «p factor» in tondo), due ripetizioni riscritte; regola dei corsivi (B) per tutta
+  la tesi; vedove e orfane vietate ovunque (`settings/custom.tex`);
+- capitolo 4: titolo «4.4 Discussione», nome dell'EEFQ al plurale, rimandi «nella sezione
+  4.4.1», Tabella 4.1 con le visite sdoppiate (verificato sui dati grezzi), Tabella 4.26
+  con le righe di riferimento in tondo, percentili in cifre, DS sciolta; tutti i numeri
+  degli otto casi confrontati con i due Excel (`strumenti/controllo_dati_cap4.py`, 620
+  controlli, 0 discrepanze);
+- front matter: «Candidata:»; appendice: 24 correzioni di forma e legenda ricomposta.
+- Sillabazione: eccezioni per «scoring», «EEFQ», «Inventory», «Questionnaire» registrate
+  nella lingua giusta con `\babelhyphenation`; «Baby-FE» e «Sonuga-Barke» non più spezzati.
+
+Scansione finale del PDF (185 pagine, 0 errori, 0 Overfull, 0 avvisi biber): nessuna
+vedova od orfana, nessun titolo in fondo a pagina, nessuna citazione autore-anno in
+chiaro, nessun nome o sigla spezzati; le 26 tabelle del capitolo 4 sulla pagina del primo
+richiamo o su quella dopo; i quattro capitoli a 0 differenze rispetto al Word con le
+revisioni registrate. Restano com'erano, su decisione dell'utente: nota sul totale a 13
+prove (Tabella 4.25), soglie del 10°/20° percentile dell'EEFQ e «circa 34 e 38 anni»
+(§4.2.1), EEFQ come sigla negli abstract, «di costituire» (Appendice, Tabella 6).
 
 ---
 

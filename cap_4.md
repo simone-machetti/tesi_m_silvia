@@ -123,7 +123,8 @@ preoccupazione», coerente con il dato):
   valide, sei casi entro il 25°, tre sotto il 10°, punteggi per età, prove non valide
   citate per i Casi 2, 3, 4, 5 e 8.
 
-**Due punti aperti, da sottoporre alla candidata** (nessuna modifica fatta):
+**Due punti segnalati alla candidata; l'utente ha deciso di lasciare il testo così
+com'è (7/9/2026).** Nessuna modifica fatta:
 1. **Soglie del 10° e 20° percentile dell'EEFQ nella nota della Tabella 4.26** («IC = 2,8 e
    3,3; FX = 3,4 e 3,9; WM = 3,5 e 4,0; RG = 3,3 e 3,7»): non compaiono in nessuno dei due
    Excel. Ricalcolate sui 66 bambini con il metodo di SPSS (n = 65, 61, 65, 62 per

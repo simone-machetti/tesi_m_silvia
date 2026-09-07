@@ -859,9 +859,10 @@ Tutti i capitoli a 0 differenze; compilazione senza errori né Overfull.
 
 ## F10. Controllo finale (punto 10), capitolo per capitolo
 
-**Stato:** in corso. Metodo in `plan.md` (punto 10): per ogni capitolo, correzioni sicure
-applicate direttamente e registrate in `cap_N.md`, dubbi nella sezione «Da decidere»,
-conferma dell'utente a fine capitolo. Ordine: controllo C citazioni (fatto,
+**Stato:** completato il 7/9/2026, tutti i blocchi confermati dall'utente. Metodo in
+`plan.md` (punto 10): per ogni capitolo, correzioni sicure applicate direttamente e
+registrate in `cap_N.md`, dubbi nella sezione «Da decidere», conferma dell'utente a fine
+capitolo. Ordine: controllo C citazioni (fatto,
 `controllo_citazioni.md`) → cap. 1 → 2 → 3 → 4 → front matter (`cap_0.md`) →
 appendice (`cap_A.md`).
 
@@ -875,9 +876,9 @@ verbale delle correzioni.
 | 1 | fatto e confermato (6/9/2026) | 9 grassetti su punteggiatura tolti, 2 spazi unificatori (`~`) resi normali, «seconda infanzia» → «prima infanzia», «una elevata» → «un'elevata», «Clancy Blair e Cybele Raver» → «Blair e Raver», vedove e orfane vietate in tutta la tesi | nessuno |
 | 2 | fatto e confermato (6/9/2026) | citazione autore-anno rimasta in chiaro convertita in `\cite` (unica in tutta la tesi), 7 grassetti su punteggiatura tolti, 6 spazi unificatori resi normali, spazio prima del punto, «nei bambini ritardo globale» → «nei bambini con ritardo globale», «una alterazione» → «un'alterazione» (2), «Sonuga-Barke» non più spezzato, «p factor» in tondo, «comorbilità» → «comorbidità» | nessuno (DSM-5 e le quattro forme estese di ADHD restano come sono, su decisione dell'utente) |
 | 3 | fatto e confermato (6/9/2026) | «assesment» → «assessment»; regola dei corsivi (B: corsivo solo per i nomi degli strumenti e delle sottoscale, tondo per i termini stranieri comuni) applicata a tutta la tesi, capitolo 4 compreso; due ripetizioni riscritte (§3.6, §3.1.1) | nessuno |
-| 4 | fatto e confermato (7/9/2026) | titolo «4.4 Discussione» aggiunto (contatore non più forzato); «Early Executive Function Questionnaire» → «Functions» (2); citazione del BOI staccata dalla parola; «nella 4.4.1» → «nella sezione 4.4.1» (3); «Sezione» → «sezione»; virgolette dritte «"Mai"» → «“Mai”»; «Baby-/FE» e «EE-/FQ», «Invento-/ry», «Question-/naire» non più spezzati (`\babelhyphenation`); Tabella 4.1 con le visite sdoppiate in «suggerite»/«effettuate» (verificato sull'Excel: spiega il 3 del Caso 2) e testo di §4.3.1 adeguato; Tabella 4.26 con le righe Media/DS in tondo; percentili in cifre in §4.4.1; DS sciolta in §4.2.1; numeri degli 8 casi, 26 didascalie e 23 raccordi controllati e confrontati con i due Excel con lo script `strumenti/controllo_dati_cap4.py` (620 controlli, 0 discrepanze) | soglie 10°/20° dell'EEFQ nella nota della Tabella 4.26 (due valori a 0,1 dal ricalcolo), «circa 34 e 38 anni» (dataset: 34,6 e 37,9); nessuna nota sul totale a 13 prove della Tabella 4.25, su decisione dell'utente |
-| Front matter | da fare | | |
-| Appendice | da fare | | |
+| 4 | fatto e confermato (7/9/2026), chiuso dopo il controllo sistematico sugli Excel | titolo «4.4 Discussione» aggiunto (contatore non più forzato); «Early Executive Function Questionnaire» → «Functions» (2); citazione del BOI staccata dalla parola; «nella 4.4.1» → «nella sezione 4.4.1» (3); «Sezione» → «sezione»; virgolette dritte «"Mai"» → «“Mai”»; «Baby-/FE» e «EE-/FQ», «Invento-/ry», «Question-/naire» non più spezzati (`\babelhyphenation`); Tabella 4.1 con le visite sdoppiate in «suggerite»/«effettuate» (verificato sull'Excel: spiega il 3 del Caso 2) e testo di §4.3.1 adeguato; Tabella 4.26 con le righe Media/DS in tondo; percentili in cifre in §4.4.1; DS sciolta in §4.2.1; numeri degli 8 casi, 26 didascalie e 23 raccordi controllati e confrontati con i due Excel con lo script `strumenti/controllo_dati_cap4.py` (620 controlli, 0 discrepanze) | soglie 10°/20° dell'EEFQ nella nota della Tabella 4.26 (due valori a 0,1 dal ricalcolo), «circa 34 e 38 anni» (dataset: 34,6 e 37,9); nessuna nota sul totale a 13 prove della Tabella 4.25, su decisione dell'utente |
+| Front matter | fatto e confermato (7/9/2026) | «Candidato:» → «Candidata:» sul frontespizio; ringraziamenti, introduzione e abstract identici ai Word, indice ed elenco delle tabelle completi, numerazione delle pagine corretta (`cap_0.md`) | nessuno (EEFQ resta sigla negli abstract, su decisione dell'utente) |
+| Appendice | fatto e confermato (7/9/2026) | 24 correzioni di forma nelle 15 tabelle e nella legenda: refusi («PUNTEGGI0», «delyed», «causale»), virgolette non chiuse, spazi, accordi grammaticali, «procedere con la richiesta 2», punteggi tutti in grassetto, legenda ricomposta con le icone accanto alle voci giuste (`cap_A.md`) | nessuno («di costituire» resta, su decisione dell'utente) |
 
 Vedove e orfane: **deciso e fatto** al capitolo 1 (l'utente ha preferito non aspettare la
 fine). `\widowpenalty` e `\clubpenalty` a 10000 in `settings/custom.tex`, agganciati a
