@@ -34,6 +34,8 @@ lista `TITOLI_AGGIUNTI` di `strumenti/verify4.py`. Il capitolo resta a **0 diffe
 | 11 | §4.4.1, 1°, 2°, 4° e 10° capoverso | «settantacinquesimo», «venticinquesimo», «cinquantesimo», «decimo» percentile (8) | «75°», «25°», «50°», «10°» | uniformità (deciso dall'utente) | come in §4.3.3 e nel resto di §4.4.1; registrate come revisioni |
 | 12 | §4.2.1, 1° capoverso | «(DS = 4,8)» | «(deviazione standard, DS = 4,8)» | acronimo (deciso dall'utente) | prima occorrenza della sigla, mai sciolta |
 
+| 13 | tutto il capitolo (7/9/2026, segnalato dall'utente) | «0 = esecuzione non corretta», «N = 66», «DS = 4,8» … con spazi normali attorno a «=»: a fine riga restava «2 =» e la spiegazione andava a capo (didascalie delle Tabelle 4.3, 4.4, 4.6, 4.8, 4.9, 4.11; §4.2.1 «= 4,8)» a inizio riga) | «0~=~esecuzione», «N~=~66» … (80 occorrenze): numero, segno e spiegazione restano sulla stessa riga | impaginazione | nessuna parola cambia; il verificatore legge `~` come spazio |
+
 Non fatto, su decisione dell'utente: la nota sulla regola del punteggio totale della
 Tabella 4.25 (vedi «Da decidere» 2).
 
