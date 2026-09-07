@@ -253,9 +253,9 @@ contenuti scientifici. Una frase corretta ma migliorabile viene segnalata senza 
 **D. Titoli**
 - maiuscole e punteggiatura finale uniformi fra titoli dello stesso livello;
 - **la sezione 4.4 manca**: esistono 4.4.1 e 4.4.2 senza un titolo padre, così anche nel
-  Word. **Deciso:** si aggiunge il titolo «4.4 Discussione» prima di 4.4.1, allo stesso
-  livello di «4.3 Risultati». Il contatore di sezione, oggi forzato per far uscire 4.4.1
-  senza padre, torna a scorrere da solo;
+  Word. **Deciso e fatto (cap_4.md):** aggiunto il titolo «4.4 Discussione» prima di 4.4.1,
+  allo stesso livello di «4.3 Risultati». Il contatore di sezione, prima forzato per far
+  uscire 4.4.1 senza padre, scorre da solo;
 - le 26 didascalie delle tabelle e le 23 frasi di raccordo, scritte da me nella fase
   precedente e mai rilette dall'utente (`tabelle.md`).
 

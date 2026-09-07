@@ -135,9 +135,10 @@ def text_md(md):
         s = re.sub(r, '', s, flags=re.S)
     # Revisioni di contenuto volute (guideline/4.3.3_4.4.1_rev.docx, vedi tasks.md F8):
     # si applicano anche al lato Word, cosi' il confronto segnala solo il non previsto.
+    s = re.sub(r'[ \t]+', ' ', s)   # le tabelle 'semplici' di pandoc allineano le celle con molti spazi
     for r in REVISIONI:
         n = s.count(r['word'])
-        if n != 1:
+        if n != r.get('occorrenze', 1):
             print('ATTENZIONE: revisione «%s» trovata %d volte nel Word' % (r['dove'], n))
         s = s.replace(r['word'], r['tesi'])
     return s
@@ -149,6 +150,8 @@ REVISIONI = _json.load(open(_os.path.join(_os.path.dirname(__file__), 'revisioni
 
 # Frasi di raccordo aggiunte per introdurre le tabelle (vedi tabelle.md): non sono
 # testo del Word e vengono tolte dal confronto.
+TITOLI_AGGIUNTI = [('4.4', 'Discussione')]
+
 RACCORDI = [
     r'Il profilo del Caso \d+ .{1,2} riassunto nella Tabella~\\ref\{[^}]*\}\.',
     r'Le risposte del Caso \d+ alle singole prove sono riportate nella Tabella~\\ref\{[^}]*\}\.',
@@ -184,13 +187,14 @@ def text_tex(tex):
               r'\\FloatBarrier', r'\\par', r'\\medskip']:
         s = re.sub(t, '', s)
     s = re.sub(r'(?m)^\s*[{}]\s*$', '', s)      # graffe di raggruppamento dello stile tabella
+    s = s.replace('\\newline', ' ')   # a capo dentro una cella (intestazione di Tabella 4.1)
     s = s.replace('\\\\', ' ').replace('&', ' ')
-    for cmd in ['textbf', 'textit', 'emph', 'underline', 'texttt', 'textsc']:
+    for cmd in ['textbf', 'textit', 'emph', 'underline', 'texttt', 'textsc', 'mbox']:
         for _ in range(5):
             s = re.sub(r'\\%s\{([^{}]*)\}' % cmd, r'\1', s)
     s = s.replace('\\textless', '<').replace('\\textgreater', '>')
     for a, b in [('\\&', '&'), ('\\%', '%'), ('\\_', '_'), ('\\#', '#'),
-                 ('\\$', '$'), ('\\{', '{'), ('\\}', '}'), ('~', ' ')]:
+                 ('\\$', '$'), ('\\{', '{'), ('\\}', '}'), ('~', ' '), ('``', '"'), ("''", '"')]:
         s = s.replace(a, b)
     s = s.replace('\\textasciitilde', '~')   # dopo la tilde-spazio, non prima
     return s
@@ -201,6 +205,9 @@ def main():
     tex = open(TEX, encoding='utf-8').read()
 
     h_md, h_tex = headings_md(md), headings_tex(tex)
+    # Titolo aggiunto nel controllo finale (cap_4.md): «4.4 Discussione», padre di 4.4.1
+    # e 4.4.2 che nel Word erano orfane. Non esiste nel Word, quindi va tolto dal confronto.
+    h_tex = [h for h in h_tex if h not in TITOLI_AGGIUNTI]
     a, b = text_md(md), text_tex(tex)
     ta, tb = tokens(a), tokens(b)
     sm = difflib.SequenceMatcher(None, ta, tb, autojunk=False)

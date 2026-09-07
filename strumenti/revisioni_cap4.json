@@ -13,5 +13,115 @@
   "dove": "Sez. 4.4.1, paragrafo Caso 1",
   "word": "un punteggio di controllo inibitorio all'EEFQ inferiore alla media del campione totale",
   "tesi": "un punteggio di controllo inibitorio all'EEFQ collocato tra il 10° e il 20° percentile della distribuzione osservata nel campione totale"
+ },
+ {
+  "dove": "§4.1.2 e §4.4.1: nome dell'EEFQ",
+  "word": "Early Executive Function Questionnaire",
+  "tesi": "Early Executive Functions Questionnaire",
+  "occorrenze": 2
+ },
+ {
+  "dove": "§4.4.2, rimando 1",
+  "word": "descritta nella 4.4.1",
+  "tesi": "descritta nella sezione 4.4.1"
+ },
+ {
+  "dove": "§4.4.2, rimando 2",
+  "word": "mostrato nella 4.4.1",
+  "tesi": "mostrato nella sezione 4.4.1"
+ },
+ {
+  "dove": "§4.4.2, rimando 3",
+  "word": "discusso nella 4.4.1",
+  "tesi": "discusso nella sezione 4.4.1"
+ },
+ {
+  "dove": "§4.3.3, rimando",
+  "word": "nella Sezione 4.3.2",
+  "tesi": "nella sezione 4.3.2"
+ },
+ {
+  "dove": "§4.2.3, citazione del BOI attaccata alla parola",
+  "word": "Inventory⟦CIT⟧,",
+  "tesi": "Inventory ⟦CIT⟧,"
+ },
+ {
+  "dove": "Tabella 4.1, intestazione",
+  "word": "Visite specialistiche N. fattori",
+  "tesi": "Visite suggerite Visite effettuate N. fattori"
+ },
+ {
+  "dove": "Tabella 4.1, riga Caso 1",
+  "word": "Caso 1 F 33 -- SÌ SÌ SÌ 3",
+  "tesi": "1 F 33 -- SÌ SÌ -- SÌ 3"
+ },
+ {
+  "dove": "Tabella 4.1, riga Caso 2",
+  "word": "Caso 2 F 31 -- -- SÌ SÌ 3",
+  "tesi": "2 F 31 -- -- SÌ SÌ SÌ 3"
+ },
+ {
+  "dove": "Tabella 4.1, riga Caso 3",
+  "word": "Caso 3 M 31 -- SÌ SÌ SÌ 3",
+  "tesi": "3 M 31 -- SÌ SÌ SÌ -- 3"
+ },
+ {
+  "dove": "Tabella 4.1, riga Caso 4",
+  "word": "Caso 4 F 37 SÌ SÌ SÌ -- 3",
+  "tesi": "4 F 37 SÌ SÌ SÌ -- -- 3"
+ },
+ {
+  "dove": "Tabella 4.1, riga Caso 5",
+  "word": "Caso 5 F 38 SÌ -- SÌ SÌ 3",
+  "tesi": "5 F 38 SÌ -- SÌ -- SÌ 3"
+ },
+ {
+  "dove": "Tabella 4.1, riga Caso 6",
+  "word": "Caso 6 M 28 -- SÌ -- SÌ 2",
+  "tesi": "6 M 28 -- SÌ -- -- SÌ 2"
+ },
+ {
+  "dove": "Tabella 4.1, riga Caso 7",
+  "word": "Caso 7 F 27 -- SÌ -- SÌ 2",
+  "tesi": "7 F 27 -- SÌ -- -- SÌ 2"
+ },
+ {
+  "dove": "Tabella 4.1, riga Caso 8",
+  "word": "Caso 8 M 29 -- -- SÌ SÌ 2",
+  "tesi": "8 M 29 -- -- SÌ -- SÌ 2"
+ },
+ {
+  "dove": "§4.3.1, elenco dei fattori",
+  "word": "l'eventuale suggerimento o effettuazione di visite specialistiche",
+  "tesi": "il suggerimento di visite specialistiche, la loro effettuazione"
+ },
+ {
+  "dove": "§4.4.1, percentili in cifre",
+  "word": "settantacinquesimo",
+  "tesi": "75°",
+  "occorrenze": 3
+ },
+ {
+  "dove": "§4.4.1, percentili in cifre",
+  "word": "venticinquesimo",
+  "tesi": "25°",
+  "occorrenze": 2
+ },
+ {
+  "dove": "§4.4.1, percentili in cifre",
+  "word": "cinquantesimo",
+  "tesi": "50°",
+  "occorrenze": 1
+ },
+ {
+  "dove": "§4.4.1, percentili in cifre",
+  "word": "decimo",
+  "tesi": "10°",
+  "occorrenze": 2
+ },
+ {
+  "dove": "§4.2.1, sigla DS",
+  "word": "(DS = 4,8)",
+  "tesi": "(deviazione standard, DS = 4,8)"
  }
 ]
