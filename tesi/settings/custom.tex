@@ -61,6 +61,23 @@
 \setcounter{bottomnumber}{2}
 \setcounter{totalnumber}{5}
 
+% Indice ed elenco delle tabelle: la casella dei numeri di pagina della classe book
+% (1,55 em) e' troppo stretta per i numeri a tre cifre in corpo 12 e dava 40 righe
+% "Overfull" di 1,2 pt. Casella e margine destro delle voci allargati.
+\makeatletter
+\renewcommand{\@pnumwidth}{2.2em}
+\renewcommand{\@tocrmarg}{3.2em}
+\makeatother
+
+% Terzo passaggio di TeX per i capoversi che non trovano una divisione in righe
+% accettabile: un po' di spazio elastico in piu' invece di una riga fuori margine
+% (caso «Sonuga-Barke [50]» a pagina 36).
+\setlength{\emergencystretch}{1.5em}
+
+% Con il divieto di vedove e orfane alcune pagine finiscono una riga prima: non
+% vanno stirate per riempire il piede (dava 150 avvisi "Underfull \vbox").
+\raggedbottom
+
 % Niente righe isolate (controllo finale, cap_1.md): vietata la prima riga di un
 % capoverso sola in fondo alla pagina (orfana) e l'ultima riga sola in cima alla
 % pagina seguente (vedova). LaTeX sposta la riga, e la pagina finisce una riga prima.

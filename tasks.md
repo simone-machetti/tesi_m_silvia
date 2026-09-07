@@ -881,11 +881,41 @@ verbale delle correzioni.
 | Appendice | fatto e confermato (7/9/2026) | 24 correzioni di forma nelle 15 tabelle e nella legenda: refusi («PUNTEGGI0», «delyed», «causale»), virgolette non chiuse, spazi, accordi grammaticali, «procedere con la richiesta 2», punteggi tutti in grassetto, legenda ricomposta con le icone accanto alle voci giuste (`cap_A.md`) | nessuno («di costituire» resta, su decisione dell'utente) |
 
 **Finalizzazione (7/9/2026).** Ricompilazione pulita da zero (`latexmk -C` e poi build
-completo): 185 pagine, 0 errori, 0 Overfull, 0 Underfull, 0 avvisi LaTeX, 0 avvisi biber;
-nessun riferimento irrisolto («??») né segnaposto nel PDF; 102 voci in bibliografia = 102
-voci nel `.bib` = 102 chiavi citate; tutti i font incorporati; link senza bordi né colori
-(stampa pulita). Aggiunti i metadati del file PDF in `settings/custom.tex` (`\hypersetup`:
-titolo, autrice, oggetto, lingua), prima vuoti. Il PDF finale è `tesi/main.pdf`.
+completo); nessun riferimento irrisolto («??») né segnaposto nel PDF; 102 voci in
+bibliografia = 102 voci nel `.bib` = 102 chiavi citate; tutti i font incorporati; link
+senza bordi né colori (stampa pulita); 90 segnalibri di navigazione. Aggiunti i metadati
+del file PDF in `settings/custom.tex` (`\hypersetup`: titolo, autrice, oggetto, lingua),
+prima vuoti. Il PDF finale è `tesi/main.pdf`.
+
+**Errata e ripasso del log (7/9/2026).** I conteggi «0 Overfull, 0 avvisi» riportati nei
+verbali `cap_N.md` erano sbagliati: nella shell usata `grep` è una funzione (ugrep) che
+in quei conteggi restituiva zero anche con corrispondenze. L'utente ha notato a occhio
+«Sonuga-Barke [50]» fuori margine a pagina 36; rileggendo il log con `/bin/grep` c'erano
+50 righe «Overfull», 151 «Underfull» e 9 avvisi. Sistemato tutto:
+- 40 Overfull da 1,2 pt nell'indice e nell'elenco delle tabelle: la casella dei numeri di
+  pagina della classe `book` è stretta per i numeri a tre cifre → `\@pnumwidth` 2,2 em e
+  `\@tocrmarg` 3,2 em in `settings/custom.tex`;
+- «Sonuga-Barke [50]» (14 pt): tolto l'`\mbox` messo al capitolo 2, il cognome torna
+  divisibile al trattino (`cap_2.md`, correzione 8 annullata); aggiunto
+  `\emergencystretch` 1,5 em, che ha risolto da solo anche i due sfori da 3,5 pt di pagina
+  83 e 124;
+- Tabella 4.1 (1,4 pt): margine interno delle celle da 3 a 2 pt (`cap_4.md`);
+- 150 «Underfull \vbox»: con vedove e orfane vietate alcune pagine finiscono una riga
+  prima e LaTeX provava a stirarle (`\flushbottom` della classe) → `\raggedbottom`,
+  nessun cambiamento visibile;
+- 5 «Underfull \hbox» dalle righe vuote (`~\newline`) sotto i titoli di ringraziamenti e
+  abstract → `\vspace*` equivalente, prima riga di testo nella stessa posizione;
+- 7 avvisi pdfTeX «destination … duplicate ignored»: le pagine senza numero prima degli
+  abstract avevano gli stessi numeri romani ripetuti dopo l'azzeramento del contatore →
+  `pageanchor=false` fino all'abstract (`main.tex`);
+- 1 avviso hyperref sui segnalibri «Caso N» con la stessa ancora della sezione padre →
+  `\phantomsection` prima degli otto `\addcontentsline`.
+
+Stato vero finale: 185 pagine, 0 errori, **0 Overfull**, 0 avvisi LaTeX, 0 avvisi biber;
+restano 17 «Underfull \hbox» tutti dentro le celle delle tabelle dell'appendice (testo
+giustificato in colonne strette, come richiesto): spazi fra le parole un po' larghi in
+alcune righe, nessun testo fuori dalla cella. Da qui in avanti i conteggi vanno fatti con
+`/bin/grep -a` o in Python.
 
 Vedove e orfane: **deciso e fatto** al capitolo 1 (l'utente ha preferito non aspettare la
 fine). `\widowpenalty` e `\clubpenalty` a 10000 in `settings/custom.tex`, agganciati a

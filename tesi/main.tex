@@ -8,10 +8,15 @@
 \begin{document}
 
 \frontmatter
+% Le pagine prima degli abstract non hanno numero stampato ma hyperref le contava
+% con gli stessi numeri romani ripetuti dopo l'azzeramento del contatore (7 avvisi
+% "duplicate ignored"): niente ancore di pagina fino all'abstract.
+\hypersetup{pageanchor=false}
 \input{head/1_frontespizio.tex}
 \input{head/2_dedica}
 \input{head/3_ringraziamenti}
 \setcounter{page}{0}
+\hypersetup{pageanchor=true}
 \input{head/4_abstract}
 % Elenco degli acronimi tolto su richiesta (guideline/modifiche.docx): il file
 % head/5_acronimi.tex resta sul disco ma non viene incluso.

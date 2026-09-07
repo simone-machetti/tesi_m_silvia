@@ -184,7 +184,7 @@ def text_tex(tex):
               r'\\end\{minipage\}', r'\\begin\{center\}', r'\\end\{center\}',
               r'\\toprule', r'\\midrule', r'\\bottomrule', r'\\endhead',
               r'\\small', r'\\footnotesize', r'\\centering', r'\\justifying',
-              r'\\FloatBarrier', r'\\par', r'\\medskip']:
+              r'\\FloatBarrier', r'\\phantomsection', r'\\par', r'\\medskip']:
         s = re.sub(t, '', s)
     s = re.sub(r'(?m)^\s*[{}]\s*$', '', s)      # graffe di raggruppamento dello stile tabella
     s = s.replace('\\newline', ' ')   # a capo dentro una cella (intestazione di Tabella 4.1)

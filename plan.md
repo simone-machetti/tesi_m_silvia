@@ -320,11 +320,13 @@ In sintesi:
 - Sillabazione: eccezioni per «scoring», «EEFQ», «Inventory», «Questionnaire» registrate
   nella lingua giusta con `\babelhyphenation`; «Baby-FE» e «Sonuga-Barke» non più spezzati.
 
-Scansione finale del PDF (185 pagine, 0 errori, 0 Overfull, 0 avvisi biber): nessuna
-vedova od orfana, nessun titolo in fondo a pagina, nessuna citazione autore-anno in
-chiaro, nessun nome o sigla spezzati; le 26 tabelle del capitolo 4 sulla pagina del primo
-richiamo o su quella dopo; i quattro capitoli a 0 differenze rispetto al Word con le
-revisioni registrate. Restano com'erano, su decisione dell'utente: nota sul totale a 13
+Scansione finale del PDF (185 pagine, 0 errori, 0 Overfull, 0 avvisi LaTeX e biber, dopo
+il ripasso del log descritto in `tasks.md`, «Errata»: i conteggi precedenti erano falsati
+da un `grep` difettoso): nessuna vedova od orfana, nessun titolo in fondo a pagina,
+nessuna citazione autore-anno in chiaro, nessuna sigla spezzata («Sonuga-Barke» torna
+divisibile al trattino per non uscire dal margine); le 26 tabelle del capitolo 4 sulla
+pagina del primo richiamo o su quella dopo; i quattro capitoli a 0 differenze rispetto al
+Word con le revisioni registrate. Restano com'erano, su decisione dell'utente: nota sul totale a 13
 prove (Tabella 4.25), soglie del 10°/20° percentile dell'EEFQ e «circa 34 e 38 anni»
 (§4.2.1), EEFQ come sigla negli abstract, «di costituire» (Appendice, Tabella 6).
 
